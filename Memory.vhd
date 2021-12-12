@@ -20,6 +20,8 @@ architecture Behavioral of Memory is
   signal MaxIndex : integer range 0 to 15 := 0;
 
 begin
+
+Out_FullStack <= FullStackIndicator;
 ButtonStates <= In_BtnValue;
 Out_BtnValue <= ButtonStates;
 
@@ -41,11 +43,37 @@ with ButtonStates select
 						 14 when "1110",
 						 15 when "1111",
 
+
+--Process of writing buttons values to memory cell on rising 
+--edge of sw0, value always goes to Memory(0) (First IN)
+
 process(In_Write)
 begin
 	if rising_edge(In_Write) then
+	
+--Writing new value when stack still have free cells
+	
+		if FullStackIndicator = '0' then
+	      if MaxIndex > 0 then
+				for i in MaxIndex - 1 downto 0 loop
+						Memory(i+1) <= Memory(i);
+				end loop;
+			end if;
+			Memory(0) <= ButtonStates;
+			if MaxIndex <= 15 then
+				MaxIndex <= MaxIndex + 1;
+			end if;
+		end if;
 		
-
+--Writing new value when stack is overflowed (Last OUT)	
+	
+		elsif FullStackIndicator = '1' then
+			for i in 14 downto 0 loop
+				Memory(i+1) <= Memory(i);
+			end loop; 
+			Memory(0) <= ButtonStates;
+		end if;
+	end if;	
 end process;
 
 process(In_Read)
@@ -59,7 +87,9 @@ begin
 	end if;
 end process;
  
-
+if MaxIndex = '16' then
+	FullStackIndicator <= "1";
+end if;
 
 
 end Behavioral;

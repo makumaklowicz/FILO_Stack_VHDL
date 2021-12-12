@@ -6,7 +6,7 @@ entity Memory is
            In_Read : in  STD_LOGIC;
            Out_FullStack : out  STD_LOGIC;
            Out_MemCellValue : out  STD_LOGIC_VECTOR (3 downto 0);
-           Out_BtnValue : out  STD_LOGIC);
+           Out_BtnValue : out  STD_LOGIC_VECTOR (3 downto 0));
 end Memory;
 
 architecture Behavioral of Memory is

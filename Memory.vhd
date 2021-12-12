@@ -17,6 +17,7 @@ architecture Behavioral of Memory is
   signal MemCellValue : std_logic_vector(3 downto 0);
   signal ButtonStates : std_logic_vector(3 downto 0);
   signal CellIndex : integer range 0 to 15 := 0;
+  signal MaxIndex : integer range 0 to 15 := 0;
 
 begin
 ButtonStates <= In_BtnValue;
@@ -52,6 +53,8 @@ begin
 	if rising_edge(In_Write) then
 		if CellIndex < MaxIndex then
 			Out_MemCellValue <= Memory(CellIndex);
+		else
+			Out_MemCellValue <= "0000"
 		end if;
 	end if;
 end process;

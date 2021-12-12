@@ -1,0 +1,192 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+----------------- B l o c k 0 ------------------
+PLApt(48/56), Fanin(9/38), Clk(0/3), Bct(0/4), Pin(0/6), Mcell(16/16)
+PLApts[48/48] 6 74 77 85 113 97 100 91 96 104 81 88 101 69 94 108 98 75 80 90 105 70 78 83 109 73 86 93 112 95 102 71 92 110 79 89 103 72 76 84 111 87 99 68 82 107 67 106
+Fanins[ 9] MaxIndex<0>.n MaxIndex<1>.n MaxIndex<2>.n MaxIndex<3>.n MaxIndex<4>.n In_BtnValue<0>.p In_BtnValue<1>.p In_BtnValue<2>.p In_BtnValue<3>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [N_PZ_255(160)] [N_PZ_257(159)] [N_PZ_258(155)] [N_PZ_261(154)] [N_PZ_267(153)] [N_PZ_262(152)]  
+           [N_PZ_264(151)] [N_PZ_269(149)] [N_PZ_266(146)] [N_PZ_260(145)] [N_PZ_270(158)] [N_PZ_259(157)]  
+           [N_PZ_268(156)] [N_PZ_271(150)] [N_PZ_265(148)] [N_PZ_263(147)] 
+Signal[16] [ 0: N_PZ_260(145)  ][ 1: N_PZ_266(146)  ][ 2: N_PZ_263(147) (143)  ][ 3: N_PZ_265(148) (142)  ] 
+           [ 4: N_PZ_269(149)  ][ 5: N_PZ_271(150) (140)  ][ 6: N_PZ_264(151)  ][ 7: N_PZ_262(152)  ][ 8:  
+           N_PZ_267(153)  ][ 9: N_PZ_261(154)  ][ 10: N_PZ_258(155)  ][ 11: N_PZ_268(156) (139)  ][ 12:  
+           N_PZ_259(157) (138)  ][ 13: N_PZ_270(158) (137)  ][ 14: N_PZ_257(159)  ][ 15: N_PZ_255(160)  ]
+----------------- B l o c k 1 ------------------
+PLApt(19/56), Fanin(14/38), Clk(0/3), Bct(1/4), Pin(4/8), Mcell(16/16)
+PLApts[19/56] 59 60 61 62 0 7 8 () () () 121 () () 121 () () () () () 121 () () () () () 121 () () 120 () () 119 () () 118 () () 117 () () 116 () () 121 () () () () () 121 () () () () () 115
+Fanins[14] Out_FullStack.n MaxIndex<0>.n MaxIndex<1>.n MaxIndex<2>.n MaxIndex<3>.n MaxIndex<4>.n Memory_10_0.n Memory_10_1.n Memory_4_and0000.n Memory_9_0.n Memory_9_1.n Memory_9_2.n Memory_9_3.n In_Write.p
+clk[0] 
+CTC: (pt=0) In_Write ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[20] [Memory_0_0,In_BtnValue<0>(3)] [Memory_0_1,In_BtnValue<1>(5)] [Memory_0_2,In_BtnValue<2>(7)]  
+           [Memory_0_3,In_BtnValue<3>(10)] [MaxIndex<0>(176)] [MaxIndex<1>(171)] [MaxIndex<2>(170)]  
+           [MaxIndex<3>(169)] [MaxIndex<4>(168)] [Memory_4_and0000(167)] [Memory_10_0(166)]  
+           [Memory_10_1(162)] [Memory_10_2(174)] [Memory_10_3(172)] [Memory_11_0(164)] [Memory_11_1(161)] 
+Signal[20] [ 0: Memory_11_1(161) (2)  ][ 1: Memory_10_1(162)  ][ 2: Memory_0_0(163) In_BtnValue<0>(3)  ][ 3:  
+           Memory_11_0(164) (4)  ][ 4: Memory_0_1(165) In_BtnValue<1>(5)  ][ 5: Memory_10_0(166)  ][ 6:  
+           Memory_4_and0000(167)  ][ 7: MaxIndex<4>(168)  ][ 8: MaxIndex<3>(169)  ][ 9: MaxIndex<2>(170)  ] 
+           [ 10: MaxIndex<1>(171)  ][ 11: Memory_10_3(172) (6)  ][ 12: Memory_0_2(173) In_BtnValue<2>(7)  ] 
+           [ 13: Memory_10_2(174) (9)  ][ 14: Memory_0_3(175) In_BtnValue<3>(10)  ][ 15: MaxIndex<0>(176)  ]
+----------------- B l o c k 2 ------------------
+PLApt(48/56), Fanin(37/38), Clk(0/3), Bct(1/4), Pin(0/6), Mcell(16/16)
+PLApts[48/56] 123 127 131 135 0 139 143 147 151 155 121 159 163 121 167 171 121 175 179 121 183 12 121 16 20 121 24 64 121 28 32 121 36 40 121 44 48 121 52 56 121 9 10 121 () () 121 () () 121 () () 5 () () 121
+Fanins[37] Memory_0_1.n Memory_10_1.n Memory_10_2.n Memory_10_3.n Memory_11_1.n Memory_12_1.n Memory_13_1.n Memory_14_1.n Memory_15_1.n Memory_1_1.n Memory_2_1.n Memory_3_1.n Memory_4_1.n Memory_4_and0000.n Memory_5_1.n Memory_6_1.n Memory_7_1.n Memory_8_1.n Memory_9_1.n N_PZ_255.n N_PZ_257.n N_PZ_258.n N_PZ_259.n N_PZ_260.n N_PZ_261.n N_PZ_262.n N_PZ_263.n N_PZ_264.n N_PZ_265.n N_PZ_266.n N_PZ_267.n N_PZ_268.n N_PZ_269.n N_PZ_270.n N_PZ_271.n In_Read.p In_Write.p
+clk[0] 
+CTC: (pt=0) In_Write ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [Out_MemCellValue<1>_BUFR(191)] [Memory_12_1(189)] [Memory_13_1(188)] [Memory_14_1(187)]  
+           [Memory_15_1(186)] [Memory_1_1(185)] [Memory_2_1(184)] [Memory_3_1(183)] [Memory_4_1(182)]  
+           [Memory_5_1(180)] [Memory_6_1(192)] [Memory_7_1(190)] [Memory_8_1(181)] [Memory_9_1(179)]  
+           [Memory_11_2(178)] [Memory_11_3(177)] 
+Signal[16] [ 0: Memory_11_3(177) (136)  ][ 1: Memory_11_2(178) (135)  ][ 2: Memory_9_1(179) (134)  ][ 3:  
+           Memory_5_1(180)  ][ 4: Memory_8_1(181) (133)  ][ 5: Memory_4_1(182)  ][ 6: Memory_3_1(183)  ][ 7:  
+           Memory_2_1(184)  ][ 8: Memory_1_1(185)  ][ 9: Memory_15_1(186)  ][ 10: Memory_14_1(187)  ][ 11:  
+           Memory_13_1(188)  ][ 12: Memory_12_1(189)  ][ 13: Memory_7_1(190) (132)  ][ 14:  
+           Out_MemCellValue<1>_BUFR(191)  ][ 15: Memory_6_1(192) (131)  ]
+----------------- B l o c k 3 ------------------
+PLApt(48/56), Fanin(37/38), Clk(0/3), Bct(1/4), Pin(0/8), Mcell(16/16)
+PLApts[48/56] 124 128 132 136 0 140 144 148 152 156 121 160 164 121 168 172 121 176 180 121 184 13 121 17 21 121 25 65 121 29 33 121 37 41 121 45 49 121 53 57 121 11 14 121 () () 121 () () 121 () () 121 () () 5
+Fanins[37] Memory_0_2.n Memory_10_2.n Memory_11_0.n Memory_11_2.n Memory_11_3.n Memory_12_2.n Memory_13_2.n Memory_14_2.n Memory_15_2.n Memory_1_2.n Memory_2_2.n Memory_3_2.n Memory_4_2.n Memory_4_and0000.n Memory_5_2.n Memory_6_2.n Memory_7_2.n Memory_8_2.n Memory_9_2.n N_PZ_255.n N_PZ_257.n N_PZ_258.n N_PZ_259.n N_PZ_260.n N_PZ_261.n N_PZ_262.n N_PZ_263.n N_PZ_264.n N_PZ_265.n N_PZ_266.n N_PZ_267.n N_PZ_268.n N_PZ_269.n N_PZ_270.n N_PZ_271.n In_Read.p In_Write.p
+clk[0] 
+CTC: (pt=0) In_Write ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [Out_MemCellValue<2>_BUFR(208)] [Memory_12_2(207)] [Memory_13_2(205)] [Memory_14_2(203)]  
+           [Memory_15_2(202)] [Memory_1_2(201)] [Memory_2_2(200)] [Memory_3_2(199)] [Memory_4_2(206)]  
+           [Memory_5_2(204)] [Memory_6_2(198)] [Memory_7_2(197)] [Memory_8_2(196)] [Memory_9_2(195)]  
+           [Memory_12_0(194)] [Memory_12_3(193)] 
+Signal[16] [ 0: Memory_12_3(193) (11)  ][ 1: Memory_12_0(194) (12)  ][ 2: Memory_9_2(195) (13)  ][ 3:  
+           Memory_8_2(196) (14)  ][ 4: Memory_7_2(197) (15)  ][ 5: Memory_6_2(198) (16)  ][ 6:  
+           Memory_3_2(199)  ][ 7: Memory_2_2(200)  ][ 8: Memory_1_2(201)  ][ 9: Memory_15_2(202)  ][ 10:  
+           Memory_14_2(203)  ][ 11: Memory_5_2(204) (17)  ][ 12: Memory_13_2(205)  ][ 13: Memory_4_2(206)  
+           (18)  ][ 14: Memory_12_2(207)  ][ 15: Out_MemCellValue<2>_BUFR(208)  ]
+----------------- B l o c k 4 ------------------
+PLApt(48/56), Fanin(38/38), Clk(0/3), Bct(1/4), Pin(0/5), Mcell(16/16)
+PLApts[48/56] 125 129 133 137 0 141 145 149 153 157 121 161 165 121 169 173 121 177 181 121 185 18 121 22 26 121 66 30 121 34 38 121 42 46 121 50 54 121 58 15 121 19 23 121 () () 121 () () 121 () () 121 () () 5
+Fanins[38] Memory_0_3.n Memory_10_3.n Memory_11_3.n Memory_12_0.n Memory_12_3.n Memory_13_0.n Memory_13_3.n Memory_14_0.n Memory_14_3.n Memory_15_3.n Memory_1_3.n Memory_2_3.n Memory_3_3.n Memory_4_3.n Memory_4_and0000.n Memory_5_3.n Memory_6_3.n Memory_7_3.n Memory_8_3.n Memory_9_3.n N_PZ_255.n N_PZ_257.n N_PZ_258.n N_PZ_259.n N_PZ_260.n N_PZ_261.n N_PZ_262.n N_PZ_263.n N_PZ_264.n N_PZ_265.n N_PZ_266.n N_PZ_267.n N_PZ_268.n N_PZ_269.n N_PZ_270.n N_PZ_271.n In_Read.p In_Write.p
+clk[0] 
+CTC: (pt=0) In_Write ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [Out_MemCellValue<3>_BUFR(224)] [Memory_13_3(223)] [Memory_14_3(221)] [Memory_15_3(220)]  
+           [Memory_1_3(219)] [Memory_2_3(218)] [Memory_3_3(217)] [Memory_4_3(216)] [Memory_5_3(215)]  
+           [Memory_6_3(211)] [Memory_7_3(209)] [Memory_8_3(222)] [Memory_9_3(214)] [Memory_13_0(213)]  
+           [Memory_14_0(212)] [Memory_15_0(210)] 
+Signal[16] [ 0: Memory_7_3(209)  ][ 1: Memory_15_0(210) (33)  ][ 2: Memory_6_3(211)  ][ 3: Memory_14_0(212)  
+           (32)  ][ 4: Memory_13_0(213) (31)  ][ 5: Memory_9_3(214) (30)  ][ 6: Memory_5_3(215)  ][ 7:  
+           Memory_4_3(216)  ][ 8: Memory_3_3(217)  ][ 9: Memory_2_3(218)  ][ 10: Memory_1_3(219)  ][ 11:  
+           Memory_15_3(220)  ][ 12: Memory_14_3(221)  ][ 13: Memory_8_3(222) (28)  ][ 14: Memory_13_3(223)  ] 
+           [ 15: Out_MemCellValue<3>_BUFR(224)  ]
+----------------- B l o c k 5 ------------------
+PLApt(19/56), Fanin(11/38), Clk(0/3), Bct(1/4), Pin(1/8), Mcell(9/16)
+PLApts[19/56] 63 27 31 35 0 39 43 47 51 55 () () () () () () 121 () () () () () 121 () () 121 () () 121 () () 121 () () 121 () () 121 () () 121 () () () () () () () () () () () () () () 121
+Fanins[11] Memory_0_0.n Memory_1_0.n Memory_2_0.n Memory_3_0.n Memory_4_0.n Memory_4_and0000.n Memory_5_0.n Memory_6_0.n Memory_7_0.n Memory_8_0.n In_Write.p
+clk[0] 
+CTC: (pt=0) In_Write ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[10] [In_Write(39)] [Memory_1_0(235)] [Memory_2_0(234)] [Memory_3_0(233)] [Memory_4_0(232)]  
+           [Memory_5_0(231)] [Memory_6_0(230)] [Memory_7_0(229)] [Memory_8_0(227)] [Memory_9_0(240)] 
+Signal[10] [ 0: (34)  ][ 1: (35)  ][ 2: Memory_8_0(227)  ][ 3: (38)  ][ 4: Memory_7_0(229)  ][ 5:  
+           Memory_6_0(230)  ][ 6: Memory_5_0(231)  ][ 7: Memory_4_0(232)  ][ 8: Memory_3_0(233)  ][ 9:  
+           Memory_2_0(234)  ][ 10: Memory_1_0(235)  ][ 11: In_Write(39)  ][ 12: (40)  ][ 13: (41)  ][ 14:  
+           (42)  ][ 15: Memory_9_0(240) (43)  ]
+----------------- B l o c k 6 ------------------
+----------------- B l o c k 7 ------------------
+----------------- B l o c k 8 ------------------
+PLApt(20/56), Fanin(36/38), Clk(0/3), Bct(1/4), Pin(4/8), Mcell(4/16)
+PLApts[20/53] 122 126 130 134 5 138 142 146 150 154 158 162 166 170 174 178 182 () () () () () () () () 186 () () () () () () () () () () () () () () () () () () () () 187 () () () () () 188
+Fanins[36] Memory_0_0.n Memory_10_0.n Memory_11_0.n Memory_12_0.n Memory_13_0.n Memory_14_0.n Memory_15_0.n Memory_1_0.n Memory_2_0.n Memory_3_0.n Memory_4_0.n Memory_5_0.n Memory_6_0.n Memory_7_0.n Memory_8_0.n Memory_9_0.n N_PZ_255.n N_PZ_257.n N_PZ_258.n N_PZ_259.n N_PZ_260.n N_PZ_261.n N_PZ_262.n N_PZ_263.n N_PZ_264.n N_PZ_265.n N_PZ_266.n N_PZ_267.n N_PZ_268.n N_PZ_269.n N_PZ_270.n N_PZ_271.n Out_MemCellValue<1>_BUFR.n Out_MemCellValue<2>_BUFR.n Out_MemCellValue<3>_BUFR.n In_Read.p
+clk[0] 
+CTC: (pt=5) In_Read ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 4] [Out_MemCellValue<0>(274),Out_MemCellValue<0>(113)]  
+           [Out_MemCellValue<1>(278),Out_MemCellValue<1>(115)]  
+           [Out_MemCellValue<2>(285),Out_MemCellValue<2>(117)]  
+           [Out_MemCellValue<3>(287),Out_MemCellValue<3>(119)] 
+Signal[ 4] [ 0: (112)  ][ 1: Out_MemCellValue<0>(274) Out_MemCellValue<0>(113)  ][ 2:  ][ 3: (114)  ][ 4:  ] 
+           [ 5: Out_MemCellValue<1>(278) Out_MemCellValue<1>(115)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ] 
+           [ 11: (116)  ][ 12: Out_MemCellValue<2>(285) Out_MemCellValue<2>(117)  ][ 13: (118)  ][ 14:  
+           Out_MemCellValue<3>(287) Out_MemCellValue<3>(119)  ][ 15:  ]
+----------------- B l o c k 9 ------------------
+PLApt(2/56), Fanin(2/38), Clk(0/3), Bct(0/4), Pin(2/9), Mcell(2/16)
+PLApts[2/50] () () () () () () () () () () () () () () () () () () () () () () () () () 4 () () () () () () () () () () () () () () () () () () () () () () () 1
+Fanins[ 2] In_BtnValue<2>.p In_BtnValue<3>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 2] [Out_BtnValue<2>(302),Out_BtnValue<2>(102)] [Out_BtnValue<3>(294),Out_BtnValue<3>(104)] 
+Signal[ 2] [ 0: (111)  ][ 1: (110)  ][ 2: (107)  ][ 3: (106)  ][ 4: (105)  ][ 5: Out_BtnValue<3>(294)  
+           Out_BtnValue<3>(104)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11: (103)  ][ 12:  ][ 13:  
+           Out_BtnValue<2>(302) Out_BtnValue<2>(102)  ][ 14:  ][ 15: (101)  ]
+----------------- B l o c k 10 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(1/8), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 1] [In_Read(124)] 
+Signal[ 1] [ 0:  ][ 1:  ][ 2:  ][ 3:  ][ 4: (120)  ][ 5: (121)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  
+           In_Read(124)  ][ 11: (125)  ][ 12: (126)  ][ 13: (128)  ][ 14: (129)  ][ 15: (130)  ]
+----------------- B l o c k 11 ------------------
+PLApt(2/56), Fanin(2/38), Clk(0/3), Bct(0/4), Pin(2/6), Mcell(2/16)
+PLApts[2/44] () () () () () () () () () () () () () 3 () () () () () () () () () () () () () () () () () () () () () () () () () () () () () 2
+Fanins[ 2] In_BtnValue<0>.p In_BtnValue<1>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 2] [Out_BtnValue<0>(332),Out_BtnValue<0>(97)] [Out_BtnValue<1>(322),Out_BtnValue<1>(100)] 
+Signal[ 2] [ 0:  ][ 1: Out_BtnValue<1>(322) Out_BtnValue<1>(100)  ][ 2:  ][ 3:  ][ 4:  ][ 5:  ][ 6:  ][ 7:  ] 
+           [ 8:  ][ 9:  ][ 10: (98)  ][ 11: Out_BtnValue<0>(332) Out_BtnValue<0>(97)  ][ 12: (96)  ][ 13:  
+           (95)  ][ 14: (94)  ][ 15:  ]
+----------------- B l o c k 12 ------------------
+----------------- B l o c k 13 ------------------
+PLApt(2/56), Fanin(7/38), Clk(0/3), Bct(1/4), Pin(1/8), Mcell(1/16)
+PLApts[2/20] () () () () 0 () () () () () () () () () () () () () () 114
+Fanins[ 7] Out_FullStack.n MaxIndex<0>.n MaxIndex<1>.n MaxIndex<2>.n MaxIndex<3>.n MaxIndex<4>.n In_Write.p
+clk[0] 
+CTC: (pt=0) In_Write ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 1] [Out_FullStack(356),Out_FullStack(69)] 
+Signal[ 1] [ 0: (74)  ][ 1: (71)  ][ 2: (70)  ][ 3: Out_FullStack(356) Out_FullStack(69)  ][ 4:  ][ 5: (68)  
+            ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11:  ][ 12: (66)  ][ 13: (64)  ][ 14:  ][ 15: (61)  ]
+----------------- B l o c k 14 ------------------
+----------------- B l o c k 15 ------------------

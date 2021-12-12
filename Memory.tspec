@@ -1,0 +1,4 @@
+AUTO_TS_P2P:FROM:In_BtnValue<0>:TO:Out_BtnValue<0>:1
+AUTO_TS_P2P:FROM:In_BtnValue<1>:TO:Out_BtnValue<1>:1
+AUTO_TS_P2P:FROM:In_BtnValue<2>:TO:Out_BtnValue<2>:1
+AUTO_TS_P2P:FROM:In_BtnValue<3>:TO:Out_BtnValue<3>:1

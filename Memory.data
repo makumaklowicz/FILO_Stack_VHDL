@@ -1,0 +1,66 @@
+MODELDATA
+MODELDATA_VERSION "v1998.8"
+DESIGN "Memory";
+
+/* port drive, load, max capacitance and max transition in data file */
+PORTDATA
+In_BtnValue<0>: MAXTRANS(0.0);
+In_BtnValue<1>: MAXTRANS(0.0);
+In_BtnValue<2>: MAXTRANS(0.0);
+In_BtnValue<3>: MAXTRANS(0.0);
+Out_BtnValue<0>: MAXTRANS(0.0);
+Out_BtnValue<1>: MAXTRANS(0.0);
+Out_BtnValue<2>: MAXTRANS(0.0);
+Out_BtnValue<3>: MAXTRANS(0.0);
+Out_FullStack: MAXTRANS(0.0);
+Out_MemCellValue<0>: MAXTRANS(0.0);
+Out_MemCellValue<1>: MAXTRANS(0.0);
+Out_MemCellValue<2>: MAXTRANS(0.0);
+Out_MemCellValue<3>: MAXTRANS(0.0);
+ENDPORTDATA
+
+/* timing arc data */
+TIMINGDATA
+
+ARCDATA
+In_BtnValue<0>_Out_BtnValue<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("5.7");
+}
+CELL_FALL(scalar) {
+  VALUES("5.7");
+}
+ENDARCDATA
+
+ARCDATA
+In_BtnValue<1>_Out_BtnValue<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("5.7");
+}
+CELL_FALL(scalar) {
+  VALUES("5.7");
+}
+ENDARCDATA
+
+ARCDATA
+In_BtnValue<2>_Out_BtnValue<2>_delay:
+CELL_RISE(scalar) {
+  VALUES("5.7");
+}
+CELL_FALL(scalar) {
+  VALUES("5.7");
+}
+ENDARCDATA
+
+ARCDATA
+In_BtnValue<3>_Out_BtnValue<3>_delay:
+CELL_RISE(scalar) {
+  VALUES("5.7");
+}
+CELL_FALL(scalar) {
+  VALUES("5.7");
+}
+ENDARCDATA
+
+ENDTIMINGDATA
+ENDMODELDATA

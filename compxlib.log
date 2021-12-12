@@ -1,0 +1,78 @@
+    ____  ____
+   /   /\/   /
+  /___/  \  /    VENDOR      : Xilinx Inc.
+  \   \   \/     VERSION     : 14.7 (P.20131013)
+   \   \         APPLICATION : E:\Programy\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\compxlib.exe
+   /   /         CONTENTS    : Compilation Log
+  /___/   /\     FILENAME    : compxlib.log
+  \   \  /  \    
+   \___\/\___\
+
+Release 14.7 - E:\Programy\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\compxlib.exe 14.7 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Processing command line ...
+Library Source Paths => 'E:/Programy/ISE/14.7/ISE_DS/ISE'
+Current Working Directory => 'C:\Users\miste\Desktop\VHDL\FILO_Stack_VHDL'
+Compilation Mode = FAST
+Execute Mode = ON
+Scheduling library installation & compilation for architectures: acr2 xa9500xl xbr xc9500 xc9500xl xpla3
+
+Scheduling library installation & compilation for libraries: coolrunner
+
+Signature:-
+------------------------------------------------------------------------------
+E:\Programy\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\compxlib.exe -s mti_se -l vhdl -arch cpld -lib unisim -lib simprim -lib coolrunner -intstyle ise 
+------------------------------------------------------------------------------
+ERROR:Compxlib - COMPXLIB[sim]: Unable to automatically find executables for simulator 'mti_se' from the following paths:
+    E:\Programy\ISE\14.7\ISE_DS\ISE\\lib\nt64
+   E:\Programy\ISE\14.7\ISE_DS\ISE\\bin\nt64
+   E:\Programy\ISE\14.7\ISE_DS\ISE\bin\nt64
+   E:\Programy\ISE\14.7\ISE_DS\ISE\lib\nt64
+   E:\Programy\ISE\14.7\ISE_DS\ISE\..\..\..\DocNav
+   E:\Programy\ISE\14.7\ISE_DS\PlanAhead\bin
+   E:\Programy\ISE\14.7\ISE_DS\EDK\bin\nt64
+   E:\Programy\ISE\14.7\ISE_DS\EDK\lib\nt64
+   E:\Programy\ISE\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin
+   E:\Programy\ISE\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin
+   E:\Programy\ISE\14.7\ISE_DS\EDK\gnuwin\bin
+   E:\Programy\ISE\14.7\ISE_DS\EDK\gnu\arm\nt\bin
+   E:\Programy\ISE\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin
+   E:\Programy\ISE\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin
+   E:\Programy\ISE\14.7\ISE_DS\common\bin\nt64
+   E:\Programy\ISE\14.7\ISE_DS\common\lib\nt64
+   C:\Program Files\Common Files\Oracle\Java\javapath
+   C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+   C:\Program Files (x86)\Razer Chroma SDK\bin
+   C:\Program Files\Razer Chroma SDK\bin
+   C:\Program Files (x86)\Razer\ChromaBroadcast\bin
+   C:\Program Files\Razer\ChromaBroadcast\bin
+   C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin
+   C:\Windows\system32
+   C:\Windows
+   C:\Windows\System32\Wbem
+   C:\Windows\System32\WindowsPowerShell\v1.0\
+   C:\Windows\System32\OpenSSH\
+   C:\Program Files\dotnet\
+   C:\Program Files\Git\cmd
+   C:\Program Files\Docker\Docker\resources\bin
+   C:\ProgramData\DockerDesktop\version-bin
+   C:\Users\miste\.dnx\bin
+   C:\Program Files\Microsoft DNX\Dnvm\
+   C:\Program Files\Microsoft SQL Server\130\Tools\Binn\
+   C:\Program Files\nodejs\
+   C:\ProgramData\chocolatey\bin
+   C:\Library\Developer\Toolchains\unknown-Asserts-development.xctoolchain\usr\bin
+   C:\Library\Swift-development\bin
+   C:\Library\icu-67\usr\bin
+   C:\Program Files\Microsoft SQL Server\150\Tools\Binn\
+   C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\
+   C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps
+   C:\Users\miste\AppData\Local\Programs\Python\Python310\Scripts\
+   C:\Users\miste\AppData\Local\Programs\Python\Python310\
+   C:\Users\miste\AppData\Local\Microsoft\WindowsApps
+   C:\Users\miste\AppData\Local\Programs\Microsoft VS Code\bin
+   C:\Users\miste\.dotnet\tools
+   C:\Users\miste\AppData\Roaming\npm
+   E:\Programy\Matlab\bin.
+Simulator 'mti_se' is ignored.

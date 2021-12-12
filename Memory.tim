@@ -1,0 +1,73 @@
+                           Performance Summary Report
+                           --------------------------
+
+Design:     Memory
+Device:     XC2C256-6-TQ144
+Speed File: Version 14.0 Advance Product Specification
+Program:    Timing Report Generator:  version P.20131013
+Date:       Sun Dec 12 20:29:47 2021
+
+Performance Summary:
+
+Pad to Pad (tPD)                          :          5.7ns (1 macrocell levels)
+Pad 'In_BtnValue<0>' to Pad 'Out_BtnValue<0>'                     
+
+--------------------------------------------------------------------------------
+                            Pad to Pad (tPD) (nsec)
+
+\ From              I     I     I     I
+ \                  n     n     n     n
+  \                 _     _     _     _
+   \                B     B     B     B
+    \               t     t     t     t
+     \              n     n     n     n
+      \             V     V     V     V
+       \            a     a     a     a
+        \           l     l     l     l
+         \          u     u     u     u
+          \         e     e     e     e
+           \        <     <     <     <
+            \       0     1     2     3
+             \      >     >     >     >
+              \                        
+  To           \------------------------
+
+Out_BtnValue<0>   5.7                  
+Out_BtnValue<1>         5.7            
+Out_BtnValue<2>               5.7      
+Out_BtnValue<3>                     5.7
+
+Path Type Definition: 
+
+Pad to Pad (tPD) -                        Reports pad to pad paths that start 
+                                          at input pads and end at output pads. 
+                                          Paths are not traced through 
+                                          registers. 
+
+Clock Pad to Output Pad (tCO) -           Reports paths that start at input 
+                                          pads trace through clock inputs of 
+                                          registers and end at output pads. 
+                                          Paths are not traced through PRE/CLR 
+                                          inputs of registers. 
+
+Setup to Clock at Pad (tSU or tSUF) -     Reports external setup time of data 
+                                          to clock at pad. Data path starts at 
+                                          an input pad and ends at register 
+                                          (Fast Input Register for tSUF) D/T 
+                                          input. Clock path starts at input pad 
+                                          and ends at the register clock input. 
+                                          Paths are not traced through 
+                                          registers. Pin-to-pin setup 
+                                          requirement is not reported or 
+                                          guaranteed for product-term clocks 
+                                          derived from macrocell feedback 
+                                          signals. 
+
+Clock to Setup (tCYC) -                   Register to register cycle time. 
+                                          Include source register tCO and 
+                                          destination register tSU. Note that 
+                                          when the computed Maximum Clock Speed 
+                                          is limited by tCYC it is computed 
+                                          assuming that all registers are 
+                                          rising-edge sensitive. 
+

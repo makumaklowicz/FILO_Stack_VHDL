@@ -1,0 +1,1167 @@
+MDF Database:  version 1.0
+MDF_INFO | Memory | XC2C256-6-TQ144
+MACROCELL | 11 | 11 | Out_BtnValue<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | In_BtnValue<0>
+INPUTP | 1 | 3
+EQ | 1 | 
+   Out_BtnValue<0> = In_BtnValue<0>;	// (1 pt, 1 inp)
+
+MACROCELL | 11 | 1 | Out_BtnValue<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | In_BtnValue<1>
+INPUTP | 1 | 5
+EQ | 1 | 
+   Out_BtnValue<1> = In_BtnValue<1>;	// (1 pt, 1 inp)
+
+MACROCELL | 9 | 13 | Out_BtnValue<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | In_BtnValue<2>
+INPUTP | 1 | 8
+EQ | 1 | 
+   Out_BtnValue<2> = In_BtnValue<2>;	// (1 pt, 1 inp)
+
+MACROCELL | 9 | 5 | Out_BtnValue<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | In_BtnValue<3>
+INPUTP | 1 | 12
+EQ | 1 | 
+   Out_BtnValue<3> = In_BtnValue<3>;	// (1 pt, 1 inp)
+
+MACROCELL | 13 | 3 | Out_FullStack_MC
+ATTRIBUTES | 2286158594 | 0
+OUTPUTMC | 7 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 15 | 13 | 3 | 1 | 6
+INPUTS | 6 | Out_FullStack  | MaxIndex<0>  | MaxIndex<4>  | MaxIndex<3>  | MaxIndex<1>  | MaxIndex<2>
+INPUTMC | 6 | 13 | 3 | 1 | 15 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 9
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Out_FullStack.T := !Out_FullStack & !MaxIndex<0> & MaxIndex<4> & 
+	!MaxIndex<3> & !MaxIndex<1> & !MaxIndex<2>;	// (1 pt, 6 inp)
+    Out_FullStack.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 1 | 15 | MaxIndex<0>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 14 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 13 | 3 | 0 | 15 | 1 | 6 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 4
+INPUTS | 2 | Out_FullStack  | MaxIndex<4>
+INPUTMC | 2 | 13 | 3 | 1 | 7
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   MaxIndex<0>.T := !Out_FullStack & !MaxIndex<4>;	// (1 pt, 2 inp)
+    MaxIndex<0>.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 1 | 7 | MaxIndex<4>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 23 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 15 | 13 | 3 | 0 | 15 | 1 | 6 | 0 | 14 | 0 | 10 | 0 | 12 | 0 | 0 | 0 | 9 | 0 | 7 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 1 | 0 | 8 | 0 | 11 | 0 | 4 | 0 | 13 | 0 | 5
+INPUTS | 6 | Out_FullStack  | MaxIndex<0>  | MaxIndex<4>  | MaxIndex<3>  | MaxIndex<1>  | MaxIndex<2>
+INPUTMC | 6 | 13 | 3 | 1 | 15 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 9
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   MaxIndex<4>.T := !Out_FullStack & MaxIndex<0> & !MaxIndex<4> & 
+	MaxIndex<3> & MaxIndex<1> & MaxIndex<2>;	// (1 pt, 6 inp)
+    MaxIndex<4>.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 1 | 8 | MaxIndex<3>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 18 | 1 | 7 | 13 | 3 | 0 | 15 | 1 | 6 | 0 | 14 | 0 | 10 | 0 | 12 | 0 | 0 | 0 | 9 | 0 | 7 | 0 | 6 | 0 | 3 | 0 | 1 | 0 | 8 | 0 | 11 | 0 | 4 | 0 | 13 | 0 | 5
+INPUTS | 5 | Out_FullStack  | MaxIndex<0>  | MaxIndex<4>  | MaxIndex<1>  | MaxIndex<2>
+INPUTMC | 5 | 13 | 3 | 1 | 15 | 1 | 7 | 1 | 10 | 1 | 9
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   MaxIndex<3>.T := !Out_FullStack & MaxIndex<0> & !MaxIndex<4> & 
+	MaxIndex<1> & MaxIndex<2>;	// (1 pt, 5 inp)
+    MaxIndex<3>.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 1 | 10 | MaxIndex<1>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 17 | 1 | 9 | 1 | 8 | 1 | 7 | 13 | 3 | 0 | 15 | 1 | 6 | 0 | 14 | 0 | 10 | 0 | 12 | 0 | 0 | 0 | 9 | 0 | 7 | 0 | 6 | 0 | 1 | 0 | 8 | 0 | 4 | 0 | 13
+INPUTS | 3 | Out_FullStack  | MaxIndex<0>  | MaxIndex<4>
+INPUTMC | 3 | 13 | 3 | 1 | 15 | 1 | 7
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   MaxIndex<1>.T := !Out_FullStack & MaxIndex<0> & !MaxIndex<4>;	// (1 pt, 3 inp)
+    MaxIndex<1>.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 1 | 9 | MaxIndex<2>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 18 | 1 | 8 | 1 | 7 | 13 | 3 | 0 | 15 | 1 | 6 | 0 | 14 | 0 | 10 | 0 | 12 | 0 | 0 | 0 | 9 | 0 | 7 | 0 | 6 | 0 | 1 | 0 | 8 | 0 | 11 | 0 | 4 | 0 | 13 | 0 | 5
+INPUTS | 4 | Out_FullStack  | MaxIndex<0>  | MaxIndex<4>  | MaxIndex<1>
+INPUTMC | 4 | 13 | 3 | 1 | 15 | 1 | 7 | 1 | 10
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   MaxIndex<2>.T := !Out_FullStack & MaxIndex<0> & !MaxIndex<4> & 
+	MaxIndex<1>;	// (1 pt, 4 inp)
+    MaxIndex<2>.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 8 | 1 | Out_MemCellValue<0>_MC
+ATTRIBUTES | 142869250 | 0
+INPUTS | 32 | Memory_0_0  | N_PZ_255  | Memory_14_0  | N_PZ_257  | Memory_13_0  | N_PZ_266  | Memory_12_0  | N_PZ_258  | Memory_11_0  | N_PZ_268  | Memory_10_0  | N_PZ_261  | Memory_9_0  | N_PZ_270  | Memory_8_0  | N_PZ_262  | Memory_7_0  | N_PZ_265  | Memory_6_0  | N_PZ_267  | Memory_5_0  | N_PZ_260  | Memory_4_0  | N_PZ_269  | Memory_3_0  | N_PZ_271  | Memory_2_0  | N_PZ_264  | Memory_1_0  | N_PZ_259  | Memory_15_0  | N_PZ_263
+INPUTMC | 32 | 1 | 2 | 0 | 15 | 4 | 3 | 0 | 14 | 4 | 4 | 0 | 1 | 3 | 1 | 0 | 10 | 1 | 3 | 0 | 11 | 1 | 5 | 0 | 9 | 5 | 15 | 0 | 13 | 5 | 2 | 0 | 7 | 5 | 4 | 0 | 3 | 5 | 5 | 0 | 8 | 5 | 6 | 0 | 0 | 5 | 7 | 0 | 4 | 5 | 8 | 0 | 5 | 5 | 9 | 0 | 6 | 5 | 10 | 0 | 12 | 4 | 1 | 0 | 2
+LCT | 1 | 2 | Internal_Name
+EQ | 17 | 
+   Out_MemCellValue<0> := Memory_0_0 & N_PZ_255
+	# Memory_14_0 & N_PZ_257
+	# Memory_13_0 & N_PZ_266
+	# Memory_12_0 & N_PZ_258
+	# Memory_11_0 & N_PZ_268
+	# Memory_10_0 & N_PZ_261
+	# Memory_9_0 & N_PZ_270
+	# Memory_8_0 & N_PZ_262
+	# Memory_7_0 & N_PZ_265
+	# Memory_6_0 & N_PZ_267
+	# Memory_5_0 & N_PZ_260
+	# Memory_4_0 & N_PZ_269
+	# Memory_3_0 & N_PZ_271
+	# Memory_2_0 & N_PZ_264
+	# Memory_1_0 & N_PZ_259
+	# Memory_15_0 & N_PZ_263;	// (16 pt, 32 inp)
+    Out_MemCellValue<0>.CLK = In_Read;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 1 | 2 | Memory_0_0_MC
+ATTRIBUTES | 2290089984 | 4
+OUTPUTMC | 2 | 5 | 10 | 8 | 1
+INPUTS | 0 
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Memory_0_0 := In_BtnValue<0>;	// (0 pt, 0 inp)
+    Memory_0_0.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 0 | 15 | N_PZ_255_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 8 | 1 | 2 | 14 | 3 | 15 | 4 | 15
+INPUTS | 9 | In_BtnValue<0>  | In_BtnValue<1>  | In_BtnValue<2>  | In_BtnValue<3>  | MaxIndex<0>  | MaxIndex<4>  | MaxIndex<3>  | MaxIndex<1>  | MaxIndex<2>
+INPUTMC | 5 | 1 | 15 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 9
+INPUTP | 4 | 3 | 5 | 8 | 12
+EQ | 10 | 
+   N_PZ_255 = !In_BtnValue<0> & !In_BtnValue<1> & !In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<0>
+	# !In_BtnValue<0> & !In_BtnValue<1> & !In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<4>
+	# !In_BtnValue<0> & !In_BtnValue<1> & !In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<3>
+	# !In_BtnValue<0> & !In_BtnValue<1> & !In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<1>
+	# !In_BtnValue<0> & !In_BtnValue<1> & !In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<2>;	// (5 pt, 9 inp)
+
+MACROCELL | 4 | 3 | Memory_14_0_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 4 | 1 | 8 | 1
+INPUTS | 2 | Memory_13_0  | Memory_4_and0000
+INPUTMC | 2 | 4 | 4 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_14_0 := Memory_13_0;	// (1 pt, 1 inp)
+    Memory_14_0.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_14_0.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 4 | 4 | Memory_13_0_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 4 | 3 | 8 | 1
+INPUTS | 2 | Memory_12_0  | Memory_4_and0000
+INPUTMC | 2 | 3 | 1 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_13_0 := Memory_12_0;	// (1 pt, 1 inp)
+    Memory_13_0.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_13_0.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 3 | 1 | Memory_12_0_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 4 | 4 | 8 | 1
+INPUTS | 2 | Memory_11_0  | Memory_4_and0000
+INPUTMC | 2 | 1 | 3 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_12_0 := Memory_11_0;	// (1 pt, 1 inp)
+    Memory_12_0.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_12_0.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 1 | 3 | Memory_11_0_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 3 | 1 | 8 | 1
+INPUTS | 2 | Memory_10_0  | Memory_4_and0000
+INPUTMC | 2 | 1 | 5 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_11_0 := Memory_10_0;	// (1 pt, 1 inp)
+    Memory_11_0.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_11_0.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 1 | 5 | Memory_10_0_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 1 | 3 | 8 | 1
+INPUTS | 2 | Memory_9_0  | Memory_4_and0000
+INPUTMC | 2 | 5 | 15 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_10_0 := Memory_9_0;	// (1 pt, 1 inp)
+    Memory_10_0.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_10_0.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 5 | 15 | Memory_9_0_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 1 | 5 | 8 | 1
+INPUTS | 2 | Memory_8_0  | Memory_4_and0000
+INPUTMC | 2 | 5 | 2 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_9_0 := Memory_8_0;	// (1 pt, 1 inp)
+    Memory_9_0.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_9_0.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 5 | 2 | Memory_8_0_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 5 | 15 | 8 | 1
+INPUTS | 2 | Memory_7_0  | Memory_4_and0000
+INPUTMC | 2 | 5 | 4 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_8_0 := Memory_7_0;	// (1 pt, 1 inp)
+    Memory_8_0.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_8_0.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 5 | 4 | Memory_7_0_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 5 | 2 | 8 | 1
+INPUTS | 2 | Memory_6_0  | Memory_4_and0000
+INPUTMC | 2 | 5 | 5 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_7_0 := Memory_6_0;	// (1 pt, 1 inp)
+    Memory_7_0.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_7_0.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 5 | 5 | Memory_6_0_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 5 | 4 | 8 | 1
+INPUTS | 2 | Memory_5_0  | Memory_4_and0000
+INPUTMC | 2 | 5 | 6 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_6_0 := Memory_5_0;	// (1 pt, 1 inp)
+    Memory_6_0.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_6_0.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 5 | 6 | Memory_5_0_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 5 | 5 | 8 | 1
+INPUTS | 2 | Memory_4_0  | Memory_4_and0000
+INPUTMC | 2 | 5 | 7 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_5_0 := Memory_4_0;	// (1 pt, 1 inp)
+    Memory_5_0.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_5_0.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 5 | 7 | Memory_4_0_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 5 | 6 | 8 | 1
+INPUTS | 2 | Memory_3_0  | Memory_4_and0000
+INPUTMC | 2 | 5 | 8 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_4_0 := Memory_3_0;	// (1 pt, 1 inp)
+    Memory_4_0.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_4_0.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 5 | 8 | Memory_3_0_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 5 | 7 | 8 | 1
+INPUTS | 2 | Memory_2_0  | Memory_4_and0000
+INPUTMC | 2 | 5 | 9 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_3_0 := Memory_2_0;	// (1 pt, 1 inp)
+    Memory_3_0.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_3_0.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 5 | 9 | Memory_2_0_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 5 | 8 | 8 | 1
+INPUTS | 2 | Memory_1_0  | Memory_4_and0000
+INPUTMC | 2 | 5 | 10 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_2_0 := Memory_1_0;	// (1 pt, 1 inp)
+    Memory_2_0.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_2_0.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 5 | 10 | Memory_1_0_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 5 | 9 | 8 | 1
+INPUTS | 2 | Memory_0_0  | Memory_4_and0000
+INPUTMC | 2 | 1 | 2 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_1_0 := Memory_0_0;	// (1 pt, 1 inp)
+    Memory_1_0.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_1_0.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 1 | 6 | Memory_4_and0000_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 60 | 5 | 10 | 5 | 9 | 5 | 8 | 5 | 7 | 5 | 6 | 5 | 5 | 5 | 4 | 5 | 2 | 5 | 15 | 1 | 5 | 1 | 3 | 3 | 1 | 4 | 4 | 4 | 3 | 4 | 1 | 2 | 8 | 2 | 7 | 2 | 6 | 2 | 5 | 2 | 3 | 2 | 15 | 2 | 13 | 2 | 4 | 2 | 2 | 1 | 1 | 1 | 0 | 2 | 12 | 2 | 11 | 2 | 10 | 2 | 9 | 3 | 8 | 3 | 7 | 3 | 6 | 3 | 13 | 3 | 11 | 3 | 5 | 3 | 4 | 3 | 3 | 3 | 2 | 1 | 13 | 2 | 1 | 3 | 14 | 3 | 12 | 3 | 10 | 3 | 9 | 4 | 10 | 4 | 9 | 4 | 8 | 4 | 7 | 4 | 6 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 1 | 11 | 2 | 0 | 3 | 0 | 4 | 14 | 4 | 12 | 4 | 11
+INPUTS | 6 | Out_FullStack  | MaxIndex<0>  | MaxIndex<4>  | MaxIndex<3>  | MaxIndex<1>  | MaxIndex<2>
+INPUTMC | 6 | 13 | 3 | 1 | 15 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 9
+EQ | 2 | 
+   Memory_4_and0000 = !Out_FullStack & !MaxIndex<0> & !MaxIndex<4> & 
+	!MaxIndex<3> & !MaxIndex<1> & !MaxIndex<2>;	// (1 pt, 6 inp)
+
+MACROCELL | 0 | 14 | N_PZ_257_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 8 | 1 | 2 | 14 | 3 | 15 | 4 | 15
+INPUTS | 9 | In_BtnValue<0>  | In_BtnValue<1>  | In_BtnValue<2>  | In_BtnValue<3>  | MaxIndex<4>  | MaxIndex<0>  | MaxIndex<3>  | MaxIndex<1>  | MaxIndex<2>
+INPUTMC | 5 | 1 | 7 | 1 | 15 | 1 | 8 | 1 | 10 | 1 | 9
+INPUTP | 4 | 3 | 5 | 8 | 12
+EQ | 5 | 
+   N_PZ_257 = !In_BtnValue<0> & In_BtnValue<1> & In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<4>
+	# !In_BtnValue<0> & In_BtnValue<1> & In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<0> & MaxIndex<3> & MaxIndex<1> & 
+	MaxIndex<2>;	// (2 pt, 9 inp)
+
+MACROCELL | 0 | 10 | N_PZ_258_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 8 | 1 | 2 | 14 | 3 | 15 | 4 | 15
+INPUTS | 9 | In_BtnValue<0>  | In_BtnValue<1>  | In_BtnValue<2>  | In_BtnValue<3>  | MaxIndex<4>  | MaxIndex<0>  | MaxIndex<3>  | MaxIndex<2>  | MaxIndex<1>
+INPUTMC | 5 | 1 | 7 | 1 | 15 | 1 | 8 | 1 | 9 | 1 | 10
+INPUTP | 4 | 3 | 5 | 8 | 12
+EQ | 6 | 
+   N_PZ_258 = !In_BtnValue<0> & !In_BtnValue<1> & In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<4>
+	# !In_BtnValue<0> & !In_BtnValue<1> & In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<0> & MaxIndex<3> & MaxIndex<2>
+	# !In_BtnValue<0> & !In_BtnValue<1> & In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<3> & MaxIndex<1> & MaxIndex<2>;	// (3 pt, 9 inp)
+
+MACROCELL | 0 | 12 | N_PZ_259_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 8 | 1 | 2 | 14 | 3 | 15 | 4 | 15
+INPUTS | 8 | In_BtnValue<0>  | In_BtnValue<1>  | In_BtnValue<2>  | In_BtnValue<3>  | MaxIndex<4>  | MaxIndex<3>  | MaxIndex<1>  | MaxIndex<2>
+INPUTMC | 4 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 9
+INPUTP | 4 | 3 | 5 | 8 | 12
+EQ | 8 | 
+   N_PZ_259 = In_BtnValue<0> & !In_BtnValue<1> & !In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<4>
+	# In_BtnValue<0> & !In_BtnValue<1> & !In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<3>
+	# In_BtnValue<0> & !In_BtnValue<1> & !In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<1>
+	# In_BtnValue<0> & !In_BtnValue<1> & !In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<2>;	// (4 pt, 8 inp)
+
+MACROCELL | 0 | 0 | N_PZ_260_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 8 | 1 | 2 | 14 | 3 | 15 | 4 | 15
+INPUTS | 8 | In_BtnValue<0>  | In_BtnValue<1>  | In_BtnValue<2>  | In_BtnValue<3>  | MaxIndex<4>  | MaxIndex<3>  | MaxIndex<1>  | MaxIndex<2>
+INPUTMC | 4 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 9
+INPUTP | 4 | 3 | 5 | 8 | 12
+EQ | 6 | 
+   N_PZ_260 = In_BtnValue<0> & !In_BtnValue<1> & In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<4>
+	# In_BtnValue<0> & !In_BtnValue<1> & In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<3>
+	# In_BtnValue<0> & !In_BtnValue<1> & In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<1> & MaxIndex<2>;	// (3 pt, 8 inp)
+
+MACROCELL | 0 | 9 | N_PZ_261_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 8 | 1 | 2 | 14 | 3 | 15 | 4 | 15
+INPUTS | 9 | In_BtnValue<0>  | In_BtnValue<1>  | In_BtnValue<2>  | In_BtnValue<3>  | MaxIndex<4>  | MaxIndex<3>  | MaxIndex<2>  | MaxIndex<0>  | MaxIndex<1>
+INPUTMC | 5 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 15 | 1 | 10
+INPUTP | 4 | 3 | 5 | 8 | 12
+EQ | 6 | 
+   N_PZ_261 = !In_BtnValue<0> & In_BtnValue<1> & !In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<4>
+	# !In_BtnValue<0> & In_BtnValue<1> & !In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<3> & MaxIndex<2>
+	# !In_BtnValue<0> & In_BtnValue<1> & !In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<0> & MaxIndex<3> & MaxIndex<1>;	// (3 pt, 9 inp)
+
+MACROCELL | 0 | 7 | N_PZ_262_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 8 | 1 | 2 | 14 | 3 | 15 | 4 | 15
+INPUTS | 9 | In_BtnValue<0>  | In_BtnValue<1>  | In_BtnValue<2>  | In_BtnValue<3>  | MaxIndex<4>  | MaxIndex<0>  | MaxIndex<3>  | MaxIndex<1>  | MaxIndex<2>
+INPUTMC | 5 | 1 | 7 | 1 | 15 | 1 | 8 | 1 | 10 | 1 | 9
+INPUTP | 4 | 3 | 5 | 8 | 12
+EQ | 8 | 
+   N_PZ_262 = !In_BtnValue<0> & !In_BtnValue<1> & !In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<4>
+	# !In_BtnValue<0> & !In_BtnValue<1> & !In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<0> & MaxIndex<3>
+	# !In_BtnValue<0> & !In_BtnValue<1> & !In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<3> & MaxIndex<1>
+	# !In_BtnValue<0> & !In_BtnValue<1> & !In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<3> & MaxIndex<2>;	// (4 pt, 9 inp)
+
+MACROCELL | 4 | 1 | Memory_15_0_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 1 | 8 | 1
+INPUTS | 2 | Memory_14_0  | Memory_4_and0000
+INPUTMC | 2 | 4 | 3 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_15_0 := Memory_14_0;	// (1 pt, 1 inp)
+    Memory_15_0.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_15_0.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 0 | 2 | N_PZ_263_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 8 | 1 | 2 | 14 | 3 | 15 | 4 | 15
+INPUTS | 5 | In_BtnValue<0>  | In_BtnValue<1>  | In_BtnValue<2>  | In_BtnValue<3>  | MaxIndex<4>
+INPUTMC | 1 | 1 | 7
+INPUTP | 4 | 3 | 5 | 8 | 12
+EQ | 2 | 
+   N_PZ_263 = In_BtnValue<0> & In_BtnValue<1> & In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<4>;	// (1 pt, 5 inp)
+
+MACROCELL | 0 | 6 | N_PZ_264_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 8 | 1 | 2 | 14 | 3 | 15 | 4 | 15
+INPUTS | 9 | In_BtnValue<0>  | In_BtnValue<1>  | In_BtnValue<2>  | In_BtnValue<3>  | MaxIndex<4>  | MaxIndex<3>  | MaxIndex<2>  | MaxIndex<0>  | MaxIndex<1>
+INPUTMC | 5 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 15 | 1 | 10
+INPUTP | 4 | 3 | 5 | 8 | 12
+EQ | 8 | 
+   N_PZ_264 = !In_BtnValue<0> & In_BtnValue<1> & !In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<4>
+	# !In_BtnValue<0> & In_BtnValue<1> & !In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<3>
+	# !In_BtnValue<0> & In_BtnValue<1> & !In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<2>
+	# !In_BtnValue<0> & In_BtnValue<1> & !In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<0> & MaxIndex<1>;	// (4 pt, 9 inp)
+
+MACROCELL | 0 | 3 | N_PZ_265_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 8 | 1 | 2 | 14 | 3 | 15 | 4 | 15
+INPUTS | 6 | In_BtnValue<0>  | In_BtnValue<1>  | In_BtnValue<2>  | In_BtnValue<3>  | MaxIndex<4>  | MaxIndex<3>
+INPUTMC | 2 | 1 | 7 | 1 | 8
+INPUTP | 4 | 3 | 5 | 8 | 12
+EQ | 4 | 
+   N_PZ_265 = In_BtnValue<0> & In_BtnValue<1> & In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<4>
+	# In_BtnValue<0> & In_BtnValue<1> & In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<3>;	// (2 pt, 6 inp)
+
+MACROCELL | 0 | 1 | N_PZ_266_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 8 | 1 | 2 | 14 | 3 | 15 | 4 | 15
+INPUTS | 8 | In_BtnValue<0>  | In_BtnValue<1>  | In_BtnValue<2>  | In_BtnValue<3>  | MaxIndex<4>  | MaxIndex<3>  | MaxIndex<1>  | MaxIndex<2>
+INPUTMC | 4 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 9
+INPUTP | 4 | 3 | 5 | 8 | 12
+EQ | 4 | 
+   N_PZ_266 = In_BtnValue<0> & !In_BtnValue<1> & In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<4>
+	# In_BtnValue<0> & !In_BtnValue<1> & In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<3> & MaxIndex<1> & MaxIndex<2>;	// (2 pt, 8 inp)
+
+MACROCELL | 0 | 8 | N_PZ_267_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 8 | 1 | 2 | 14 | 3 | 15 | 4 | 15
+INPUTS | 9 | In_BtnValue<0>  | In_BtnValue<1>  | In_BtnValue<2>  | In_BtnValue<3>  | MaxIndex<4>  | MaxIndex<3>  | MaxIndex<0>  | MaxIndex<1>  | MaxIndex<2>
+INPUTMC | 5 | 1 | 7 | 1 | 8 | 1 | 15 | 1 | 10 | 1 | 9
+INPUTP | 4 | 3 | 5 | 8 | 12
+EQ | 6 | 
+   N_PZ_267 = !In_BtnValue<0> & In_BtnValue<1> & In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<4>
+	# !In_BtnValue<0> & In_BtnValue<1> & In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<3>
+	# !In_BtnValue<0> & In_BtnValue<1> & In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<0> & MaxIndex<1> & MaxIndex<2>;	// (3 pt, 9 inp)
+
+MACROCELL | 0 | 11 | N_PZ_268_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 8 | 1 | 2 | 14 | 3 | 15 | 4 | 15
+INPUTS | 7 | In_BtnValue<0>  | In_BtnValue<1>  | In_BtnValue<2>  | In_BtnValue<3>  | MaxIndex<4>  | MaxIndex<3>  | MaxIndex<2>
+INPUTMC | 3 | 1 | 7 | 1 | 8 | 1 | 9
+INPUTP | 4 | 3 | 5 | 8 | 12
+EQ | 4 | 
+   N_PZ_268 = In_BtnValue<0> & In_BtnValue<1> & !In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<4>
+	# In_BtnValue<0> & In_BtnValue<1> & !In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<3> & MaxIndex<2>;	// (2 pt, 7 inp)
+
+MACROCELL | 0 | 4 | N_PZ_269_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 8 | 1 | 2 | 14 | 3 | 15 | 4 | 15
+INPUTS | 9 | In_BtnValue<0>  | In_BtnValue<1>  | In_BtnValue<2>  | In_BtnValue<3>  | MaxIndex<4>  | MaxIndex<3>  | MaxIndex<0>  | MaxIndex<2>  | MaxIndex<1>
+INPUTMC | 5 | 1 | 7 | 1 | 8 | 1 | 15 | 1 | 9 | 1 | 10
+INPUTP | 4 | 3 | 5 | 8 | 12
+EQ | 8 | 
+   N_PZ_269 = !In_BtnValue<0> & !In_BtnValue<1> & In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<4>
+	# !In_BtnValue<0> & !In_BtnValue<1> & In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<3>
+	# !In_BtnValue<0> & !In_BtnValue<1> & In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<0> & MaxIndex<2>
+	# !In_BtnValue<0> & !In_BtnValue<1> & In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<1> & MaxIndex<2>;	// (4 pt, 9 inp)
+
+MACROCELL | 0 | 13 | N_PZ_270_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 8 | 1 | 2 | 14 | 3 | 15 | 4 | 15
+INPUTS | 8 | In_BtnValue<0>  | In_BtnValue<1>  | In_BtnValue<2>  | In_BtnValue<3>  | MaxIndex<4>  | MaxIndex<3>  | MaxIndex<1>  | MaxIndex<2>
+INPUTMC | 4 | 1 | 7 | 1 | 8 | 1 | 10 | 1 | 9
+INPUTP | 4 | 3 | 5 | 8 | 12
+EQ | 6 | 
+   N_PZ_270 = In_BtnValue<0> & !In_BtnValue<1> & !In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<4>
+	# In_BtnValue<0> & !In_BtnValue<1> & !In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<3> & MaxIndex<1>
+	# In_BtnValue<0> & !In_BtnValue<1> & !In_BtnValue<2> & 
+	In_BtnValue<3> & MaxIndex<3> & MaxIndex<2>;	// (3 pt, 8 inp)
+
+MACROCELL | 0 | 5 | N_PZ_271_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 8 | 1 | 2 | 14 | 3 | 15 | 4 | 15
+INPUTS | 7 | In_BtnValue<0>  | In_BtnValue<1>  | In_BtnValue<2>  | In_BtnValue<3>  | MaxIndex<4>  | MaxIndex<3>  | MaxIndex<2>
+INPUTMC | 3 | 1 | 7 | 1 | 8 | 1 | 9
+INPUTP | 4 | 3 | 5 | 8 | 12
+EQ | 6 | 
+   N_PZ_271 = In_BtnValue<0> & In_BtnValue<1> & !In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<4>
+	# In_BtnValue<0> & In_BtnValue<1> & !In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<3>
+	# In_BtnValue<0> & In_BtnValue<1> & !In_BtnValue<2> & 
+	!In_BtnValue<3> & MaxIndex<2>;	// (3 pt, 7 inp)
+
+MACROCELL | 8 | 5 | Out_MemCellValue<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | Out_MemCellValue<1>_BUFR
+INPUTMC | 1 | 2 | 14
+EQ | 1 | 
+   Out_MemCellValue<1> = Out_MemCellValue<1>_BUFR;	// (1 pt, 1 inp)
+
+MACROCELL | 2 | 14 | Out_MemCellValue<1>_BUFR_MC
+ATTRIBUTES | 2155873056 | 0
+OUTPUTMC | 1 | 8 | 5
+INPUTS | 33 | N_PZ_255  | Memory_0_1  | N_PZ_257  | Memory_14_1  | N_PZ_258  | Memory_12_1  | N_PZ_259  | Memory_1_1  | N_PZ_260  | Memory_5_1  | N_PZ_261  | Memory_10_1  | N_PZ_262  | Memory_8_1  | N_PZ_263  | Memory_15_1  | N_PZ_264  | Memory_2_1  | N_PZ_265  | Memory_7_1  | N_PZ_266  | Memory_13_1  | N_PZ_267  | Memory_6_1  | N_PZ_268  | Memory_11_1  | N_PZ_269  | Memory_4_1  | N_PZ_270  | Memory_9_1  | N_PZ_271  | Memory_3_1  | In_Read
+INPUTMC | 32 | 0 | 15 | 1 | 4 | 0 | 14 | 2 | 10 | 0 | 10 | 2 | 12 | 0 | 12 | 2 | 8 | 0 | 0 | 2 | 3 | 0 | 9 | 1 | 1 | 0 | 7 | 2 | 4 | 0 | 2 | 2 | 9 | 0 | 6 | 2 | 7 | 0 | 3 | 2 | 13 | 0 | 1 | 2 | 11 | 0 | 8 | 2 | 15 | 0 | 11 | 1 | 0 | 0 | 4 | 2 | 5 | 0 | 13 | 2 | 2 | 0 | 5 | 2 | 6
+INPUTP | 1 | 190
+EQ | 17 | 
+   Out_MemCellValue<1>_BUFR := N_PZ_255 & Memory_0_1
+	# N_PZ_257 & Memory_14_1
+	# N_PZ_258 & Memory_12_1
+	# N_PZ_259 & Memory_1_1
+	# N_PZ_260 & Memory_5_1
+	# N_PZ_261 & Memory_10_1
+	# N_PZ_262 & Memory_8_1
+	# N_PZ_263 & Memory_15_1
+	# N_PZ_264 & Memory_2_1
+	# N_PZ_265 & Memory_7_1
+	# N_PZ_266 & Memory_13_1
+	# N_PZ_267 & Memory_6_1
+	# N_PZ_268 & Memory_11_1
+	# N_PZ_269 & Memory_4_1
+	# N_PZ_270 & Memory_9_1
+	# N_PZ_271 & Memory_3_1;	// (16 pt, 32 inp)
+    Out_MemCellValue<1>_BUFR.CLK = In_Read;	// PTC	(1 pt, 1 inp)
+
+MACROCELL | 1 | 4 | Memory_0_1_MC
+ATTRIBUTES | 2290089984 | 4
+OUTPUTMC | 2 | 2 | 8 | 2 | 14
+INPUTS | 0 
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Memory_0_1 := In_BtnValue<1>;	// (0 pt, 0 inp)
+    Memory_0_1.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 2 | 10 | Memory_14_1_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 2 | 9 | 2 | 14
+INPUTS | 2 | Memory_13_1  | Memory_4_and0000
+INPUTMC | 2 | 2 | 11 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_14_1 := Memory_13_1;	// (1 pt, 1 inp)
+    Memory_14_1.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_14_1.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 2 | 11 | Memory_13_1_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 2 | 10 | 2 | 14
+INPUTS | 2 | Memory_12_1  | Memory_4_and0000
+INPUTMC | 2 | 2 | 12 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_13_1 := Memory_12_1;	// (1 pt, 1 inp)
+    Memory_13_1.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_13_1.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 2 | 12 | Memory_12_1_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 2 | 11 | 2 | 14
+INPUTS | 2 | Memory_11_1  | Memory_4_and0000
+INPUTMC | 2 | 1 | 0 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_12_1 := Memory_11_1;	// (1 pt, 1 inp)
+    Memory_12_1.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_12_1.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 1 | 0 | Memory_11_1_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 2 | 12 | 2 | 14
+INPUTS | 2 | Memory_10_1  | Memory_4_and0000
+INPUTMC | 2 | 1 | 1 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_11_1 := Memory_10_1;	// (1 pt, 1 inp)
+    Memory_11_1.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_11_1.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 1 | 1 | Memory_10_1_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 1 | 0 | 2 | 14
+INPUTS | 2 | Memory_9_1  | Memory_4_and0000
+INPUTMC | 2 | 2 | 2 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_10_1 := Memory_9_1;	// (1 pt, 1 inp)
+    Memory_10_1.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_10_1.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 2 | 2 | Memory_9_1_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 1 | 1 | 2 | 14
+INPUTS | 2 | Memory_8_1  | Memory_4_and0000
+INPUTMC | 2 | 2 | 4 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_9_1 := Memory_8_1;	// (1 pt, 1 inp)
+    Memory_9_1.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_9_1.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 2 | 4 | Memory_8_1_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 2 | 2 | 2 | 14
+INPUTS | 2 | Memory_7_1  | Memory_4_and0000
+INPUTMC | 2 | 2 | 13 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_8_1 := Memory_7_1;	// (1 pt, 1 inp)
+    Memory_8_1.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_8_1.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 2 | 13 | Memory_7_1_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 2 | 4 | 2 | 14
+INPUTS | 2 | Memory_6_1  | Memory_4_and0000
+INPUTMC | 2 | 2 | 15 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_7_1 := Memory_6_1;	// (1 pt, 1 inp)
+    Memory_7_1.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_7_1.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 2 | 15 | Memory_6_1_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 2 | 13 | 2 | 14
+INPUTS | 2 | Memory_5_1  | Memory_4_and0000
+INPUTMC | 2 | 2 | 3 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_6_1 := Memory_5_1;	// (1 pt, 1 inp)
+    Memory_6_1.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_6_1.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 2 | 3 | Memory_5_1_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 2 | 15 | 2 | 14
+INPUTS | 2 | Memory_4_1  | Memory_4_and0000
+INPUTMC | 2 | 2 | 5 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_5_1 := Memory_4_1;	// (1 pt, 1 inp)
+    Memory_5_1.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_5_1.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 2 | 5 | Memory_4_1_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 2 | 3 | 2 | 14
+INPUTS | 2 | Memory_3_1  | Memory_4_and0000
+INPUTMC | 2 | 2 | 6 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_4_1 := Memory_3_1;	// (1 pt, 1 inp)
+    Memory_4_1.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_4_1.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 2 | 6 | Memory_3_1_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 2 | 5 | 2 | 14
+INPUTS | 2 | Memory_2_1  | Memory_4_and0000
+INPUTMC | 2 | 2 | 7 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_3_1 := Memory_2_1;	// (1 pt, 1 inp)
+    Memory_3_1.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_3_1.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 2 | 7 | Memory_2_1_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 2 | 6 | 2 | 14
+INPUTS | 2 | Memory_1_1  | Memory_4_and0000
+INPUTMC | 2 | 2 | 8 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_2_1 := Memory_1_1;	// (1 pt, 1 inp)
+    Memory_2_1.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_2_1.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 2 | 8 | Memory_1_1_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 2 | 7 | 2 | 14
+INPUTS | 2 | Memory_0_1  | Memory_4_and0000
+INPUTMC | 2 | 1 | 4 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_1_1 := Memory_0_1;	// (1 pt, 1 inp)
+    Memory_1_1.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_1_1.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 2 | 9 | Memory_15_1_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 1 | 2 | 14
+INPUTS | 2 | Memory_14_1  | Memory_4_and0000
+INPUTMC | 2 | 2 | 10 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_15_1 := Memory_14_1;	// (1 pt, 1 inp)
+    Memory_15_1.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_15_1.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 8 | 12 | Out_MemCellValue<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | Out_MemCellValue<2>_BUFR
+INPUTMC | 1 | 3 | 15
+EQ | 1 | 
+   Out_MemCellValue<2> = Out_MemCellValue<2>_BUFR;	// (1 pt, 1 inp)
+
+MACROCELL | 3 | 15 | Out_MemCellValue<2>_BUFR_MC
+ATTRIBUTES | 2155873056 | 0
+OUTPUTMC | 1 | 8 | 12
+INPUTS | 33 | N_PZ_255  | Memory_0_2  | N_PZ_257  | Memory_14_2  | N_PZ_258  | Memory_12_2  | N_PZ_259  | Memory_1_2  | N_PZ_260  | Memory_5_2  | N_PZ_261  | Memory_10_2  | N_PZ_262  | Memory_8_2  | N_PZ_263  | Memory_15_2  | N_PZ_264  | Memory_2_2  | N_PZ_265  | Memory_7_2  | N_PZ_266  | Memory_13_2  | N_PZ_267  | Memory_6_2  | N_PZ_268  | Memory_11_2  | N_PZ_269  | Memory_4_2  | N_PZ_270  | Memory_9_2  | N_PZ_271  | Memory_3_2  | In_Read
+INPUTMC | 32 | 0 | 15 | 1 | 12 | 0 | 14 | 3 | 10 | 0 | 10 | 3 | 14 | 0 | 12 | 3 | 8 | 0 | 0 | 3 | 11 | 0 | 9 | 1 | 13 | 0 | 7 | 3 | 3 | 0 | 2 | 3 | 9 | 0 | 6 | 3 | 7 | 0 | 3 | 3 | 4 | 0 | 1 | 3 | 12 | 0 | 8 | 3 | 5 | 0 | 11 | 2 | 1 | 0 | 4 | 3 | 13 | 0 | 13 | 3 | 2 | 0 | 5 | 3 | 6
+INPUTP | 1 | 190
+EQ | 17 | 
+   Out_MemCellValue<2>_BUFR := N_PZ_255 & Memory_0_2
+	# N_PZ_257 & Memory_14_2
+	# N_PZ_258 & Memory_12_2
+	# N_PZ_259 & Memory_1_2
+	# N_PZ_260 & Memory_5_2
+	# N_PZ_261 & Memory_10_2
+	# N_PZ_262 & Memory_8_2
+	# N_PZ_263 & Memory_15_2
+	# N_PZ_264 & Memory_2_2
+	# N_PZ_265 & Memory_7_2
+	# N_PZ_266 & Memory_13_2
+	# N_PZ_267 & Memory_6_2
+	# N_PZ_268 & Memory_11_2
+	# N_PZ_269 & Memory_4_2
+	# N_PZ_270 & Memory_9_2
+	# N_PZ_271 & Memory_3_2;	// (16 pt, 32 inp)
+    Out_MemCellValue<2>_BUFR.CLK = In_Read;	// PTC	(1 pt, 1 inp)
+
+MACROCELL | 1 | 12 | Memory_0_2_MC
+ATTRIBUTES | 2290089984 | 4
+OUTPUTMC | 2 | 3 | 8 | 3 | 15
+INPUTS | 0 
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Memory_0_2 := In_BtnValue<2>;	// (0 pt, 0 inp)
+    Memory_0_2.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 3 | 10 | Memory_14_2_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 3 | 9 | 3 | 15
+INPUTS | 2 | Memory_13_2  | Memory_4_and0000
+INPUTMC | 2 | 3 | 12 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_14_2 := Memory_13_2;	// (1 pt, 1 inp)
+    Memory_14_2.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_14_2.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 3 | 12 | Memory_13_2_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 3 | 10 | 3 | 15
+INPUTS | 2 | Memory_12_2  | Memory_4_and0000
+INPUTMC | 2 | 3 | 14 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_13_2 := Memory_12_2;	// (1 pt, 1 inp)
+    Memory_13_2.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_13_2.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 3 | 14 | Memory_12_2_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 3 | 12 | 3 | 15
+INPUTS | 2 | Memory_11_2  | Memory_4_and0000
+INPUTMC | 2 | 2 | 1 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_12_2 := Memory_11_2;	// (1 pt, 1 inp)
+    Memory_12_2.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_12_2.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 2 | 1 | Memory_11_2_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 3 | 14 | 3 | 15
+INPUTS | 2 | Memory_10_2  | Memory_4_and0000
+INPUTMC | 2 | 1 | 13 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_11_2 := Memory_10_2;	// (1 pt, 1 inp)
+    Memory_11_2.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_11_2.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 1 | 13 | Memory_10_2_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 2 | 1 | 3 | 15
+INPUTS | 2 | Memory_9_2  | Memory_4_and0000
+INPUTMC | 2 | 3 | 2 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_10_2 := Memory_9_2;	// (1 pt, 1 inp)
+    Memory_10_2.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_10_2.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 3 | 2 | Memory_9_2_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 1 | 13 | 3 | 15
+INPUTS | 2 | Memory_8_2  | Memory_4_and0000
+INPUTMC | 2 | 3 | 3 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_9_2 := Memory_8_2;	// (1 pt, 1 inp)
+    Memory_9_2.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_9_2.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 3 | 3 | Memory_8_2_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 3 | 2 | 3 | 15
+INPUTS | 2 | Memory_7_2  | Memory_4_and0000
+INPUTMC | 2 | 3 | 4 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_8_2 := Memory_7_2;	// (1 pt, 1 inp)
+    Memory_8_2.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_8_2.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 3 | 4 | Memory_7_2_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 3 | 3 | 3 | 15
+INPUTS | 2 | Memory_6_2  | Memory_4_and0000
+INPUTMC | 2 | 3 | 5 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_7_2 := Memory_6_2;	// (1 pt, 1 inp)
+    Memory_7_2.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_7_2.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 3 | 5 | Memory_6_2_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 3 | 4 | 3 | 15
+INPUTS | 2 | Memory_5_2  | Memory_4_and0000
+INPUTMC | 2 | 3 | 11 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_6_2 := Memory_5_2;	// (1 pt, 1 inp)
+    Memory_6_2.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_6_2.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 3 | 11 | Memory_5_2_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 3 | 5 | 3 | 15
+INPUTS | 2 | Memory_4_2  | Memory_4_and0000
+INPUTMC | 2 | 3 | 13 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_5_2 := Memory_4_2;	// (1 pt, 1 inp)
+    Memory_5_2.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_5_2.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 3 | 13 | Memory_4_2_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 3 | 11 | 3 | 15
+INPUTS | 2 | Memory_3_2  | Memory_4_and0000
+INPUTMC | 2 | 3 | 6 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_4_2 := Memory_3_2;	// (1 pt, 1 inp)
+    Memory_4_2.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_4_2.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 3 | 6 | Memory_3_2_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 3 | 13 | 3 | 15
+INPUTS | 2 | Memory_2_2  | Memory_4_and0000
+INPUTMC | 2 | 3 | 7 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_3_2 := Memory_2_2;	// (1 pt, 1 inp)
+    Memory_3_2.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_3_2.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 3 | 7 | Memory_2_2_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 3 | 6 | 3 | 15
+INPUTS | 2 | Memory_1_2  | Memory_4_and0000
+INPUTMC | 2 | 3 | 8 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_2_2 := Memory_1_2;	// (1 pt, 1 inp)
+    Memory_2_2.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_2_2.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 3 | 8 | Memory_1_2_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 3 | 7 | 3 | 15
+INPUTS | 2 | Memory_0_2  | Memory_4_and0000
+INPUTMC | 2 | 1 | 12 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_1_2 := Memory_0_2;	// (1 pt, 1 inp)
+    Memory_1_2.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_1_2.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 3 | 9 | Memory_15_2_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 1 | 3 | 15
+INPUTS | 2 | Memory_14_2  | Memory_4_and0000
+INPUTMC | 2 | 3 | 10 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_15_2 := Memory_14_2;	// (1 pt, 1 inp)
+    Memory_15_2.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_15_2.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 8 | 14 | Out_MemCellValue<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | Out_MemCellValue<3>_BUFR
+INPUTMC | 1 | 4 | 15
+EQ | 1 | 
+   Out_MemCellValue<3> = Out_MemCellValue<3>_BUFR;	// (1 pt, 1 inp)
+
+MACROCELL | 4 | 15 | Out_MemCellValue<3>_BUFR_MC
+ATTRIBUTES | 2155873056 | 0
+OUTPUTMC | 1 | 8 | 14
+INPUTS | 33 | N_PZ_255  | Memory_0_3  | N_PZ_257  | Memory_14_3  | N_PZ_258  | Memory_12_3  | N_PZ_259  | Memory_1_3  | N_PZ_260  | Memory_5_3  | N_PZ_261  | Memory_10_3  | N_PZ_262  | Memory_8_3  | N_PZ_263  | Memory_15_3  | N_PZ_264  | Memory_2_3  | N_PZ_265  | Memory_7_3  | N_PZ_266  | Memory_13_3  | N_PZ_267  | Memory_6_3  | N_PZ_268  | Memory_11_3  | N_PZ_269  | Memory_4_3  | N_PZ_270  | Memory_9_3  | N_PZ_271  | Memory_3_3  | In_Read
+INPUTMC | 32 | 0 | 15 | 1 | 14 | 0 | 14 | 4 | 12 | 0 | 10 | 3 | 0 | 0 | 12 | 4 | 10 | 0 | 0 | 4 | 6 | 0 | 9 | 1 | 11 | 0 | 7 | 4 | 13 | 0 | 2 | 4 | 11 | 0 | 6 | 4 | 9 | 0 | 3 | 4 | 0 | 0 | 1 | 4 | 14 | 0 | 8 | 4 | 2 | 0 | 11 | 2 | 0 | 0 | 4 | 4 | 7 | 0 | 13 | 4 | 5 | 0 | 5 | 4 | 8
+INPUTP | 1 | 190
+EQ | 17 | 
+   Out_MemCellValue<3>_BUFR := N_PZ_255 & Memory_0_3
+	# N_PZ_257 & Memory_14_3
+	# N_PZ_258 & Memory_12_3
+	# N_PZ_259 & Memory_1_3
+	# N_PZ_260 & Memory_5_3
+	# N_PZ_261 & Memory_10_3
+	# N_PZ_262 & Memory_8_3
+	# N_PZ_263 & Memory_15_3
+	# N_PZ_264 & Memory_2_3
+	# N_PZ_265 & Memory_7_3
+	# N_PZ_266 & Memory_13_3
+	# N_PZ_267 & Memory_6_3
+	# N_PZ_268 & Memory_11_3
+	# N_PZ_269 & Memory_4_3
+	# N_PZ_270 & Memory_9_3
+	# N_PZ_271 & Memory_3_3;	// (16 pt, 32 inp)
+    Out_MemCellValue<3>_BUFR.CLK = In_Read;	// PTC	(1 pt, 1 inp)
+
+MACROCELL | 1 | 14 | Memory_0_3_MC
+ATTRIBUTES | 2290089984 | 4
+OUTPUTMC | 2 | 4 | 10 | 4 | 15
+INPUTS | 0 
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+Memory_0_3 := In_BtnValue<3>;	// (0 pt, 0 inp)
+    Memory_0_3.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 4 | 12 | Memory_14_3_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 4 | 11 | 4 | 15
+INPUTS | 2 | Memory_13_3  | Memory_4_and0000
+INPUTMC | 2 | 4 | 14 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_14_3 := Memory_13_3;	// (1 pt, 1 inp)
+    Memory_14_3.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_14_3.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 4 | 14 | Memory_13_3_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 4 | 12 | 4 | 15
+INPUTS | 2 | Memory_12_3  | Memory_4_and0000
+INPUTMC | 2 | 3 | 0 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_13_3 := Memory_12_3;	// (1 pt, 1 inp)
+    Memory_13_3.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_13_3.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 3 | 0 | Memory_12_3_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 4 | 14 | 4 | 15
+INPUTS | 2 | Memory_11_3  | Memory_4_and0000
+INPUTMC | 2 | 2 | 0 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_12_3 := Memory_11_3;	// (1 pt, 1 inp)
+    Memory_12_3.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_12_3.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 2 | 0 | Memory_11_3_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 3 | 0 | 4 | 15
+INPUTS | 2 | Memory_10_3  | Memory_4_and0000
+INPUTMC | 2 | 1 | 11 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_11_3 := Memory_10_3;	// (1 pt, 1 inp)
+    Memory_11_3.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_11_3.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 1 | 11 | Memory_10_3_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 2 | 0 | 4 | 15
+INPUTS | 2 | Memory_9_3  | Memory_4_and0000
+INPUTMC | 2 | 4 | 5 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_10_3 := Memory_9_3;	// (1 pt, 1 inp)
+    Memory_10_3.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_10_3.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 4 | 5 | Memory_9_3_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 1 | 11 | 4 | 15
+INPUTS | 2 | Memory_8_3  | Memory_4_and0000
+INPUTMC | 2 | 4 | 13 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_9_3 := Memory_8_3;	// (1 pt, 1 inp)
+    Memory_9_3.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_9_3.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 4 | 13 | Memory_8_3_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 4 | 5 | 4 | 15
+INPUTS | 2 | Memory_7_3  | Memory_4_and0000
+INPUTMC | 2 | 4 | 0 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_8_3 := Memory_7_3;	// (1 pt, 1 inp)
+    Memory_8_3.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_8_3.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 4 | 0 | Memory_7_3_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 4 | 13 | 4 | 15
+INPUTS | 2 | Memory_6_3  | Memory_4_and0000
+INPUTMC | 2 | 4 | 2 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_7_3 := Memory_6_3;	// (1 pt, 1 inp)
+    Memory_7_3.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_7_3.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 4 | 2 | Memory_6_3_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 4 | 0 | 4 | 15
+INPUTS | 2 | Memory_5_3  | Memory_4_and0000
+INPUTMC | 2 | 4 | 6 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_6_3 := Memory_5_3;	// (1 pt, 1 inp)
+    Memory_6_3.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_6_3.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 4 | 6 | Memory_5_3_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 4 | 2 | 4 | 15
+INPUTS | 2 | Memory_4_3  | Memory_4_and0000
+INPUTMC | 2 | 4 | 7 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_5_3 := Memory_4_3;	// (1 pt, 1 inp)
+    Memory_5_3.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_5_3.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 4 | 7 | Memory_4_3_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 4 | 6 | 4 | 15
+INPUTS | 2 | Memory_3_3  | Memory_4_and0000
+INPUTMC | 2 | 4 | 8 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_4_3 := Memory_3_3;	// (1 pt, 1 inp)
+    Memory_4_3.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_4_3.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 4 | 8 | Memory_3_3_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 4 | 7 | 4 | 15
+INPUTS | 2 | Memory_2_3  | Memory_4_and0000
+INPUTMC | 2 | 4 | 9 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_3_3 := Memory_2_3;	// (1 pt, 1 inp)
+    Memory_3_3.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_3_3.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 4 | 9 | Memory_2_3_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 4 | 8 | 4 | 15
+INPUTS | 2 | Memory_1_3  | Memory_4_and0000
+INPUTMC | 2 | 4 | 10 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_2_3 := Memory_1_3;	// (1 pt, 1 inp)
+    Memory_2_3.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_2_3.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 4 | 10 | Memory_1_3_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 2 | 4 | 9 | 4 | 15
+INPUTS | 2 | Memory_0_3  | Memory_4_and0000
+INPUTMC | 2 | 1 | 14 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_1_3 := Memory_0_3;	// (1 pt, 1 inp)
+    Memory_1_3.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_1_3.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+MACROCELL | 4 | 11 | Memory_15_3_MC
+ATTRIBUTES | 2290090816 | 0
+OUTPUTMC | 1 | 4 | 15
+INPUTS | 2 | Memory_14_3  | Memory_4_and0000
+INPUTMC | 2 | 4 | 12 | 1 | 6
+LCT | 1 | 2 | Internal_Name
+EQ | 3 | 
+   Memory_15_3 := Memory_14_3;	// (1 pt, 1 inp)
+    Memory_15_3.CLK = In_Write;	// CTC	(1 pt, 1 inp)
+    Memory_15_3.CE = !Memory_4_and0000;	// (1 pt, 1 inp)
+
+PIN | In_Read | 64 | 16 | LVCMOS18 | 190 | 3 | 2 | 14 | 3 | 15 | 4 | 15
+PIN | In_Write | 64 | 16 | LVCMOS18 | 62 | 0
+PIN | In_BtnValue<0> | 64 | 16 | LVCMOS18 | 3 | 18 | 11 | 11 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 12 | 0 | 0 | 0 | 9 | 0 | 7 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 1 | 0 | 8 | 0 | 11 | 0 | 4 | 0 | 13 | 0 | 5 | 1 | 2
+PIN | In_BtnValue<1> | 64 | 16 | LVCMOS18 | 5 | 18 | 11 | 1 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 12 | 0 | 0 | 0 | 9 | 0 | 7 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 1 | 0 | 8 | 0 | 11 | 0 | 4 | 0 | 13 | 0 | 5 | 1 | 4
+PIN | In_BtnValue<2> | 64 | 16 | LVCMOS18 | 8 | 18 | 9 | 13 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 12 | 0 | 0 | 0 | 9 | 0 | 7 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 1 | 0 | 8 | 0 | 11 | 0 | 4 | 0 | 13 | 0 | 5 | 1 | 12
+PIN | In_BtnValue<3> | 64 | 16 | LVCMOS18 | 12 | 18 | 9 | 5 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 12 | 0 | 0 | 0 | 9 | 0 | 7 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 1 | 0 | 8 | 0 | 11 | 0 | 4 | 0 | 13 | 0 | 5 | 1 | 14
+PIN | Out_BtnValue<0> | 536871040 | 0 | LVCMOS18 | 145
+PIN | Out_BtnValue<1> | 536871040 | 0 | LVCMOS18 | 152
+PIN | Out_BtnValue<2> | 536871040 | 0 | LVCMOS18 | 156
+PIN | Out_BtnValue<3> | 536871040 | 0 | LVCMOS18 | 160
+PIN | Out_FullStack | 536871040 | 0 | LVCMOS18 | 107
+PIN | Out_MemCellValue<0> | 536871040 | 0 | LVCMOS18 | 169
+PIN | Out_MemCellValue<1> | 536871040 | 0 | LVCMOS18 | 173
+PIN | Out_MemCellValue<2> | 536871040 | 0 | LVCMOS18 | 176
+PIN | Out_MemCellValue<3> | 536871040 | 0 | LVCMOS18 | 178

@@ -11,6 +11,12 @@ end Memory;
 
 architecture Behavioral of Memory is
 
+  type Memory_type is array (15 downto 0) of std_logic_vector(3 downto 0);
+  signal Memory : Memory_type;
+  signal FullStackIndicator : std_logic;
+  signal MemCellValue : std_logic_vector(3 downto 0);
+  signal CellIndex : integer range 0 to 15 := 0;
+
 begin
 
 

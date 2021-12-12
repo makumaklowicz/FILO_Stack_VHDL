@@ -1,5 +1,0 @@
-# begin LFP file C:\Users\miste\Desktop\VHDL\FILO_Stack_VHDL\Memory.lfp
-designfile Memory.vhd
-parttype xc2c256-tq144-6
-bus_delimiter 0;
-set_busdelim_onsave 1;

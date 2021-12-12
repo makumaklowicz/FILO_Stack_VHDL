@@ -9,7 +9,9 @@ entity Memory is
            In_Read : in  STD_LOGIC;
            Out_FullStack : out  STD_LOGIC;
            Out_MemCellValue : out  STD_LOGIC_VECTOR (3 downto 0);
-           Out_BtnValue : out  STD_LOGIC_VECTOR (3 downto 0));
+           Out_BtnValue : out  STD_LOGIC_VECTOR (3 downto 0);
+			  In_Clr_Memory : in  STD_LOGIC;
+           In_Del_Last_Element : in  STD_LOGIC);
 end Memory;
 
 architecture Behavioral of Memory is
@@ -23,6 +25,8 @@ architecture Behavioral of Memory is
   signal Writesig : STD_LOGIC;
   signal Readsig : STD_LOGIC;
   signal MemCellValue : STD_LOGIC_VECTOR(3 downto 0) :="0000";
+  signal Clr_Memory : STD_LOGIC;
+  signal Del_Last_Element : STD_LOGIC;
 
 begin
 
@@ -101,7 +105,16 @@ begin
 			end if;
 		end if;
 	end process;
---
+	
+--Clearing all using btn0
+
+	process (Clr_Memory)
+	end process;
+	
+--Deleting last element using btn1 (Last OUT)
+
+	process (Del_Last_Element)
+	end process;
 
 end Behavioral;
 

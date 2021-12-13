@@ -1,0 +1,6 @@
+FILO ver1, Pinout:
+Write: sw0
+Read: sw1
+Buttons on J1
+Output: Green LEDs, J3
+BTNValues: Red LEDs, J4

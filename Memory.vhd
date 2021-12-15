@@ -24,6 +24,7 @@ architecture Behavioral of Memory is
   signal Readsig : STD_LOGIC;
   signal MemCellValue : STD_LOGIC_VECTOR(3 downto 0) :="0000";
   signal Enable : STD_LOGIC;
+  signal clk_RdWr : STD_LOGIC;
   
 begin
 
@@ -34,13 +35,14 @@ begin
 	Readsig <= In_Read;
 	Out_MemCellValue <= MemCellValue;
 	Enable <=In_Enable;
+	clk_RdWr <=  (Writesig xor ReadSig) and Enable;
 	
 --Process of writing buttons values to memory cell on rising 
 --edge of btn0, value always goes to Memory(0) (First IN)
 
-	process (Writesig,Readsig)
+	process (clk_RdWr)
 	begin
-	if Enable ='1' then
+	if rising_edge(clk_RdWr) then
 		if Writesig='1' and Readsig='0' then
 	
 --Writing new value when stack still have free cells

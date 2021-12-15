@@ -22,45 +22,43 @@ Out_MemCellValue<3> S:PIN119
 ;The remaining section of the .gyd file is for documentation purposes only.
 ;It shows where your internal equations were placed in the last successful fit.
 
-PARTITION FB1_1 Memory_0_3 Memory_0_2 Memory_2_1 Memory_2_0
-		 Memory_0_1 Memory_1_3 Memory_0_0 MaxIndex<4>
-		 MaxIndex<3> MaxIndex<2> MaxIndex<0> Memory_1_2
-		 Memory_1_1 Memory_1_0 N_PZ_218 N_PZ_215
+PARTITION FB1_1 Memory_9_2 Memory_10_2 Memory_4_2 Memory_2_2
+		 Out_MemCellValue<2>_BUFR Memory_13_2 Memory_0_3 Memory_0_2
+		 Memory_0_1 Memory_0_0 MaxIndex<4> Memory_14_2
+		 Memory_11_2 Memory_12_2 clk_RdWr N_PZ_454
 		
-PARTITION FB2_1 Memory_11_1 Memory_9_0 Memory_10_1 Memory_3_0
-		 Memory_4_0 Memory_15_0 Memory_14_0 Memory_13_0
-		 Memory_12_0 Memory_11_0 Memory_10_0 Memory_5_0
-		 Memory_6_0 Memory_7_0 Memory_8_0 MaxIndex<1>
+PARTITION FB2_1 Memory_10_3 Memory_11_1 Memory_10_1 Memory_10_0
+		 Memory_12_1 Memory_11_0 N_PZ_390 MaxIndex<3>
+		 MaxIndex<2> MaxIndex<1> MaxIndex<0> Memory_12_0
+		 Memory_12_3 Out_MemCellValue<3>_BUFR Memory_11_3 N_PZ_415
 		
-PARTITION FB3_13 N_PZ_176
-PARTITION FB3_15 Out_MemCellValue<1>_BUFR
+PARTITION FB3_1 Memory_15_1 Memory_13_1 Memory_14_1 Memory_9_0
+		 Memory_13_0 Memory_8_0 Memory_6_0 Memory_5_0
+		 Memory_4_0 Memory_2_0 Memory_15_0 Memory_14_0
+		 N_PZ_460 Memory_7_0 MemCellValue_mux0000<0>66 Memory_3_0
+		
+PARTITION FB4_1 Memory_5_2 Memory_6_2 Memory_6_3 Memory_5_3
+		 Memory_3_3 Memory_4_3 Memory_3_1 Memory_6_1
+		 Memory_2_1 Memory_8_1 Memory_4_1 Memory_2_3
+		 Memory_9_1 Memory_7_1 Memory_5_1 MemCellValue_mux0000<1>66
+		
+PARTITION FB5_1 Memory_9_3
+PARTITION FB5_3 Memory_8_3 Memory_1_0 Memory_7_3 Memory_1_3
+		 Memory_8_2 Memory_14_3 Memory_13_3 Memory_15_3
+		 Memory_7_2 Memory_3_2 Memory_1_2 MemCellValue_mux0000<3>66
+		 Memory_15_2 MemCellValue_mux0000<2>66
+PARTITION FB6_11 Memory_1_1
 
-PARTITION FB4_16 Out_MemCellValue<2>_BUFR
-PARTITION FB5_16 Out_MemCellValue<3>_BUFR
-PARTITION FB6_1 N_PZ_208 N_PZ_207 N_PZ_191 N_PZ_201
-		 N_PZ_190 N_PZ_188 N_PZ_186 N_PZ_180
-		 N_PZ_179 N_PZ_178 N_PZ_177 N_PZ_200
-		 N_PZ_199 N_PZ_198 N_PZ_197 N_PZ_196
-		
-PARTITION FB7_1 Memory_8_2 Memory_9_2 Memory_15_2 Memory_14_2
-		 Memory_11_3 Memory_10_3 Memory_13_2 Memory_12_2
-		 Memory_11_2 Memory_10_2 Memory_2_2 Memory_3_2
-		 Memory_4_2 Memory_5_2 Memory_6_2 Memory_7_2
-		
-PARTITION FB8_1 Memory_9_3 Memory_8_3 Memory_7_3 Memory_15_3
-		 Memory_6_3 Memory_5_3 Memory_14_3 Memory_13_3
-		 Memory_12_3 Memory_15_1 Memory_4_3 Memory_3_3
-		 Memory_2_3 Memory_14_1 Memory_13_1 Memory_12_1
-		
+
+
 PARTITION FB9_2 Out_MemCellValue<0>
 PARTITION FB9_6 Out_MemCellValue<1>
 PARTITION FB9_13 Out_MemCellValue<2>
 PARTITION FB9_15 Out_MemCellValue<3>
 
-PARTITION FB10_6 Out_BtnValue<3> Memory_8_1 Memory_7_1 Memory_6_1
-		 Memory_5_1 Memory_4_1
-PARTITION FB10_13 Memory_3_1 Out_BtnValue<2> N_PZ_214 Memory_9_1
-		
+PARTITION FB10_6 Out_BtnValue<3>
+PARTITION FB10_14 Out_BtnValue<2>
+
 
 PARTITION FB12_2 Out_BtnValue<1>
 PARTITION FB12_12 Out_BtnValue<0>

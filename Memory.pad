@@ -1,7 +1,7 @@
 Release 8.1i - Fit P.20131013
 Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
 
-12-12-2021  9:21PM
+12-13-2021  9:54PM
 
 NOTE: This file is designed to be imported into a spreadsheet program
 such as Microsoft Excel for viewing, printing and sorting. The pipe '|'
@@ -56,7 +56,7 @@ P35|KPR||I/O/CDR|||1|||||||
 P36|GND||GND||||||||||
 P37||VCC|VCC||||||||||
 P38|KPR||I/O/GCK2|||1|||||||
-P39|In_Write|I|I/O/DGE0|INPUT|LVCMOS18|1||FAST||||
+P39|In_Enable|I|I/O/DGE0|INPUT|LVCMOS18|1||FAST||||
 P40|KPR||I/O|||1|||||||
 P41|KPR||I/O|||1|||||||
 P42|KPR||I/O|||1|||||||
@@ -111,7 +111,7 @@ P90|GND||GND||||||||||
 P91|KPR||I/O|||1|||||||
 P92|KPR||I/O|||1|||||||
 P93||VCCIO-1.8|VCCIO|||1|||||||
-P94|KPR||I/O|||2|||||||
+P94|In_Read|I|I/O|INPUT|LVCMOS18|2||FAST||||
 P95|KPR||I/O|||2|||||||
 P96|KPR||I/O|||2|||||||
 P97|Out_BtnValue<0>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
@@ -141,7 +141,7 @@ P120|KPR||I/O|||2|||||||
 P121|KPR||I/O|||2|||||||
 P122|TDO||TDO||||||||||
 P123|GND||GND||||||||||
-P124|In_Read|I|I/O/DGE1|INPUT|LVCMOS18|2||FAST||||
+P124|KPR||I/O/DGE1|||2|||||||
 P125|KPR||I/O|||2|||||||
 P126|KPR||I/O|||2|||||||
 P127||VCCIO-1.8|VCCIO|||2|||||||
@@ -160,7 +160,7 @@ P139|KPR||I/O|||2|||||||
 P140|KPR||I/O|||2|||||||
 P141||VCCIO-1.8|VCCIO|||2|||||||
 P142|KPR||I/O|||2|||||||
-P143|KPR||I/O/GSR|||2|||||||
+P143|In_Write|I|I/O/GSR|INPUT|LVCMOS18|2||FAST||||
 P144|GND||GND||||||||||
 
 To preserve the pinout above for future design iterations in

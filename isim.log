@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\miste\Desktop\FILO_Stack_VHDL-main\Memory_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/miste/Desktop/FILO_Stack_VHDL-main/Memory_isim_beh.wdb 
+Running: C:\Users\miste\Desktop\Nowy folder (2)\FILO_Stack_VHDL\Memory_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/miste/Desktop/Nowy folder (2)/FILO_Stack_VHDL/Memory_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -13,28 +13,92 @@ Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # isim force add /memory/in_btnvalue 1111 -radix bin
 # isim force add /memory/in_btnvalue 1111 -radix bin
-# isim force add /memory/in_write 0 -radix bin
-# isim force add /memory/in_write 0 -radix bin
+# isim force add /memory/in_write 1 -radix bin -value 0 -radix bin -time 500 ns -repeat 1 us
+# isim force add /memory/in_write 1 -radix bin -value 0 -radix bin -time 500 ns -repeat 1 us
 # isim force add /memory/in_read 0 -radix bin
 # isim force add /memory/in_read 0 -radix bin
 # isim force add /memory/in_enable 1 -radix bin
 # isim force add /memory/in_enable 1 -radix bin
 # run 1.00us
-# isim force add /memory/in_write 1 -radix bin
-# isim force add /memory/in_write 1 -radix bin
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# isim force remove /memory/in_write
+# isim force add /memory/in_write 0 -radix bin
+# isim force add /memory/in_write 0 -radix bin
+# isim force add /memory/in_read 1 -radix bin -value 0 -radix bin -time 500 ns -repeat 1 us
+# isim force add /memory/in_read 1 -radix bin -value 0 -radix bin -time 500 ns -repeat 1 us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# isim force add /memory/in_read 0 -radix bin
+# isim force add /memory/in_read 0 -radix bin
+# isim force add /memory/in_write 1 -radix bin -value 0 -radix bin -time 500 ns -repeat 1 us
+# isim force add /memory/in_write 1 -radix bin -value 0 -radix bin -time 500 ns -repeat 1 us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# isim force add /memory/in_btnvalue 1010 -radix bin
+# isim force add /memory/in_btnvalue 1010 -radix bin
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# isim force add /memory/in_btnvalue 1110 -radix bin
+# isim force add /memory/in_btnvalue 1110 -radix bin
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
 # run 1.00us
 # isim force add /memory/in_write 0 -radix bin
 # isim force add /memory/in_write 0 -radix bin
+# isim force add /memory/in_read 1 -radix bin -value 0 -radix bin -time 500 ns -repeat 1 us
 # run 1.00us
-# isim force add /memory/in_enable 0 -radix bin
-# isim force add /memory/in_enable 0 -radix bin
 # run 1.00us
-# isim force add /memory/in_write 1 -radix bin
-# isim force add /memory/in_write 1 -radix bin
 # run 1.00us
-# isim force add /memory/in_write 0 -radix bin
-# isim force add /memory/in_write 0 -radix bin
-# isim force add /memory/in_read 1 -radix bin
-# isim force add /memory/in_read 1 -radix bin
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
 # run 1.00us
 # run 1.00us

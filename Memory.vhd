@@ -78,9 +78,15 @@ begin
 
 		if Readsig ='1' and Writesig='0' then
 		if MaxIndex > 0 then
-				MemCellValue <= Memory(MaxIndex - 1);
+				MemCellValue <= Memory(0);
+				for i in Memory'high - 1 downto 1 loop
+							Memory(i-1) <= Memory(i);
+					end loop;
 				Memory(MaxIndex - 1) <="0000";
 				MaxIndex <= MaxIndex - 1;
+				if MaxIndex < 16 then
+					FullStackIndicator <= '0';
+				end if;
 		end if;
 		end if;
 		end if;

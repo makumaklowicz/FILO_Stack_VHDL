@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.24 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.24 secs
  
 --> Reading design: Memory.prj
 
@@ -75,7 +75,9 @@ wysiwyg                            : NO
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/miste/Desktop/FILO_Stack_VHDL-experimental/Memory.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/Memory is now defined in a different file.  It was defined in "C:/Users/miste/Desktop/FILO_Stack_VHDL-experimental/Memory.vhd", and is now defined in "C:/Users/miste/Desktop/Nowy folder (2)/FILO_Stack_VHDL/Memory.vhd".
+WARNING:HDLParsers:3607 - Unit work/Memory/Behavioral is now defined in a different file.  It was defined in "C:/Users/miste/Desktop/FILO_Stack_VHDL-experimental/Memory.vhd", and is now defined in "C:/Users/miste/Desktop/Nowy folder (2)/FILO_Stack_VHDL/Memory.vhd".
+Compiling vhdl file "C:/Users/miste/Desktop/Nowy folder (2)/FILO_Stack_VHDL/Memory.vhd" in Library work.
 Entity <memory> compiled.
 Entity <memory> (Architecture <behavioral>) compiled.
 
@@ -99,18 +101,20 @@ Entity <Memory> analyzed. Unit <Memory> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <Memory>.
-    Related source file is "C:/Users/miste/Desktop/FILO_Stack_VHDL-experimental/Memory.vhd".
+    Related source file is "C:/Users/miste/Desktop/Nowy folder (2)/FILO_Stack_VHDL/Memory.vhd".
+WARNING:Xst:646 - Signal <Memory<15>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 1-bit xor2 for signal <clk_RdWr$xor0000> created at line 38.
     Found 1-bit register for signal <FullStackIndicator>.
+    Found 5-bit comparator greatequal for signal <FullStackIndicator$cmp_ge0000> created at line 87.
     Found 5-bit updown counter for signal <MaxIndex>.
     Found 5-bit comparator greater for signal <MaxIndex$cmp_gt0000> created at line 57.
     Found 4-bit register for signal <MemCellValue>.
-    Found 64-bit register for signal <Memory>.
-    Found 5-bit comparator lessequal for signal <Memory_4$cmp_le0000> created at line 51.
+    Found 60-bit register for signal <Memory<14:0>>.
+    Found 5-bit comparator lessequal for signal <Memory_4$cmp_le0000> created at line 80.
     Summary:
 	inferred   1 Counter(s).
 	inferred   1 D-type flip-flop(s).
-	inferred   2 Comparator(s).
+	inferred   3 Comparator(s).
 	inferred   1 Xor(s).
 Unit <Memory> synthesized.
 
@@ -121,10 +125,11 @@ HDL Synthesis Report
 Macro Statistics
 # Counters                                             : 1
  5-bit updown counter                                  : 1
-# Registers                                            : 18
+# Registers                                            : 17
  1-bit register                                        : 1
- 4-bit register                                        : 17
-# Comparators                                          : 2
+ 4-bit register                                        : 16
+# Comparators                                          : 3
+ 5-bit comparator greatequal                           : 1
  5-bit comparator greater                              : 1
  5-bit comparator lessequal                            : 1
 # Xors                                                 : 1
@@ -136,8 +141,6 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block FullStackIndicator.
-   You should achieve better results by setting this init to 1.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -153,8 +156,6 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1426 - The value init of the FF/Latch FullStackIndicator hinder the constant cleaning in the block Memory.
-   You should achieve better results by setting this init to 1.
 
 Optimizing unit <Memory> ...
   implementation constraint: INIT=r	 : FullStackIndicator
@@ -198,35 +199,33 @@ Design Statistics
 # IOs                              : 16
 
 Cell Usage :
-# BELS                             : 613
-#      AND2                        : 240
-#      AND3                        : 23
-#      AND4                        : 2
-#      AND5                        : 5
-#      AND6                        : 1
+# BELS                             : 510
+#      AND2                        : 212
+#      AND3                        : 15
+#      AND4                        : 1
+#      AND5                        : 4
 #      GND                         : 1
-#      INV                         : 245
-#      OR2                         : 68
-#      OR3                         : 17
-#      OR5                         : 1
-#      VCC                         : 1
+#      INV                         : 194
+#      OR2                         : 69
+#      OR3                         : 3
+#      OR4                         : 2
 #      XOR2                        : 9
-# FlipFlops/Latches                : 74
-#      FDCE                        : 74
+# FlipFlops/Latches                : 70
+#      FDCE                        : 70
 # IO Buffers                       : 16
 #      IBUF                        : 7
 #      OBUF                        : 9
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.43 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.91 secs
  
 --> 
 
-Total memory usage is 4496020 kilobytes
+Total memory usage is 4495892 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-12-15T17:36:50</DateModified>
+  <DateModified>2022-01-24T12:03:26</DateModified>
   <ModuleName>Memory</ModuleName>
-  <SummaryTimeStamp>2021-12-15T17:36:36</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/miste/Desktop/Nowy folder (2)/FILO_Stack_VHDL/iseconfig/Memory.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/miste/Desktop/Nowy folder (2)/FILO_Stack_VHDL\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2022-01-24T12:03:12</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/miste/Desktop/Kody_JOS/FILO_Stack_VHDL-main/iseconfig/Memory.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/miste/Desktop/Kody_JOS/FILO_Stack_VHDL-main\</ImplementationReportsDirectory>
   <DateInitialized>2021-12-12T16:12:52</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

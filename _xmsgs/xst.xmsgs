@@ -5,14 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Memory</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/miste/Desktop/FILO_Stack_VHDL-experimental/Memory.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/miste/Desktop/Nowy folder (2)/FILO_Stack_VHDL/Memory.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/Memory/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/miste/Desktop/FILO_Stack_VHDL-experimental/Memory.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/miste/Desktop/Nowy folder (2)/FILO_Stack_VHDL/Memory.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">Memory&lt;15&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-</msg>
-
 </messages>
 

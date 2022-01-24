@@ -22,28 +22,30 @@ Out_MemCellValue<3> S:PIN119
 ;The remaining section of the .gyd file is for documentation purposes only.
 ;It shows where your internal equations were placed in the last successful fit.
 
-PARTITION FB1_1 Memory_9_0 Memory_8_0
-PARTITION FB1_4 MaxIndex<4> Memory_7_0 Memory_13_0 Memory_6_0
-		 Memory_5_0 Memory_4_0 Memory_3_0 Memory_2_0
-		 Memory_12_0 Memory_11_0 Memory_10_0 Memory_1_0
-		 N_PZ_361
-PARTITION FB2_1 Memory_7_1 Memory_0_0 Memory_6_1 Memory_5_1
-		 Memory_4_1 MaxIndex<1> MaxIndex<2> MaxIndex<3>
-		 N_PZ_362 N_PZ_401 clk_RdWr Memory_3_1
-		 Memory_2_1 Memory_1_1 Memory_0_1 N_PZ_407
+PARTITION FB1_1 Memory_13_0 Memory_12_0 Memory_5_0 Memory_6_0
+		 Memory_11_0 Memory_7_0 Memory_10_0 MaxIndex<4>
+		 MaxIndex<3> MaxIndex<2> MaxIndex<1> Memory_8_0
+		 Memory_9_0 Memory_14_0 MaxIndex<0> N_PZ_394
 		
-PARTITION FB3_1 Memory_7_2 Memory_8_2 Memory_9_2 Memory_13_2
-		 Memory_10_2 Memory_14_2 Memory_14_0 Memory_14_1
-		 Memory_8_1 Memory_9_1 Memory_13_1 Memory_12_1
-		 Memory_11_1 Memory_11_2 Memory_10_1 Memory_12_2
+PARTITION FB2_1 Memory_4_1 Memory_12_1 Memory_5_1 Memory_6_1
+		 Memory_7_1 Memory_11_1 Memory_10_1 N_PZ_377
+		 Memory_4_or0000 clk_RdWr N_PZ_430 Memory_8_1
+		 Memory_9_1 Memory_14_1 Memory_13_1 N_PZ_415
 		
-PARTITION FB4_3 Memory_1_3 Memory_2_3 Memory_3_3 Memory_4_3
-		 Memory_7_3 Memory_14_3 Memory_8_3 Memory_9_3
-		 Memory_13_3 Memory_5_3 Memory_12_3 Memory_6_3
-		 Memory_11_3 Memory_10_3
-PARTITION FB5_7 MaxIndex<0> Memory_0_3 Memory_0_2 Memory_6_2
-		 Memory_5_2 Memory_4_2 Memory_3_2
-PARTITION FB5_15 Memory_1_2 Memory_2_2
+PARTITION FB3_1 Memory_3_2 Memory_3_1 Memory_4_0 Memory_2_2
+		 Memory_3_0 Memory_1_2 Memory_2_1 Memory_1_1
+		 Memory_2_0 Memory_1_0 Memory_0_3 Memory_0_2
+		 Memory_0_1 Memory_2_3 Memory_0_0 Memory_1_3
+		
+PARTITION FB4_2 Memory_15_2 Memory_12_3 Memory_11_3 Memory_10_3
+		 Memory_4_2 Memory_7_2 Memory_8_2 Memory_9_2
+		 Memory_14_2 Memory_13_2 Memory_5_2 Memory_12_2
+		 Memory_6_2 Memory_11_2 Memory_10_2
+PARTITION FB5_1 Memory_15_0
+PARTITION FB5_3 Memory_15_3
+PARTITION FB5_7 Memory_9_3 Memory_8_3 Memory_7_3 Memory_3_3
+		 Memory_6_3 Memory_5_3 Memory_4_3 Memory_15_1
+		 Memory_14_3 Memory_13_3
 
 
 

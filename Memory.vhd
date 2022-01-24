@@ -31,8 +31,8 @@ begin
 	Out_FullStack <= FullStackIndicator;
 	ButtonStates <= In_BtnValue;
 	Out_BtnValue <= ButtonStates;
-	Writesig <= In_Write;
-	Readsig <= In_Read;
+	Writesig <= not In_Write;
+	Readsig <= not In_Read;
 	Out_MemCellValue <= MemCellValue;
 	Enable <=In_Enable;
 	clk_RdWr <=  (Writesig xor ReadSig) and Enable;
@@ -45,9 +45,8 @@ begin
 	if rising_edge(clk_RdWr) then
 		if Writesig='1' and Readsig='0' then
 	
---Writing new value when stack still have free cells
+--Writing new value
 	
-			if FullStackIndicator = '0' then
 				if MaxIndex > 0 then
 					for i in Memory'high - 1 downto 0 loop
 							Memory(i+1) <= Memory(i);
@@ -58,39 +57,28 @@ begin
 					MaxIndex <= MaxIndex + 1;
 				end if;
 		
---Writing new value when stack is overflowed (Last OUT)	
 	
-			elsif FullStackIndicator = '1' then
-				for i in 14 downto 0 loop
-					Memory(i+1) <= Memory(i);
-				end loop; 
-				Memory(0) <= ButtonStates;
-			end if;
-			
-			if MaxIndex = 16 then
-				FullStackIndicator <= '1';
-			end if;
-		end if;	
-	
-
 --Process of reading memory on rising edge of btn1, reading last cell
 --and deleting this cell (Last OUT)
 
-		if Readsig ='1' and Writesig='0' then
+		elsif Readsig ='1' and Writesig='0' then
 		if MaxIndex > 0 then
 				MemCellValue <= Memory(0);
-				for i in Memory'high - 1 downto 1 loop
+				for i in Memory'high downto 1 loop
 							Memory(i-1) <= Memory(i);
 					end loop;
 				Memory(MaxIndex - 1) <="0000";
 				MaxIndex <= MaxIndex - 1;
-				if MaxIndex < 16 then
-					FullStackIndicator <= '0';
-				end if;
 		end if;
 		end if;
 		end if;
 	end process;
+	
+--Selecting value for indicator of overflow
+	
+	with MaxIndex select
+   FullStackIndicator <= '1' when 16,
+                         '0' when others;
 
 
 end Behavioral;

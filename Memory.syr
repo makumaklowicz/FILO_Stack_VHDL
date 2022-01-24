@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.24 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.24 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: Memory.prj
 
@@ -75,9 +75,7 @@ wysiwyg                            : NO
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-WARNING:HDLParsers:3607 - Unit work/Memory is now defined in a different file.  It was defined in "C:/Users/miste/Desktop/FILO_Stack_VHDL-experimental/Memory.vhd", and is now defined in "C:/Users/miste/Desktop/Nowy folder (2)/FILO_Stack_VHDL/Memory.vhd".
-WARNING:HDLParsers:3607 - Unit work/Memory/Behavioral is now defined in a different file.  It was defined in "C:/Users/miste/Desktop/FILO_Stack_VHDL-experimental/Memory.vhd", and is now defined in "C:/Users/miste/Desktop/Nowy folder (2)/FILO_Stack_VHDL/Memory.vhd".
-Compiling vhdl file "C:/Users/miste/Desktop/Nowy folder (2)/FILO_Stack_VHDL/Memory.vhd" in Library work.
+Compiling vhdl file "C:/Users/miste/Desktop/Kody_JOS/FILO_Stack_VHDL-main/Memory.vhd" in Library work.
 Entity <memory> compiled.
 Entity <memory> (Architecture <behavioral>) compiled.
 
@@ -101,20 +99,16 @@ Entity <Memory> analyzed. Unit <Memory> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <Memory>.
-    Related source file is "C:/Users/miste/Desktop/Nowy folder (2)/FILO_Stack_VHDL/Memory.vhd".
-WARNING:Xst:646 - Signal <Memory<15>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Related source file is "C:/Users/miste/Desktop/Kody_JOS/FILO_Stack_VHDL-main/Memory.vhd".
     Found 1-bit xor2 for signal <clk_RdWr$xor0000> created at line 38.
-    Found 1-bit register for signal <FullStackIndicator>.
-    Found 5-bit comparator greatequal for signal <FullStackIndicator$cmp_ge0000> created at line 87.
     Found 5-bit updown counter for signal <MaxIndex>.
-    Found 5-bit comparator greater for signal <MaxIndex$cmp_gt0000> created at line 57.
+    Found 5-bit comparator greater for signal <MaxIndex$cmp_gt0000> created at line 56.
     Found 4-bit register for signal <MemCellValue>.
-    Found 60-bit register for signal <Memory<14:0>>.
-    Found 5-bit comparator lessequal for signal <Memory_4$cmp_le0000> created at line 80.
+    Found 64-bit register for signal <Memory>.
+    Found 5-bit comparator lessequal for signal <Memory_4$cmp_le0000> created at line 50.
     Summary:
 	inferred   1 Counter(s).
-	inferred   1 D-type flip-flop(s).
-	inferred   3 Comparator(s).
+	inferred   2 Comparator(s).
 	inferred   1 Xor(s).
 Unit <Memory> synthesized.
 
@@ -126,10 +120,8 @@ Macro Statistics
 # Counters                                             : 1
  5-bit updown counter                                  : 1
 # Registers                                            : 17
- 1-bit register                                        : 1
- 4-bit register                                        : 16
-# Comparators                                          : 3
- 5-bit comparator greatequal                           : 1
+ 4-bit register                                        : 17
+# Comparators                                          : 2
  5-bit comparator greater                              : 1
  5-bit comparator lessequal                            : 1
 # Xors                                                 : 1
@@ -148,8 +140,6 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Counters                                             : 1
  5-bit updown counter                                  : 1
-# Registers                                            : 1
- Flip-Flops                                            : 1
 
 =========================================================================
 
@@ -158,7 +148,6 @@ Macro Statistics
 =========================================================================
 
 Optimizing unit <Memory> ...
-  implementation constraint: INIT=r	 : FullStackIndicator
   implementation constraint: INIT=r	 : MemCellValue_3
   implementation constraint: INIT=r	 : MemCellValue_0
   implementation constraint: INIT=r	 : MemCellValue_1
@@ -199,19 +188,19 @@ Design Statistics
 # IOs                              : 16
 
 Cell Usage :
-# BELS                             : 510
-#      AND2                        : 212
-#      AND3                        : 15
+# BELS                             : 467
+#      AND2                        : 100
+#      AND3                        : 70
 #      AND4                        : 1
-#      AND5                        : 4
+#      AND5                        : 7
+#      AND7                        : 1
 #      GND                         : 1
-#      INV                         : 194
-#      OR2                         : 69
-#      OR3                         : 3
-#      OR4                         : 2
+#      INV                         : 206
+#      OR2                         : 70
+#      OR3                         : 2
 #      XOR2                        : 9
-# FlipFlops/Latches                : 70
-#      FDCE                        : 70
+# FlipFlops/Latches                : 73
+#      FDCE                        : 73
 # IO Buffers                       : 16
 #      IBUF                        : 7
 #      OBUF                        : 9
@@ -219,13 +208,13 @@ Cell Usage :
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.91 secs
+Total CPU time to Xst completion: 4.07 secs
  
 --> 
 
-Total memory usage is 4495892 kilobytes
+Total memory usage is 4496044 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    3 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

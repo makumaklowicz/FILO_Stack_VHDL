@@ -1,7 +1,7 @@
  
 cpldfit:  version P.20131013                        Xilinx Inc.
                                   Fitter Report
-Design Name: Memory                              Date: 12-15-2021,  5:36PM
+Design Name: Memory                              Date:  1-24-2022, 12:03PM
 Device Used: XC2C256-6-TQ144
 Fitting Status: Successful
 
@@ -9,17 +9,17 @@ Fitting Status: Successful
 
 Macrocells     Product Terms    Function Block   Registers      Pins           
 Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
-79 /256 ( 31%) 269 /896  ( 30%) 150 /640  ( 23%) 70 /256 ( 27%) 16 /118 ( 14%)
+84 /256 ( 33%) 273 /896  ( 30%) 149 /640  ( 23%) 73 /256 ( 29%) 16 /118 ( 14%)
 
 ** Function Block Resources **
 
 Function Mcells   FB Inps  Pterms   IO       CTC      CTR      CTS      CTE     
 Block    Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot
-FB1      15/16     26/40    56/56*    0/ 6    1/1*     0/1      0/1      0/1
-FB2      16/16*    27/40    53/56     0/ 8    1/1*     0/1      0/1      0/1
-FB3      16/16*    29/40    54/56     0/ 6    1/1*     0/1      0/1      0/1
-FB4      14/16     25/40    56/56*    0/ 8    1/1*     0/1      0/1      0/1
-FB5       9/16     23/40    34/56     0/ 5    1/1*     0/1      0/1      0/1
+FB1      16/16*    21/40    52/56     0/ 6    1/1*     0/1      0/1      0/1
+FB2      16/16*    26/40    54/56     0/ 8    1/1*     0/1      0/1      0/1
+FB3      16/16*    34/40    54/56     0/ 6    1/1*     0/1      0/1      0/1
+FB4      15/16     27/40    56/56*    0/ 8    1/1*     0/1      0/1      0/1
+FB5      12/16     26/40    43/56     0/ 5    1/1*     0/1      0/1      0/1
 FB6       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
 FB7       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
 FB8       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
@@ -28,11 +28,11 @@ FB10      2/16      2/40     2/56     2/ 9    0/1      0/1      0/1      0/1
 FB11      0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
 FB12      2/16      2/40     2/56     2/ 6    0/1      0/1      0/1      0/1
 FB13      0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
-FB14      1/16     10/40     3/56     1/ 8    1/1*     0/1      0/1      0/1
+FB14      1/16      5/40     1/56     1/ 8    0/1      0/1      0/1      0/1
 FB15      0/16      0/40     0/56     0/ 7    0/1      0/1      0/1      0/1
 FB16      0/16      0/40     0/56     0/ 7    0/1      0/1      0/1      0/1
          -----    -------  -------   -----    ---      ---      ---      ---
-Total    79/256   150/640  269/896    9/118   7/16     0/16     0/16     0/16
+Total    84/256   149/640  273/896    9/118   6/16     0/16     0/16     0/16
 
 CTC - Control Term Clock
 CTR - Control Term Reset
@@ -80,85 +80,90 @@ Out_BtnValue<3>      1     1     2    FB10_6  104   I/O       O       LVCMOS18  
 Out_BtnValue<2>      1     1     2    FB10_14 102   I/O       O       LVCMOS18           FAST         
 Out_BtnValue<1>      1     1     2    FB12_2  100   I/O       O       LVCMOS18           FAST         
 Out_BtnValue<0>      1     1     2    FB12_12 97    I/O       O       LVCMOS18           FAST         
-Out_FullStack        3     10    1    FB14_4  69    I/O       O       LVCMOS18           FAST TFF     RESET
+Out_FullStack        1     5     1    FB14_4  69    I/O       O       LVCMOS18           FAST         
 
-** 70 Buried Nodes **
-
-Signal               Total Total Loc     Reg     Reg Init
-Name                 Pts   Inps          Use     State
-Memory_9_0           5     12    FB1_1   DFF     RESET
-Memory_8_0           5     12    FB1_2   DFF     RESET
-MaxIndex<4>          3     9     FB1_4   TFF     RESET
-Memory_7_0           5     11    FB1_5   DFF     RESET
-Memory_13_0          5     12    FB1_6   DFF     RESET
-Memory_6_0           5     12    FB1_7   DFF     RESET
-Memory_5_0           5     12    FB1_8   DFF     RESET
-Memory_4_0           5     12    FB1_9   DFF     RESET
-Memory_3_0           5     11    FB1_10  DFF     RESET
-Memory_2_0           5     12    FB1_11  DFF     RESET
-Memory_12_0          5     12    FB1_12  DFF     RESET
-Memory_11_0          5     12    FB1_13  DFF     RESET
-Memory_10_0          5     12    FB1_14  DFF     RESET
-Memory_1_0           5     11    FB1_15  DFF     RESET
-N_PZ_361             1     2     FB1_16          
-Memory_7_1           5     11    FB2_1   DFF     RESET
-Memory_0_0           5     10    FB2_2   DFF     RESET
-Memory_6_1           5     12    FB2_3   DFF     RESET
-Memory_5_1           5     12    FB2_4   DFF     RESET
-Memory_4_1           5     12    FB2_5   DFF     RESET
-MaxIndex<1>          4     7     FB2_6   TFF     RESET
-MaxIndex<2>          4     8     FB2_7   TFF     RESET
-MaxIndex<3>          4     9     FB2_8   TFF     RESET
-N_PZ_362             2     7     FB2_9           
-N_PZ_401             3     7     FB2_10          
-clk_RdWr             2     4     FB2_11          
-Memory_3_1           5     11    FB2_12  DFF     RESET
-Memory_2_1           5     12    FB2_13  DFF     RESET
-Memory_1_1           5     11    FB2_14  DFF     RESET
-Memory_0_1           5     10    FB2_15  DFF     RESET
-N_PZ_407             1     2     FB2_16          
-Memory_7_2           5     11    FB3_1   DFF     RESET
-Memory_8_2           5     12    FB3_2   DFF     RESET
-Memory_9_2           5     12    FB3_3   DFF     RESET
-Memory_13_2          5     12    FB3_4   DFF     RESET
-Memory_10_2          5     12    FB3_5   DFF     RESET
-Memory_14_2          4     11    FB3_6   DFF     RESET
-Memory_14_0          4     11    FB3_7   DFF     RESET
-Memory_14_1          4     11    FB3_8   DFF     RESET
-Memory_8_1           5     12    FB3_9   DFF     RESET
+** 75 Buried Nodes **
 
 Signal               Total Total Loc     Reg     Reg Init
 Name                 Pts   Inps          Use     State
-Memory_9_1           5     12    FB3_10  DFF     RESET
-Memory_13_1          5     12    FB3_11  DFF     RESET
-Memory_12_1          5     12    FB3_12  DFF     RESET
-Memory_11_1          5     12    FB3_13  DFF     RESET
-Memory_11_2          5     12    FB3_14  DFF     RESET
-Memory_10_1          5     12    FB3_15  DFF     RESET
-Memory_12_2          5     12    FB3_16  DFF     RESET
-Memory_1_3           5     11    FB4_3   DFF     RESET
-Memory_2_3           5     12    FB4_4   DFF     RESET
-Memory_3_3           5     11    FB4_5   DFF     RESET
-Memory_4_3           5     12    FB4_6   DFF     RESET
-Memory_7_3           5     11    FB4_7   DFF     RESET
-Memory_14_3          4     11    FB4_8   DFF     RESET
-Memory_8_3           5     12    FB4_9   DFF     RESET
-Memory_9_3           5     12    FB4_10  DFF     RESET
-Memory_13_3          5     12    FB4_11  DFF     RESET
-Memory_5_3           5     12    FB4_12  DFF     RESET
-Memory_12_3          5     12    FB4_13  DFF     RESET
-Memory_6_3           5     12    FB4_14  DFF     RESET
-Memory_11_3          5     12    FB4_15  DFF     RESET
-Memory_10_3          5     12    FB4_16  DFF     RESET
-MaxIndex<0>          3     5     FB5_7   TFF     RESET
-Memory_0_3           5     10    FB5_8   DFF     RESET
-Memory_0_2           5     10    FB5_9   DFF     RESET
-Memory_6_2           5     12    FB5_10  DFF     RESET
-Memory_5_2           5     12    FB5_11  DFF     RESET
-Memory_4_2           5     12    FB5_12  DFF     RESET
-Memory_3_2           5     11    FB5_13  DFF     RESET
-Memory_1_2           5     11    FB5_15  DFF     RESET
-Memory_2_2           5     12    FB5_16  DFF     RESET
+Memory_13_0          5     11    FB1_1   DFF     RESET
+Memory_12_0          5     11    FB1_2   DFF     RESET
+Memory_5_0           5     11    FB1_3   DFF     RESET
+Memory_6_0           5     11    FB1_4   DFF     RESET
+Memory_11_0          5     11    FB1_5   DFF     RESET
+Memory_7_0           5     10    FB1_6   DFF     RESET
+Memory_10_0          5     11    FB1_7   DFF     RESET
+MaxIndex<4>          3     8     FB1_8   TFF     RESET
+MaxIndex<3>          3     7     FB1_9   TFF     RESET
+MaxIndex<2>          3     6     FB1_10  TFF     RESET
+MaxIndex<1>          3     5     FB1_11  TFF     RESET
+Memory_8_0           5     11    FB1_12  DFF     RESET
+Memory_9_0           5     11    FB1_13  DFF     RESET
+Memory_14_0          5     11    FB1_14  DFF     RESET
+MaxIndex<0>          3     4     FB1_15  TFF     RESET
+N_PZ_394             1     2     FB1_16          
+Memory_4_1           5     11    FB2_1   DFF     RESET
+Memory_12_1          5     11    FB2_2   DFF     RESET
+Memory_5_1           5     11    FB2_3   DFF     RESET
+Memory_6_1           5     11    FB2_4   DFF     RESET
+Memory_7_1           5     10    FB2_5   DFF     RESET
+Memory_11_1          5     11    FB2_6   DFF     RESET
+Memory_10_1          5     11    FB2_7   DFF     RESET
+N_PZ_377             2     6     FB2_8           
+Memory_4_or0000      3     7     FB2_9           
+clk_RdWr             2     4     FB2_10          
+N_PZ_430             2     4     FB2_11          
+Memory_8_1           5     11    FB2_12  DFF     RESET
+Memory_9_1           5     11    FB2_13  DFF     RESET
+Memory_14_1          5     11    FB2_14  DFF     RESET
+Memory_13_1          5     11    FB2_15  DFF     RESET
+N_PZ_415             1     2     FB2_16          
+Memory_3_2           5     10    FB3_1   DFF     RESET
+Memory_3_1           5     10    FB3_2   DFF     RESET
+Memory_4_0           5     11    FB3_3   DFF     RESET
+Memory_2_2           5     11    FB3_4   DFF     RESET
+Memory_3_0           5     10    FB3_5   DFF     RESET
+Memory_1_2           5     10    FB3_6   DFF     RESET
+Memory_2_1           5     11    FB3_7   DFF     RESET
+Memory_1_1           5     10    FB3_8   DFF     RESET
+
+Signal               Total Total Loc     Reg     Reg Init
+Name                 Pts   Inps          Use     State
+Memory_2_0           5     11    FB3_9   DFF     RESET
+Memory_1_0           5     10    FB3_10  DFF     RESET
+Memory_0_3           5     11    FB3_11  DFF     RESET
+Memory_0_2           5     11    FB3_12  DFF     RESET
+Memory_0_1           5     11    FB3_13  DFF     RESET
+Memory_2_3           5     11    FB3_14  DFF     RESET
+Memory_0_0           5     11    FB3_15  DFF     RESET
+Memory_1_3           5     10    FB3_16  DFF     RESET
+Memory_15_2          3     5     FB4_2   DFF     RESET
+Memory_12_3          5     11    FB4_3   DFF     RESET
+Memory_11_3          5     11    FB4_4   DFF     RESET
+Memory_10_3          5     11    FB4_5   DFF     RESET
+Memory_4_2           5     11    FB4_6   DFF     RESET
+Memory_7_2           5     10    FB4_7   DFF     RESET
+Memory_8_2           5     11    FB4_8   DFF     RESET
+Memory_9_2           5     11    FB4_9   DFF     RESET
+Memory_14_2          5     11    FB4_10  DFF     RESET
+Memory_13_2          5     11    FB4_11  DFF     RESET
+Memory_5_2           5     11    FB4_12  DFF     RESET
+Memory_12_2          5     11    FB4_13  DFF     RESET
+Memory_6_2           5     11    FB4_14  DFF     RESET
+Memory_11_2          5     11    FB4_15  DFF     RESET
+Memory_10_2          5     11    FB4_16  DFF     RESET
+Memory_15_0          3     5     FB5_1   DFF     RESET
+Memory_15_3          3     5     FB5_3   DFF     RESET
+Memory_9_3           5     11    FB5_7   DFF     RESET
+Memory_8_3           5     11    FB5_8   DFF     RESET
+Memory_7_3           5     10    FB5_9   DFF     RESET
+Memory_3_3           5     10    FB5_10  DFF     RESET
+Memory_6_3           5     11    FB5_11  DFF     RESET
+Memory_5_3           5     11    FB5_12  DFF     RESET
+Memory_4_3           5     11    FB5_13  DFF     RESET
+Memory_15_1          3     5     FB5_14  DFF     RESET
+Memory_14_3          5     11    FB5_15  DFF     RESET
+Memory_13_3          5     11    FB5_16  DFF     RESET
 
 ** 7 Inputs **
 
@@ -198,267 +203,273 @@ Pin Type/Use - I  - Input             GCK - Global clock
 Pin No.      - ~  - User Assigned
 *********************************** FB1  ***********************************
 This function block is part of I/O Bank number:               2
-Number of function block inputs used/remaining:               26/14
+Number of function block inputs used/remaining:               21/19
 Number of function block control terms used/remaining:        1/3
-Number of PLA product terms used/remaining:                   56/0
+Number of PLA product terms used/remaining:                   52/4
 Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
 Name                          Pt            No.  Type    Use   
-Memory_9_0                    5     FB1_1        (b)     (b)    +          
-Memory_8_0                    5     FB1_2        (b)     (b)    +          
-(unused)                      0     FB1_3   143  GSR/I/O I     
-MaxIndex<4>                   3     FB1_4   142  I/O     (b)    +          
-Memory_7_0                    5     FB1_5        (b)     (b)    +          
-Memory_13_0                   5     FB1_6   140  I/O     (b)    +          
-Memory_6_0                    5     FB1_7        (b)     (b)    +          
-Memory_5_0                    5     FB1_8        (b)     (b)    +          
-Memory_4_0                    5     FB1_9        (b)     (b)    +          
-Memory_3_0                    5     FB1_10       (b)     (b)    +          
-Memory_2_0                    5     FB1_11       (b)     (b)    +          
-Memory_12_0                   5     FB1_12  139  I/O     (b)    +          
-Memory_11_0                   5     FB1_13  138  I/O     (b)    +          
-Memory_10_0                   5     FB1_14  137  I/O     (b)    +          
-Memory_1_0                    5     FB1_15       (b)     (b)    +          
-N_PZ_361                      1     FB1_16       (b)     (b)               
+Memory_13_0                   5     FB1_1        (b)     (b)    +          
+Memory_12_0                   5     FB1_2        (b)     (b)    +          
+Memory_5_0                    5     FB1_3   143  GSR/I/O I      +          
+Memory_6_0                    5     FB1_4   142  I/O     (b)    +          
+Memory_11_0                   5     FB1_5        (b)     (b)    +          
+Memory_7_0                    5     FB1_6   140  I/O     (b)    +          
+Memory_10_0                   5     FB1_7        (b)     (b)    +          
+MaxIndex<4>                   3     FB1_8        (b)     (b)    +          
+MaxIndex<3>                   3     FB1_9        (b)     (b)    +          
+MaxIndex<2>                   3     FB1_10       (b)     (b)    +          
+MaxIndex<1>                   3     FB1_11       (b)     (b)    +          
+Memory_8_0                    5     FB1_12  139  I/O     (b)    +          
+Memory_9_0                    5     FB1_13  138  I/O     (b)    +          
+Memory_14_0                   5     FB1_14  137  I/O     (b)    +          
+MaxIndex<0>                   3     FB1_15       (b)     (b)    +          
+N_PZ_394                      1     FB1_16       (b)     (b)               
 
 Signals Used by Logic in Function Block
-  1: MaxIndex<0>       10: Memory_13_0       19: Memory_8_0 
-  2: MaxIndex<1>       11: Memory_14_0       20: Memory_9_0 
-  3: MaxIndex<2>       12: Memory_1_0        21: N_PZ_361 
-  4: MaxIndex<3>       13: Memory_2_0        22: N_PZ_362 
-  5: MaxIndex<4>       14: Memory_3_0        23: N_PZ_401 
-  6: Memory_0_0        15: Memory_4_0        24: N_PZ_407 
-  7: Memory_10_0       16: Memory_5_0        25: Out_FullStack 
-  8: Memory_11_0       17: Memory_6_0        26: clk_RdWr 
-  9: Memory_12_0       18: Memory_7_0       
+  1: MaxIndex<0>        8: Memory_12_0       15: Memory_6_0 
+  2: MaxIndex<1>        9: Memory_13_0       16: Memory_7_0 
+  3: MaxIndex<2>       10: Memory_14_0       17: Memory_8_0 
+  4: MaxIndex<3>       11: Memory_15_0       18: Memory_9_0 
+  5: MaxIndex<4>       12: Memory_4_0        19: N_PZ_377 
+  6: Memory_10_0       13: Memory_4_or0000   20: N_PZ_415 
+  7: Memory_11_0       14: Memory_5_0        21: clk_RdWr 
 
 Signal                     1         2         3         4 FB      
 Name             0----+----0----+----0----+----0----+----0 Inputs  
-Memory_9_0        XXXXX.X...........XXXXX..X.............. 12      
-Memory_8_0        XXXXX............XXXXXX..X.............. 12      
-MaxIndex<4>       XXXXX.................XXXX.............. 9       
-Memory_7_0        XXX.X...........XXX.XXX..X.............. 11      
-Memory_13_0       XXXXX...XXX.........XXX..X.............. 12      
-Memory_6_0        XXXXX..........XXX..XXX..X.............. 12      
-Memory_5_0        XXXXX.........XXX...XXX..X.............. 12      
-Memory_4_0        XXXXX........XXX....XXX..X.............. 12      
-Memory_3_0        XX.XX.......XXX.....XXX..X.............. 11      
-Memory_2_0        XXXXX......XXX......XXX..X.............. 12      
-Memory_12_0       XXXXX..XXX..........XXX..X.............. 12      
-Memory_11_0       XXXXX.XXX...........XXX..X.............. 12      
-Memory_10_0       XXXXX.XX...........XXXX..X.............. 12      
-Memory_1_0        X.XXXX.....XX.......XXX..X.............. 11      
-N_PZ_361          .....................XX................. 2       
+Memory_13_0       XXXXX..XXX..X.....X.X................... 11      
+Memory_12_0       XXXXX.XXX...X.....X.X................... 11      
+Memory_5_0        XXXXX......XXXX...X.X................... 11      
+Memory_6_0        XXXXX.......XXXX..X.X................... 11      
+Memory_11_0       XXXXXXXX....X.....X.X................... 11      
+Memory_7_0        XXX.X.......X.XXX.X.X................... 10      
+Memory_10_0       XXXXXXX.....X....XX.X................... 11      
+MaxIndex<4>       XXXXX.......X.....X.X................... 8       
+MaxIndex<3>       XXX.X.......X......XX................... 7       
+MaxIndex<2>       XX..X.......X......XX................... 6       
+MaxIndex<1>       X...X.......X......XX................... 5       
+Memory_8_0        XXXXX.......X..XXXX.X................... 11      
+Memory_9_0        XXXXXX......X...XXX.X................... 11      
+Memory_14_0       XXXXX...XXX.X.....X.X................... 11      
+MaxIndex<0>       ....X.......X......XX................... 4       
+N_PZ_394          ............X......X.................... 2       
                  0----+----1----+----2----+----3----+----4
                            0         0         0         0
 *********************************** FB2  ***********************************
 This function block is part of I/O Bank number:               2
-Number of function block inputs used/remaining:               27/13
-Number of function block control terms used/remaining:        1/3
-Number of PLA product terms used/remaining:                   53/3
-Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
-Name                          Pt            No.  Type    Use   
-Memory_7_1                    5     FB2_1   2    GTS/I/O (b)    +          
-Memory_0_0                    5     FB2_2        (b)     (b)    +          
-Memory_6_1                    5     FB2_3   3    GTS/I/O I      +          
-Memory_5_1                    5     FB2_4   4    I/O     (b)    +          
-Memory_4_1                    5     FB2_5   5    GTS/I/O I      +          
-MaxIndex<1>                   4     FB2_6        (b)     (b)    +          
-MaxIndex<2>                   4     FB2_7        (b)     (b)    +          
-MaxIndex<3>                   4     FB2_8        (b)     (b)    +          
-N_PZ_362                      2     FB2_9        (b)     (b)               
-N_PZ_401                      3     FB2_10       (b)     (b)               
-clk_RdWr                      2     FB2_11       (b)     (b)               
-Memory_3_1                    5     FB2_12  6    GTS/I/O (b)    +          
-Memory_2_1                    5     FB2_13  7    I/O     I      +          
-Memory_1_1                    5     FB2_14  9    I/O     (b)    +          
-Memory_0_1                    5     FB2_15  10   I/O     I      +          
-N_PZ_407                      1     FB2_16       (b)     (b)               
-
-Signals Used by Logic in Function Block
-  1: In_BtnValue<0>    10: MaxIndex<4>       19: Memory_6_1 
-  2: In_BtnValue<1>    11: Memory_0_0        20: Memory_7_1 
-  3: In_Enable         12: Memory_0_1        21: Memory_8_1 
-  4: In_Read           13: Memory_1_0        22: N_PZ_361 
-  5: In_Write          14: Memory_1_1        23: N_PZ_362 
-  6: MaxIndex<0>       15: Memory_2_1        24: N_PZ_401 
-  7: MaxIndex<1>       16: Memory_3_1        25: N_PZ_407 
-  8: MaxIndex<2>       17: Memory_4_1        26: Out_FullStack 
-  9: MaxIndex<3>       18: Memory_5_1        27: clk_RdWr 
-
-Signal                     1         2         3         4 FB      
-Name             0----+----0----+----0----+----0----+----0 Inputs  
-Memory_7_1        .....XXX.X........XXXXXX..X............. 11      
-Memory_0_0        X.....XXXXX.X..........XX.X............. 10      
-Memory_6_1        .....XXXXX.......XXX.XXX..X............. 12      
-Memory_5_1        .....XXXXX......XXX..XXX..X............. 12      
-Memory_4_1        .....XXXXX.....XXX...XXX..X............. 12      
-MaxIndex<1>       ....XX...X.............XXXX............. 7       
-MaxIndex<2>       ....XXX..X.............XXXX............. 8       
-MaxIndex<3>       ....XXXX.X.............XXXX............. 9       
-N_PZ_362          .....XXXXX..............XX.............. 7       
-N_PZ_401          ...XXXXXXX.............................. 7       
-clk_RdWr          ..XXX...................X............... 4       
-Memory_3_1        .....XX.XX....XXX....XXX..X............. 11      
-Memory_2_1        .....XXXXX...XXX.....XXX..X............. 12      
-Memory_1_1        .....X.XXX.X.XX......XXX..X............. 11      
-Memory_0_1        .X....XXXX.X.X.........XX.X............. 10      
-N_PZ_407          ...XX................................... 2       
-                 0----+----1----+----2----+----3----+----4
-                           0         0         0         0
-*********************************** FB3  ***********************************
-This function block is part of I/O Bank number:               2
-Number of function block inputs used/remaining:               29/11
+Number of function block inputs used/remaining:               26/14
 Number of function block control terms used/remaining:        1/3
 Number of PLA product terms used/remaining:                   54/2
 Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
 Name                          Pt            No.  Type    Use   
-Memory_7_2                    5     FB3_1   136  I/O     (b)    +          
-Memory_8_2                    5     FB3_2   135  I/O     (b)    +          
-Memory_9_2                    5     FB3_3   134  I/O     (b)    +          
-Memory_13_2                   5     FB3_4        (b)     (b)    +          
-Memory_10_2                   5     FB3_5   133  I/O     (b)    +          
-Memory_14_2                   4     FB3_6        (b)     (b)    +          
-Memory_14_0                   4     FB3_7        (b)     (b)    +          
-Memory_14_1                   4     FB3_8        (b)     (b)    +          
-Memory_8_1                    5     FB3_9        (b)     (b)    +          
-Memory_9_1                    5     FB3_10       (b)     (b)    +          
-Memory_13_1                   5     FB3_11       (b)     (b)    +          
-Memory_12_1                   5     FB3_12       (b)     (b)    +          
-Memory_11_1                   5     FB3_13       (b)     (b)    +          
-Memory_11_2                   5     FB3_14  132  I/O     (b)    +          
-Memory_10_1                   5     FB3_15       (b)     (b)    +          
-Memory_12_2                   5     FB3_16  131  I/O     (b)    +          
+Memory_4_1                    5     FB2_1   2    GTS/I/O (b)    +          
+Memory_12_1                   5     FB2_2        (b)     (b)    +          
+Memory_5_1                    5     FB2_3   3    GTS/I/O I      +          
+Memory_6_1                    5     FB2_4   4    I/O     (b)    +          
+Memory_7_1                    5     FB2_5   5    GTS/I/O I      +          
+Memory_11_1                   5     FB2_6        (b)     (b)    +          
+Memory_10_1                   5     FB2_7        (b)     (b)    +          
+N_PZ_377                      2     FB2_8        (b)     (b)               
+Memory_4_or0000               3     FB2_9        (b)     (b)               
+clk_RdWr                      2     FB2_10       (b)     (b)               
+N_PZ_430                      2     FB2_11       (b)     (b)               
+Memory_8_1                    5     FB2_12  6    GTS/I/O (b)    +          
+Memory_9_1                    5     FB2_13  7    I/O     I      +          
+Memory_14_1                   5     FB2_14  9    I/O     (b)    +          
+Memory_13_1                   5     FB2_15  10   I/O     I      +          
+N_PZ_415                      1     FB2_16       (b)     (b)               
 
 Signals Used by Logic in Function Block
-  1: In_Read           11: Memory_12_1       21: Memory_7_2 
-  2: MaxIndex<0>       12: Memory_12_2       22: Memory_8_1 
-  3: MaxIndex<1>       13: Memory_13_0       23: Memory_8_2 
-  4: MaxIndex<2>       14: Memory_13_1       24: Memory_9_1 
-  5: MaxIndex<3>       15: Memory_13_2       25: Memory_9_2 
-  6: MaxIndex<4>       16: Memory_14_0       26: N_PZ_361 
-  7: Memory_10_1       17: Memory_14_1       27: N_PZ_362 
-  8: Memory_10_2       18: Memory_14_2       28: N_PZ_401 
-  9: Memory_11_1       19: Memory_6_2        29: clk_RdWr 
- 10: Memory_11_2       20: Memory_7_1       
+  1: In_Enable         10: Memory_11_1       19: Memory_6_1 
+  2: In_Read           11: Memory_12_1       20: Memory_7_1 
+  3: In_Write          12: Memory_13_1       21: Memory_8_1 
+  4: MaxIndex<0>       13: Memory_14_1       22: Memory_9_1 
+  5: MaxIndex<1>       14: Memory_15_1       23: N_PZ_377 
+  6: MaxIndex<2>       15: Memory_3_1        24: N_PZ_415 
+  7: MaxIndex<3>       16: Memory_4_1        25: Out_FullStack 
+  8: MaxIndex<4>       17: Memory_4_or0000   26: clk_RdWr 
+  9: Memory_10_1       18: Memory_5_1       
 
 Signal                     1         2         3         4 FB      
 Name             0----+----0----+----0----+----0----+----0 Inputs  
-Memory_7_2        .XXX.X............X.X.X..XXXX........... 11      
-Memory_8_2        .XXXXX..............X.X.XXXXX........... 12      
-Memory_9_2        .XXXXX.X..............X.XXXXX........... 12      
-Memory_13_2       .XXXXX.....X..X..X.......XXXX........... 12      
-Memory_10_2       .XXXXX.X.X..............XXXXX........... 12      
-Memory_14_2       XXXXXX........X..X.......XX.X........... 11      
-Memory_14_0       XXXXXX......X..X.........XX.X........... 11      
-Memory_14_1       XXXXXX.......X..X........XX.X........... 11      
-Memory_8_1        .XXXXX.............X.X.X.XXXX........... 12      
-Memory_9_1        .XXXXXX..............X.X.XXXX........... 12      
-Memory_13_1       .XXXXX....X..X..X........XXXX........... 12      
-Memory_12_1       .XXXXX..X.X..X...........XXXX........... 12      
-Memory_11_1       .XXXXXX.X.X..............XXXX........... 12      
-Memory_11_2       .XXXXX.X.X.X.............XXXX........... 12      
-Memory_10_1       .XXXXXX.X..............X.XXXX........... 12      
-Memory_12_2       .XXXXX...X.X..X..........XXXX........... 12      
+Memory_4_1        ...XXXXX......XXXX....X..X.............. 11      
+Memory_12_1       ...XXXXX.XXX....X.....X..X.............. 11      
+Memory_5_1        ...XXXXX.......XXXX...X..X.............. 11      
+Memory_6_1        ...XXXXX........XXXX..X..X.............. 11      
+Memory_7_1        ...XXX.X........X.XXX.X..X.............. 10      
+Memory_11_1       ...XXXXXXXX.....X.....X..X.............. 11      
+Memory_10_1       ...XXXXXXX......X....XX..X.............. 11      
+N_PZ_377          ...XXXXX...............X................ 6       
+Memory_4_or0000   .XXXXXXX................................ 7       
+clk_RdWr          XXX....................X................ 4       
+N_PZ_430          .XX...................X.X............... 4       
+Memory_8_1        ...XXXXX........X..XXXX..X.............. 11      
+Memory_9_1        ...XXXXXX.......X...XXX..X.............. 11      
+Memory_14_1       ...XXXXX...XXX..X.....X..X.............. 11      
+Memory_13_1       ...XXXXX..XXX...X.....X..X.............. 11      
+N_PZ_415          .XX..................................... 2       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB3  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               34/6
+Number of function block control terms used/remaining:        1/3
+Number of PLA product terms used/remaining:                   54/2
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+Memory_3_2                    5     FB3_1   136  I/O     (b)    +          
+Memory_3_1                    5     FB3_2   135  I/O     (b)    +          
+Memory_4_0                    5     FB3_3   134  I/O     (b)    +          
+Memory_2_2                    5     FB3_4        (b)     (b)    +          
+Memory_3_0                    5     FB3_5   133  I/O     (b)    +          
+Memory_1_2                    5     FB3_6        (b)     (b)    +          
+Memory_2_1                    5     FB3_7        (b)     (b)    +          
+Memory_1_1                    5     FB3_8        (b)     (b)    +          
+Memory_2_0                    5     FB3_9        (b)     (b)    +          
+Memory_1_0                    5     FB3_10       (b)     (b)    +          
+Memory_0_3                    5     FB3_11       (b)     (b)    +          
+Memory_0_2                    5     FB3_12       (b)     (b)    +          
+Memory_0_1                    5     FB3_13       (b)     (b)    +          
+Memory_2_3                    5     FB3_14  132  I/O     (b)    +          
+Memory_0_0                    5     FB3_15       (b)     (b)    +          
+Memory_1_3                    5     FB3_16  131  I/O     (b)    +          
+
+Signals Used by Logic in Function Block
+  1: In_BtnValue<0>    13: Memory_0_2        24: Memory_3_1 
+  2: In_BtnValue<1>    14: Memory_0_3        25: Memory_3_2 
+  3: In_BtnValue<2>    15: Memory_1_0        26: Memory_3_3 
+  4: In_BtnValue<3>    16: Memory_1_1        27: Memory_4_0 
+  5: In_Read           17: Memory_1_2        28: Memory_4_1 
+  6: MaxIndex<0>       18: Memory_1_3        29: Memory_4_2 
+  7: MaxIndex<1>       19: Memory_2_0        30: Memory_4_or0000 
+  8: MaxIndex<2>       20: Memory_2_1        31: Memory_5_0 
+  9: MaxIndex<3>       21: Memory_2_2        32: N_PZ_377 
+ 10: MaxIndex<4>       22: Memory_2_3        33: N_PZ_394 
+ 11: Memory_0_0        23: Memory_3_0        34: clk_RdWr 
+ 12: Memory_0_1       
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+Memory_3_2        .....XX.XX..........X...X...XX.X.X...... 10      
+Memory_3_1        .....XX.XX.........X...X...X.X.X.X...... 10      
+Memory_4_0        .....XXXXX............X...X..XXX.X...... 11      
+Memory_2_2        .....XXXXX......X...X...X....X.X.X...... 11      
+Memory_3_0        .....XX.XX........X...X...X..X.X.X...... 10      
+Memory_1_2        .....X.XXX..X...X...X........X.X.X...... 10      
+Memory_2_1        .....XXXXX.....X...X...X.....X.X.X...... 11      
+Memory_1_1        .....X.XXX.X...X...X.........X.X.X...... 10      
+Memory_2_0        .....XXXXX....X...X...X......X.X.X...... 11      
+Memory_1_0        .....X.XXXX...X...X..........X.X.X...... 10      
+Memory_0_3        ...XX.XXXX...X...X...........X..XX...... 11      
+Memory_0_2        ..X.X.XXXX..X...X............X..XX...... 11      
+Memory_0_1        .X..X.XXXX.X...X.............X..XX...... 11      
+Memory_2_3        .....XXXXX.......X...X...X...X.X.X...... 11      
+Memory_0_0        X...X.XXXXX...X..............X..XX...... 11      
+Memory_1_3        .....X.XXX...X...X...X.......X.X.X...... 10      
                  0----+----1----+----2----+----3----+----4
                            0         0         0         0
 *********************************** FB4  ***********************************
 This function block is part of I/O Bank number:               2
-Number of function block inputs used/remaining:               25/15
+Number of function block inputs used/remaining:               27/13
 Number of function block control terms used/remaining:        1/3
 Number of PLA product terms used/remaining:                   56/0
 Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
 Name                          Pt            No.  Type    Use   
 (unused)                      0     FB4_1   11   I/O           
-(unused)                      0     FB4_2   12   I/O           
-Memory_1_3                    5     FB4_3   13   I/O     (b)    +          
-Memory_2_3                    5     FB4_4   14   I/O     (b)    +          
-Memory_3_3                    5     FB4_5   15   I/O     (b)    +          
-Memory_4_3                    5     FB4_6   16   I/O     (b)    +          
-Memory_7_3                    5     FB4_7        (b)     (b)    +          
-Memory_14_3                   4     FB4_8        (b)     (b)    +          
-Memory_8_3                    5     FB4_9        (b)     (b)    +          
-Memory_9_3                    5     FB4_10       (b)     (b)    +          
-Memory_13_3                   5     FB4_11       (b)     (b)    +          
-Memory_5_3                    5     FB4_12  17   I/O     (b)    +          
-Memory_12_3                   5     FB4_13       (b)     (b)    +          
-Memory_6_3                    5     FB4_14  18   I/O     (b)    +          
-Memory_11_3                   5     FB4_15       (b)     (b)    +          
-Memory_10_3                   5     FB4_16       (b)     (b)    +          
+Memory_15_2                   3     FB4_2   12   I/O     (b)    +          
+Memory_12_3                   5     FB4_3   13   I/O     (b)    +          
+Memory_11_3                   5     FB4_4   14   I/O     (b)    +          
+Memory_10_3                   5     FB4_5   15   I/O     (b)    +          
+Memory_4_2                    5     FB4_6   16   I/O     (b)    +          
+Memory_7_2                    5     FB4_7        (b)     (b)    +          
+Memory_8_2                    5     FB4_8        (b)     (b)    +          
+Memory_9_2                    5     FB4_9        (b)     (b)    +          
+Memory_14_2                   5     FB4_10       (b)     (b)    +          
+Memory_13_2                   5     FB4_11       (b)     (b)    +          
+Memory_5_2                    5     FB4_12  17   I/O     (b)    +          
+Memory_12_2                   5     FB4_13       (b)     (b)    +          
+Memory_6_2                    5     FB4_14  18   I/O     (b)    +          
+Memory_11_2                   5     FB4_15       (b)     (b)    +          
+Memory_10_2                   5     FB4_16       (b)     (b)    +          
 
 Signals Used by Logic in Function Block
-  1: In_Read           10: Memory_12_3       18: Memory_6_3 
-  2: MaxIndex<0>       11: Memory_13_3       19: Memory_7_3 
-  3: MaxIndex<1>       12: Memory_14_3       20: Memory_8_3 
-  4: MaxIndex<2>       13: Memory_1_3        21: Memory_9_3 
-  5: MaxIndex<3>       14: Memory_2_3        22: N_PZ_361 
-  6: MaxIndex<4>       15: Memory_3_3        23: N_PZ_362 
-  7: Memory_0_3        16: Memory_4_3        24: N_PZ_401 
-  8: Memory_10_3       17: Memory_5_3        25: clk_RdWr 
-  9: Memory_11_3      
+  1: MaxIndex<0>       10: Memory_12_2       19: Memory_5_2 
+  2: MaxIndex<1>       11: Memory_12_3       20: Memory_6_2 
+  3: MaxIndex<2>       12: Memory_13_2       21: Memory_7_2 
+  4: MaxIndex<3>       13: Memory_13_3       22: Memory_8_2 
+  5: MaxIndex<4>       14: Memory_14_2       23: Memory_9_2 
+  6: Memory_10_2       15: Memory_15_2       24: Memory_9_3 
+  7: Memory_10_3       16: Memory_3_2        25: N_PZ_377 
+  8: Memory_11_2       17: Memory_4_2        26: N_PZ_430 
+  9: Memory_11_3       18: Memory_4_or0000   27: clk_RdWr 
 
 Signal                     1         2         3         4 FB      
 Name             0----+----0----+----0----+----0----+----0 Inputs  
-Memory_1_3        .X.XXXX.....XX.......XXXX............... 11      
-Memory_2_3        .XXXXX......XXX......XXXX............... 12      
-Memory_3_3        .XX.XX.......XXX.....XXXX............... 11      
-Memory_4_3        .XXXXX........XXX....XXXX............... 12      
-Memory_7_3        .XXX.X...........XXX.XXXX............... 11      
-Memory_14_3       XXXXXX....XX.........XX.X............... 11      
-Memory_8_3        .XXXXX............XXXXXXX............... 12      
-Memory_9_3        .XXXXX.X...........XXXXXX............... 12      
-Memory_13_3       .XXXXX...XXX.........XXXX............... 12      
-Memory_5_3        .XXXXX.........XXX...XXXX............... 12      
-Memory_12_3       .XXXXX..XXX..........XXXX............... 12      
-Memory_6_3        .XXXXX..........XXX..XXXX............... 12      
-Memory_11_3       .XXXXX.XXX...........XXXX............... 12      
-Memory_10_3       .XXXXX.XX...........XXXXX............... 12      
+Memory_15_2       .............XX.........XXX............. 5       
+Memory_12_3       XXXXX...X.X.X....X......X.X............. 11      
+Memory_11_3       XXXXX.X.X.X......X......X.X............. 11      
+Memory_10_3       XXXXX.X.X........X.....XX.X............. 11      
+Memory_4_2        XXXXX..........XXXX.....X.X............. 11      
+Memory_7_2        XXX.X............X.XXX..X.X............. 10      
+Memory_8_2        XXXXX............X..XXX.X.X............. 11      
+Memory_9_2        XXXXXX...........X...XX.X.X............. 11      
+Memory_14_2       XXXXX......X.XX..X......X.X............. 11      
+Memory_13_2       XXXXX....X.X.X...X......X.X............. 11      
+Memory_5_2        XXXXX...........XXXX....X.X............. 11      
+Memory_12_2       XXXXX..X.X.X.....X......X.X............. 11      
+Memory_6_2        XXXXX............XXXX...X.X............. 11      
+Memory_11_2       XXXXXX.X.X.......X......X.X............. 11      
+Memory_10_2       XXXXXX.X.........X....X.X.X............. 11      
                  0----+----1----+----2----+----3----+----4
                            0         0         0         0
 *********************************** FB5  ***********************************
 This function block is part of I/O Bank number:               1
-Number of function block inputs used/remaining:               23/17
+Number of function block inputs used/remaining:               26/14
 Number of function block control terms used/remaining:        1/3
-Number of PLA product terms used/remaining:                   34/22
+Number of PLA product terms used/remaining:                   43/13
 Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
 Name                          Pt            No.  Type    Use   
-(unused)                      0     FB5_1        (b)           
+Memory_15_0                   3     FB5_1        (b)     (b)    +          
 (unused)                      0     FB5_2   33   I/O           
-(unused)                      0     FB5_3        (b)           
+Memory_15_3                   3     FB5_3        (b)     (b)    +          
 (unused)                      0     FB5_4   32   GCK/I/O       
 (unused)                      0     FB5_5   31   I/O           
 (unused)                      0     FB5_6   30   GCK/I/O       
-MaxIndex<0>                   3     FB5_7        (b)     (b)    +          
-Memory_0_3                    5     FB5_8        (b)     (b)    +          
-Memory_0_2                    5     FB5_9        (b)     (b)    +          
-Memory_6_2                    5     FB5_10       (b)     (b)    +          
-Memory_5_2                    5     FB5_11       (b)     (b)    +          
-Memory_4_2                    5     FB5_12       (b)     (b)    +          
-Memory_3_2                    5     FB5_13       (b)     (b)    +          
-(unused)                      0     FB5_14  28   I/O           
-Memory_1_2                    5     FB5_15       (b)     (b)    +          
-Memory_2_2                    5     FB5_16       (b)     (b)    +          
+Memory_9_3                    5     FB5_7        (b)     (b)    +          
+Memory_8_3                    5     FB5_8        (b)     (b)    +          
+Memory_7_3                    5     FB5_9        (b)     (b)    +          
+Memory_3_3                    5     FB5_10       (b)     (b)    +          
+Memory_6_3                    5     FB5_11       (b)     (b)    +          
+Memory_5_3                    5     FB5_12       (b)     (b)    +          
+Memory_4_3                    5     FB5_13       (b)     (b)    +          
+Memory_15_1                   3     FB5_14  28   I/O     (b)    +          
+Memory_14_3                   5     FB5_15       (b)     (b)    +          
+Memory_13_3                   5     FB5_16       (b)     (b)    +          
 
 Signals Used by Logic in Function Block
-  1: In_BtnValue<2>     9: Memory_0_3        17: Memory_7_2 
-  2: In_BtnValue<3>    10: Memory_1_2        18: N_PZ_361 
-  3: MaxIndex<0>       11: Memory_1_3        19: N_PZ_362 
-  4: MaxIndex<1>       12: Memory_2_2        20: N_PZ_401 
-  5: MaxIndex<2>       13: Memory_3_2        21: N_PZ_407 
-  6: MaxIndex<3>       14: Memory_4_2        22: Out_FullStack 
-  7: MaxIndex<4>       15: Memory_5_2        23: clk_RdWr 
-  8: Memory_0_2        16: Memory_6_2       
+  1: MaxIndex<0>       10: Memory_14_1       19: Memory_5_3 
+  2: MaxIndex<1>       11: Memory_14_3       20: Memory_6_3 
+  3: MaxIndex<2>       12: Memory_15_0       21: Memory_7_3 
+  4: MaxIndex<3>       13: Memory_15_1       22: Memory_8_3 
+  5: MaxIndex<4>       14: Memory_15_3       23: Memory_9_3 
+  6: Memory_10_3       15: Memory_2_3        24: N_PZ_377 
+  7: Memory_12_3       16: Memory_3_3        25: N_PZ_430 
+  8: Memory_13_3       17: Memory_4_3        26: clk_RdWr 
+  9: Memory_14_0       18: Memory_4_or0000  
 
 Signal                     1         2         3         4 FB      
 Name             0----+----0----+----0----+----0----+----0 Inputs  
-MaxIndex<0>       ......X............XXXX................. 5       
-Memory_0_3        .X.XXXX.X.X........XX.X................. 10      
-Memory_0_2        X..XXXXX.X.........XX.X................. 10      
-Memory_6_2        ..XXXXX.......XXXXXX..X................. 12      
-Memory_5_2        ..XXXXX......XXX.XXX..X................. 12      
-Memory_4_2        ..XXXXX.....XXX..XXX..X................. 12      
-Memory_3_2        ..XX.XX....XXX...XXX..X................. 11      
-Memory_1_2        ..X.XXXX.X.X.....XXX..X................. 11      
-Memory_2_2        ..XXXXX..X.XX....XXX..X................. 12      
+Memory_15_0       ........X..X...........XXX.............. 5       
+Memory_15_3       ..........X..X.........XXX.............. 5       
+Memory_9_3        XXXXXX...........X...XXX.X.............. 11      
+Memory_8_3        XXXXX............X..XXXX.X.............. 11      
+Memory_7_3        XXX.X............X.XXX.X.X.............. 10      
+Memory_3_3        XX.XX.........XXXX.....X.X.............. 10      
+Memory_6_3        XXXXX............XXXX..X.X.............. 11      
+Memory_5_3        XXXXX...........XXXX...X.X.............. 11      
+Memory_4_3        XXXXX..........XXXX....X.X.............. 11      
+Memory_15_1       .........X..X..........XXX.............. 5       
+Memory_14_3       XXXXX..X..X..X...X.....X.X.............. 11      
+Memory_13_3       XXXXX.XX..X......X.....X.X.............. 11      
                  0----+----1----+----2----+----3----+----4
                            0         0         0         0
 *********************************** FB6  ***********************************
@@ -555,7 +566,7 @@ Out_MemCellValue<3>           3     FB9_15  119  I/O     O      +
 (unused)                      0     FB9_16       (b)           
 
 Signals Used by Logic in Function Block
-  1: Memory_0_0         3: Memory_0_2         5: N_PZ_401 
+  1: Memory_0_0         3: Memory_0_2         5: Memory_4_or0000 
   2: Memory_0_1         4: Memory_0_3         6: clk_RdWr 
 
 Signal                     1         2         3         4 FB      
@@ -684,15 +695,15 @@ Name                          Pt            No.  Type    Use
 (unused)                      0     FB13_16      (b)           
 *********************************** FB14 ***********************************
 This function block is part of I/O Bank number:               1
-Number of function block inputs used/remaining:               10/30
-Number of function block control terms used/remaining:        1/3
-Number of PLA product terms used/remaining:                   3/53
+Number of function block inputs used/remaining:               5/35
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   1/55
 Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
 Name                          Pt            No.  Type    Use   
 (unused)                      0     FB14_1  74   I/O           
 (unused)                      0     FB14_2  71   I/O           
 (unused)                      0     FB14_3  70   I/O           
-Out_FullStack                 3     FB14_4  69   I/O     O      +          
+Out_FullStack                 1     FB14_4  69   I/O     O                 
 (unused)                      0     FB14_5       (b)           
 (unused)                      0     FB14_6  68   I/O           
 (unused)                      0     FB14_7       (b)           
@@ -707,14 +718,12 @@ Out_FullStack                 3     FB14_4  69   I/O     O      +
 (unused)                      0     FB14_16 61   I/O           
 
 Signals Used by Logic in Function Block
-  1: In_Write           5: MaxIndex<3>        8: N_PZ_407 
-  2: MaxIndex<0>        6: MaxIndex<4>        9: Out_FullStack 
-  3: MaxIndex<1>        7: N_PZ_401          10: clk_RdWr 
-  4: MaxIndex<2>      
+  1: MaxIndex<0>        3: MaxIndex<2>        5: MaxIndex<4> 
+  2: MaxIndex<1>        4: MaxIndex<3>      
 
 Signal                     1         2         3         4 FB      
 Name             0----+----0----+----0----+----0----+----0 Inputs  
-Out_FullStack     XXXXXXXXXX.............................. 10      
+Out_FullStack     XXXXX................................... 5       
                  0----+----1----+----2----+----3----+----4
                            0         0         0         0
 *********************************** FB15 ***********************************
@@ -768,467 +777,487 @@ Name                          Pt            No.  Type    Use
 ********** Mapped Logic **********
 
 FTCPE_MaxIndex0: FTCPE port map (MaxIndex(0),MaxIndex_T(0),clk_RdWr,'0','0','1');
-MaxIndex_T(0) <= ((NOT N_PZ_401)
-	OR (NOT Out_FullStack AND NOT MaxIndex(4) AND N_PZ_407));
+MaxIndex_T(0) <= ((NOT MaxIndex(4) AND N_PZ_415)
+	OR (NOT N_PZ_415 AND NOT Memory_4_or0000));
 
 FTCPE_MaxIndex1: FTCPE port map (MaxIndex(1),MaxIndex_T(1),clk_RdWr,'0','0','1');
-MaxIndex_T(1) <= ((MaxIndex(0) AND In_Write AND NOT N_PZ_401)
-	OR (NOT MaxIndex(0) AND NOT In_Write AND NOT N_PZ_401)
-	OR (NOT Out_FullStack AND MaxIndex(0) AND NOT MaxIndex(4) AND 
-	N_PZ_407));
+MaxIndex_T(1) <= ((MaxIndex(0) AND NOT MaxIndex(4) AND N_PZ_415)
+	OR (NOT MaxIndex(0) AND NOT N_PZ_415 AND NOT Memory_4_or0000));
 
 FTCPE_MaxIndex2: FTCPE port map (MaxIndex(2),MaxIndex_T(2),clk_RdWr,'0','0','1');
-MaxIndex_T(2) <= ((MaxIndex(0) AND MaxIndex(1) AND In_Write AND NOT N_PZ_401)
-	OR (NOT MaxIndex(0) AND NOT MaxIndex(1) AND NOT In_Write AND NOT N_PZ_401)
-	OR (NOT Out_FullStack AND MaxIndex(0) AND NOT MaxIndex(4) AND 
-	MaxIndex(1) AND N_PZ_407));
+MaxIndex_T(2) <= ((MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
+	N_PZ_415)
+	OR (NOT MaxIndex(0) AND NOT MaxIndex(1) AND NOT N_PZ_415 AND 
+	NOT Memory_4_or0000));
 
 FTCPE_MaxIndex3: FTCPE port map (MaxIndex(3),MaxIndex_T(3),clk_RdWr,'0','0','1');
-MaxIndex_T(3) <= ((MaxIndex(0) AND MaxIndex(1) AND In_Write AND NOT N_PZ_401 AND 
-	MaxIndex(2))
-	OR (NOT MaxIndex(0) AND NOT MaxIndex(1) AND NOT In_Write AND NOT N_PZ_401 AND 
-	NOT MaxIndex(2))
-	OR (NOT Out_FullStack AND MaxIndex(0) AND NOT MaxIndex(4) AND 
-	MaxIndex(1) AND N_PZ_407 AND MaxIndex(2)));
+MaxIndex_T(3) <= ((MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
+	N_PZ_415 AND MaxIndex(2))
+	OR (NOT MaxIndex(0) AND NOT MaxIndex(1) AND NOT N_PZ_415 AND 
+	NOT Memory_4_or0000 AND NOT MaxIndex(2)));
 
 FTCPE_MaxIndex4: FTCPE port map (MaxIndex(4),MaxIndex_T(4),clk_RdWr,'0','0','1');
-MaxIndex_T(4) <= ((NOT MaxIndex(0) AND NOT MaxIndex(1) AND NOT N_PZ_401 AND 
-	NOT MaxIndex(2) AND NOT MaxIndex(3))
-	OR (NOT Out_FullStack AND MaxIndex(0) AND NOT MaxIndex(4) AND 
-	MaxIndex(1) AND N_PZ_407 AND MaxIndex(2) AND MaxIndex(3)));
+MaxIndex_T(4) <= ((NOT MaxIndex(0) AND NOT MaxIndex(1) AND NOT Memory_4_or0000 AND 
+	NOT MaxIndex(3) AND NOT MaxIndex(2))
+	OR (MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
+	MaxIndex(3) AND MaxIndex(2) AND NOT N_PZ_377));
 
 FDCPE_Memory_0_0: FDCPE port map (Memory_0_0,Memory_0_0_D,clk_RdWr,'0','0','1');
-Memory_0_0_D <= NOT (((NOT In_BtnValue(0) AND N_PZ_407)
-	OR (NOT N_PZ_401 AND NOT Memory_1_0)
-	OR (NOT N_PZ_407 AND N_PZ_401 AND NOT Memory_0_0)
-	OR (NOT MaxIndex(4) AND NOT MaxIndex(1) AND NOT N_PZ_401 AND 
-	NOT MaxIndex(2) AND NOT MaxIndex(3))));
+Memory_0_0_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_1_0)
+	OR (NOT Memory_0_0 AND N_PZ_394)
+	OR (NOT In_BtnValue(0) AND In_Read AND NOT N_PZ_394)
+	OR (NOT MaxIndex(4) AND NOT MaxIndex(1) AND NOT Memory_4_or0000 AND 
+	NOT MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_0_1: FDCPE port map (Memory_0_1,Memory_0_1_D,clk_RdWr,'0','0','1');
-Memory_0_1_D <= NOT (((NOT In_BtnValue(1) AND N_PZ_407)
-	OR (NOT N_PZ_401 AND NOT Memory_1_1)
-	OR (NOT N_PZ_407 AND N_PZ_401 AND NOT Memory_0_1)
-	OR (NOT MaxIndex(4) AND NOT MaxIndex(1) AND NOT N_PZ_401 AND 
-	NOT MaxIndex(2) AND NOT MaxIndex(3))));
+Memory_0_1_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_1_1)
+	OR (N_PZ_394 AND NOT Memory_0_1)
+	OR (NOT In_BtnValue(1) AND In_Read AND NOT N_PZ_394)
+	OR (NOT MaxIndex(4) AND NOT MaxIndex(1) AND NOT Memory_4_or0000 AND 
+	NOT MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_0_2: FDCPE port map (Memory_0_2,Memory_0_2_D,clk_RdWr,'0','0','1');
-Memory_0_2_D <= NOT (((NOT In_BtnValue(2) AND N_PZ_407)
-	OR (NOT N_PZ_401 AND NOT Memory_1_2)
-	OR (NOT N_PZ_407 AND N_PZ_401 AND NOT Memory_0_2)
-	OR (NOT MaxIndex(4) AND NOT MaxIndex(1) AND NOT N_PZ_401 AND 
-	NOT MaxIndex(2) AND NOT MaxIndex(3))));
+Memory_0_2_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_1_2)
+	OR (N_PZ_394 AND NOT Memory_0_2)
+	OR (NOT In_BtnValue(2) AND In_Read AND NOT N_PZ_394)
+	OR (NOT MaxIndex(4) AND NOT MaxIndex(1) AND NOT Memory_4_or0000 AND 
+	NOT MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_0_3: FDCPE port map (Memory_0_3,Memory_0_3_D,clk_RdWr,'0','0','1');
-Memory_0_3_D <= NOT (((NOT In_BtnValue(3) AND N_PZ_407)
-	OR (NOT N_PZ_401 AND NOT Memory_1_3)
-	OR (NOT N_PZ_407 AND N_PZ_401 AND NOT Memory_0_3)
-	OR (NOT MaxIndex(4) AND NOT MaxIndex(1) AND NOT N_PZ_401 AND 
-	NOT MaxIndex(2) AND NOT MaxIndex(3))));
+Memory_0_3_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_1_3)
+	OR (N_PZ_394 AND NOT Memory_0_3)
+	OR (NOT In_BtnValue(3) AND In_Read AND NOT N_PZ_394)
+	OR (NOT MaxIndex(4) AND NOT MaxIndex(1) AND NOT Memory_4_or0000 AND 
+	NOT MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_10_0: FDCPE port map (Memory_10_0,Memory_10_0_D,clk_RdWr,'0','0','1');
-Memory_10_0_D <= NOT (((NOT N_PZ_401 AND NOT Memory_11_0)
-	OR (N_PZ_361 AND NOT Memory_10_0)
-	OR (NOT N_PZ_362 AND NOT Memory_9_0)
+Memory_10_0_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_11_0)
+	OR (NOT N_PZ_377 AND NOT Memory_9_0)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_10_0)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_10_1: FDCPE port map (Memory_10_1,Memory_10_1_D,clk_RdWr,'0','0','1');
-Memory_10_1_D <= NOT (((NOT N_PZ_401 AND NOT Memory_11_1)
-	OR (N_PZ_361 AND NOT Memory_10_1)
-	OR (NOT N_PZ_362 AND NOT Memory_9_1)
+Memory_10_1_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_11_1)
+	OR (NOT N_PZ_377 AND NOT Memory_9_1)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_10_1)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_10_2: FDCPE port map (Memory_10_2,Memory_10_2_D,clk_RdWr,'0','0','1');
-Memory_10_2_D <= NOT (((NOT N_PZ_401 AND NOT Memory_11_2)
-	OR (N_PZ_361 AND NOT Memory_10_2)
-	OR (NOT N_PZ_362 AND NOT Memory_9_2)
+Memory_10_2_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_11_2)
+	OR (NOT N_PZ_377 AND NOT Memory_9_2)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_10_2)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_10_3: FDCPE port map (Memory_10_3,Memory_10_3_D,clk_RdWr,'0','0','1');
-Memory_10_3_D <= NOT (((NOT N_PZ_401 AND NOT Memory_11_3)
-	OR (N_PZ_361 AND NOT Memory_10_3)
-	OR (NOT N_PZ_362 AND NOT Memory_9_3)
+Memory_10_3_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_11_3)
+	OR (NOT N_PZ_377 AND NOT Memory_9_3)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_10_3)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_11_0: FDCPE port map (Memory_11_0,Memory_11_0_D,clk_RdWr,'0','0','1');
-Memory_11_0_D <= NOT (((NOT N_PZ_401 AND NOT Memory_12_0)
-	OR (N_PZ_361 AND NOT Memory_11_0)
-	OR (NOT N_PZ_362 AND NOT Memory_10_0)
+Memory_11_0_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_12_0)
+	OR (NOT N_PZ_377 AND NOT Memory_10_0)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_11_0)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_11_1: FDCPE port map (Memory_11_1,Memory_11_1_D,clk_RdWr,'0','0','1');
-Memory_11_1_D <= NOT (((NOT N_PZ_401 AND NOT Memory_12_1)
-	OR (N_PZ_361 AND NOT Memory_11_1)
-	OR (NOT N_PZ_362 AND NOT Memory_10_1)
+Memory_11_1_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_12_1)
+	OR (NOT N_PZ_377 AND NOT Memory_10_1)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_11_1)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_11_2: FDCPE port map (Memory_11_2,Memory_11_2_D,clk_RdWr,'0','0','1');
-Memory_11_2_D <= NOT (((NOT N_PZ_401 AND NOT Memory_12_2)
-	OR (N_PZ_361 AND NOT Memory_11_2)
-	OR (NOT N_PZ_362 AND NOT Memory_10_2)
+Memory_11_2_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_12_2)
+	OR (NOT N_PZ_377 AND NOT Memory_10_2)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_11_2)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_11_3: FDCPE port map (Memory_11_3,Memory_11_3_D,clk_RdWr,'0','0','1');
-Memory_11_3_D <= NOT (((NOT N_PZ_401 AND NOT Memory_12_3)
-	OR (N_PZ_361 AND NOT Memory_11_3)
-	OR (NOT N_PZ_362 AND NOT Memory_10_3)
+Memory_11_3_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_12_3)
+	OR (NOT N_PZ_377 AND NOT Memory_10_3)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_11_3)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_12_0: FDCPE port map (Memory_12_0,Memory_12_0_D,clk_RdWr,'0','0','1');
-Memory_12_0_D <= NOT (((NOT N_PZ_401 AND NOT Memory_13_0)
-	OR (N_PZ_361 AND NOT Memory_12_0)
-	OR (NOT N_PZ_362 AND NOT Memory_11_0)
+Memory_12_0_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_13_0)
+	OR (NOT N_PZ_377 AND NOT Memory_11_0)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_12_0)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_12_1: FDCPE port map (Memory_12_1,Memory_12_1_D,clk_RdWr,'0','0','1');
-Memory_12_1_D <= NOT (((NOT N_PZ_401 AND NOT Memory_13_1)
-	OR (N_PZ_361 AND NOT Memory_12_1)
-	OR (NOT N_PZ_362 AND NOT Memory_11_1)
+Memory_12_1_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_13_1)
+	OR (NOT N_PZ_377 AND NOT Memory_11_1)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_12_1)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_12_2: FDCPE port map (Memory_12_2,Memory_12_2_D,clk_RdWr,'0','0','1');
-Memory_12_2_D <= NOT (((NOT N_PZ_401 AND NOT Memory_13_2)
-	OR (N_PZ_361 AND NOT Memory_12_2)
-	OR (NOT N_PZ_362 AND NOT Memory_11_2)
+Memory_12_2_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_13_2)
+	OR (NOT N_PZ_377 AND NOT Memory_11_2)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_12_2)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_12_3: FDCPE port map (Memory_12_3,Memory_12_3_D,clk_RdWr,'0','0','1');
-Memory_12_3_D <= NOT (((NOT N_PZ_401 AND NOT Memory_13_3)
-	OR (N_PZ_361 AND NOT Memory_12_3)
-	OR (NOT N_PZ_362 AND NOT Memory_11_3)
+Memory_12_3_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_13_3)
+	OR (NOT N_PZ_377 AND NOT Memory_11_3)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_12_3)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_13_0: FDCPE port map (Memory_13_0,Memory_13_0_D,clk_RdWr,'0','0','1');
-Memory_13_0_D <= NOT (((NOT N_PZ_401 AND NOT Memory_14_0)
-	OR (N_PZ_361 AND NOT Memory_13_0)
-	OR (NOT N_PZ_362 AND NOT Memory_12_0)
+Memory_13_0_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_14_0)
+	OR (NOT N_PZ_377 AND NOT Memory_12_0)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_13_0)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_13_1: FDCPE port map (Memory_13_1,Memory_13_1_D,clk_RdWr,'0','0','1');
-Memory_13_1_D <= NOT (((NOT N_PZ_401 AND NOT Memory_14_1)
-	OR (N_PZ_361 AND NOT Memory_13_1)
-	OR (NOT N_PZ_362 AND NOT Memory_12_1)
+Memory_13_1_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_14_1)
+	OR (NOT N_PZ_377 AND NOT Memory_12_1)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_13_1)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_13_2: FDCPE port map (Memory_13_2,Memory_13_2_D,clk_RdWr,'0','0','1');
-Memory_13_2_D <= NOT (((NOT N_PZ_401 AND NOT Memory_14_2)
-	OR (N_PZ_361 AND NOT Memory_13_2)
-	OR (NOT N_PZ_362 AND NOT Memory_12_2)
+Memory_13_2_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_14_2)
+	OR (NOT N_PZ_377 AND NOT Memory_12_2)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_13_2)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_13_3: FDCPE port map (Memory_13_3,Memory_13_3_D,clk_RdWr,'0','0','1');
-Memory_13_3_D <= NOT (((NOT N_PZ_401 AND NOT Memory_14_3)
-	OR (N_PZ_361 AND NOT Memory_13_3)
-	OR (NOT N_PZ_362 AND NOT Memory_12_3)
+Memory_13_3_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_14_3)
+	OR (NOT N_PZ_377 AND NOT Memory_12_3)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_13_3)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_14_0: FDCPE port map (Memory_14_0,Memory_14_0_D,clk_RdWr,'0','0','1');
-Memory_14_0_D <= NOT (((N_PZ_362 AND NOT Memory_14_0)
-	OR (NOT N_PZ_362 AND NOT Memory_13_0)
+Memory_14_0_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_15_0)
+	OR (NOT N_PZ_377 AND NOT Memory_13_0)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_14_0)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	In_Read AND MaxIndex(2) AND MaxIndex(3) AND NOT N_PZ_361)));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_14_1: FDCPE port map (Memory_14_1,Memory_14_1_D,clk_RdWr,'0','0','1');
-Memory_14_1_D <= NOT (((N_PZ_362 AND NOT Memory_14_1)
-	OR (NOT N_PZ_362 AND NOT Memory_13_1)
+Memory_14_1_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_15_1)
+	OR (NOT N_PZ_377 AND NOT Memory_13_1)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_14_1)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	In_Read AND MaxIndex(2) AND MaxIndex(3) AND NOT N_PZ_361)));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_14_2: FDCPE port map (Memory_14_2,Memory_14_2_D,clk_RdWr,'0','0','1');
-Memory_14_2_D <= NOT (((N_PZ_362 AND NOT Memory_14_2)
-	OR (NOT N_PZ_362 AND NOT Memory_13_2)
+Memory_14_2_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_15_2)
+	OR (NOT N_PZ_377 AND NOT Memory_13_2)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_14_2)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	In_Read AND MaxIndex(2) AND MaxIndex(3) AND NOT N_PZ_361)));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_14_3: FDCPE port map (Memory_14_3,Memory_14_3_D,clk_RdWr,'0','0','1');
-Memory_14_3_D <= NOT (((N_PZ_362 AND NOT Memory_14_3)
-	OR (NOT N_PZ_362 AND NOT Memory_13_3)
+Memory_14_3_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_15_3)
+	OR (NOT N_PZ_377 AND NOT Memory_13_3)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_14_3)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	In_Read AND MaxIndex(2) AND MaxIndex(3) AND NOT N_PZ_361)));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND MaxIndex(2))));
+
+FDCPE_Memory_15_0: FDCPE port map (Memory_15_0,Memory_15_0_D,clk_RdWr,'0','0','1');
+Memory_15_0_D <= ((NOT N_PZ_377 AND Memory_14_0)
+	OR (Memory_15_0 AND NOT N_PZ_430));
+
+FDCPE_Memory_15_1: FDCPE port map (Memory_15_1,Memory_15_1_D,clk_RdWr,'0','0','1');
+Memory_15_1_D <= ((NOT N_PZ_377 AND Memory_14_1)
+	OR (NOT N_PZ_430 AND Memory_15_1));
+
+FDCPE_Memory_15_2: FDCPE port map (Memory_15_2,Memory_15_2_D,clk_RdWr,'0','0','1');
+Memory_15_2_D <= ((NOT N_PZ_377 AND Memory_14_2)
+	OR (NOT N_PZ_430 AND Memory_15_2));
+
+FDCPE_Memory_15_3: FDCPE port map (Memory_15_3,Memory_15_3_D,clk_RdWr,'0','0','1');
+Memory_15_3_D <= ((NOT N_PZ_377 AND Memory_14_3)
+	OR (NOT N_PZ_430 AND Memory_15_3));
 
 FDCPE_Memory_1_0: FDCPE port map (Memory_1_0,Memory_1_0_D,clk_RdWr,'0','0','1');
-Memory_1_0_D <= NOT (((NOT N_PZ_401 AND NOT Memory_2_0)
-	OR (NOT Memory_0_0 AND NOT N_PZ_362)
-	OR (NOT Memory_1_0 AND N_PZ_361)
-	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT N_PZ_401 AND 
-	NOT MaxIndex(2) AND NOT MaxIndex(3))));
+Memory_1_0_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_2_0)
+	OR (NOT N_PZ_377 AND NOT Memory_0_0)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_1_0)
+	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT Memory_4_or0000 AND 
+	NOT MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_1_1: FDCPE port map (Memory_1_1,Memory_1_1_D,clk_RdWr,'0','0','1');
-Memory_1_1_D <= NOT (((NOT N_PZ_401 AND NOT Memory_2_1)
-	OR (N_PZ_361 AND NOT Memory_1_1)
-	OR (NOT N_PZ_362 AND NOT Memory_0_1)
-	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT N_PZ_401 AND 
-	NOT MaxIndex(2) AND NOT MaxIndex(3))));
+Memory_1_1_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_2_1)
+	OR (NOT N_PZ_377 AND NOT Memory_0_1)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_1_1)
+	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT Memory_4_or0000 AND 
+	NOT MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_1_2: FDCPE port map (Memory_1_2,Memory_1_2_D,clk_RdWr,'0','0','1');
-Memory_1_2_D <= NOT (((NOT N_PZ_401 AND NOT Memory_2_2)
-	OR (N_PZ_361 AND NOT Memory_1_2)
-	OR (NOT N_PZ_362 AND NOT Memory_0_2)
-	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT N_PZ_401 AND 
-	NOT MaxIndex(2) AND NOT MaxIndex(3))));
+Memory_1_2_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_2_2)
+	OR (NOT N_PZ_377 AND NOT Memory_0_2)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_1_2)
+	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT Memory_4_or0000 AND 
+	NOT MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_1_3: FDCPE port map (Memory_1_3,Memory_1_3_D,clk_RdWr,'0','0','1');
-Memory_1_3_D <= NOT (((NOT N_PZ_401 AND NOT Memory_2_3)
-	OR (N_PZ_361 AND NOT Memory_1_3)
-	OR (NOT N_PZ_362 AND NOT Memory_0_3)
-	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT N_PZ_401 AND 
-	NOT MaxIndex(2) AND NOT MaxIndex(3))));
+Memory_1_3_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_2_3)
+	OR (NOT N_PZ_377 AND NOT Memory_0_3)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_1_3)
+	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT Memory_4_or0000 AND 
+	NOT MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_2_0: FDCPE port map (Memory_2_0,Memory_2_0_D,clk_RdWr,'0','0','1');
-Memory_2_0_D <= NOT (((NOT N_PZ_401 AND NOT Memory_3_0)
-	OR (NOT Memory_1_0 AND NOT N_PZ_362)
-	OR (N_PZ_361 AND NOT Memory_2_0)
+Memory_2_0_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_3_0)
+	OR (NOT N_PZ_377 AND NOT Memory_1_0)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_2_0)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2) AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_2_1: FDCPE port map (Memory_2_1,Memory_2_1_D,clk_RdWr,'0','0','1');
-Memory_2_1_D <= NOT (((NOT N_PZ_401 AND NOT Memory_3_1)
-	OR (N_PZ_361 AND NOT Memory_2_1)
-	OR (NOT N_PZ_362 AND NOT Memory_1_1)
+Memory_2_1_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_3_1)
+	OR (NOT N_PZ_377 AND NOT Memory_1_1)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_2_1)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2) AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_2_2: FDCPE port map (Memory_2_2,Memory_2_2_D,clk_RdWr,'0','0','1');
-Memory_2_2_D <= NOT (((NOT N_PZ_401 AND NOT Memory_3_2)
-	OR (N_PZ_361 AND NOT Memory_2_2)
-	OR (NOT N_PZ_362 AND NOT Memory_1_2)
+Memory_2_2_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_3_2)
+	OR (NOT N_PZ_377 AND NOT Memory_1_2)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_2_2)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2) AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_2_3: FDCPE port map (Memory_2_3,Memory_2_3_D,clk_RdWr,'0','0','1');
-Memory_2_3_D <= NOT (((NOT N_PZ_401 AND NOT Memory_3_3)
-	OR (N_PZ_361 AND NOT Memory_2_3)
-	OR (NOT N_PZ_362 AND NOT Memory_1_3)
+Memory_2_3_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_3_3)
+	OR (NOT N_PZ_377 AND NOT Memory_1_3)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_2_3)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2) AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_3_0: FDCPE port map (Memory_3_0,Memory_3_0_D,clk_RdWr,'0','0','1');
-Memory_3_0_D <= NOT (((NOT N_PZ_401 AND NOT Memory_4_0)
-	OR (N_PZ_361 AND NOT Memory_3_0)
-	OR (NOT N_PZ_362 AND NOT Memory_2_0)
+Memory_3_0_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_4_0)
+	OR (NOT N_PZ_377 AND NOT Memory_2_0)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_3_0)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3))));
 
 FDCPE_Memory_3_1: FDCPE port map (Memory_3_1,Memory_3_1_D,clk_RdWr,'0','0','1');
-Memory_3_1_D <= NOT (((NOT N_PZ_401 AND NOT Memory_4_1)
-	OR (N_PZ_361 AND NOT Memory_3_1)
-	OR (NOT N_PZ_362 AND NOT Memory_2_1)
+Memory_3_1_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_4_1)
+	OR (NOT N_PZ_377 AND NOT Memory_2_1)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_3_1)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3))));
 
 FDCPE_Memory_3_2: FDCPE port map (Memory_3_2,Memory_3_2_D,clk_RdWr,'0','0','1');
-Memory_3_2_D <= NOT (((NOT N_PZ_401 AND NOT Memory_4_2)
-	OR (N_PZ_361 AND NOT Memory_3_2)
-	OR (NOT N_PZ_362 AND NOT Memory_2_2)
+Memory_3_2_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_4_2)
+	OR (NOT N_PZ_377 AND NOT Memory_2_2)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_3_2)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3))));
 
 FDCPE_Memory_3_3: FDCPE port map (Memory_3_3,Memory_3_3_D,clk_RdWr,'0','0','1');
-Memory_3_3_D <= NOT (((NOT N_PZ_401 AND NOT Memory_4_3)
-	OR (N_PZ_361 AND NOT Memory_3_3)
-	OR (NOT N_PZ_362 AND NOT Memory_2_3)
+Memory_3_3_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_4_3)
+	OR (NOT N_PZ_377 AND NOT Memory_2_3)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_3_3)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3))));
 
 FDCPE_Memory_4_0: FDCPE port map (Memory_4_0,Memory_4_0_D,clk_RdWr,'0','0','1');
-Memory_4_0_D <= NOT (((NOT N_PZ_401 AND NOT Memory_5_0)
-	OR (N_PZ_361 AND NOT Memory_4_0)
-	OR (NOT N_PZ_362 AND NOT Memory_3_0)
+Memory_4_0_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_5_0)
+	OR (NOT N_PZ_377 AND NOT Memory_3_0)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_4_0)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_4_1: FDCPE port map (Memory_4_1,Memory_4_1_D,clk_RdWr,'0','0','1');
-Memory_4_1_D <= NOT (((NOT N_PZ_401 AND NOT Memory_5_1)
-	OR (N_PZ_361 AND NOT Memory_4_1)
-	OR (NOT N_PZ_362 AND NOT Memory_3_1)
+Memory_4_1_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_5_1)
+	OR (NOT N_PZ_377 AND NOT Memory_3_1)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_4_1)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_4_2: FDCPE port map (Memory_4_2,Memory_4_2_D,clk_RdWr,'0','0','1');
-Memory_4_2_D <= NOT (((NOT N_PZ_401 AND NOT Memory_5_2)
-	OR (N_PZ_361 AND NOT Memory_4_2)
-	OR (NOT N_PZ_362 AND NOT Memory_3_2)
+Memory_4_2_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_5_2)
+	OR (NOT N_PZ_377 AND NOT Memory_3_2)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_4_2)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_4_3: FDCPE port map (Memory_4_3,Memory_4_3_D,clk_RdWr,'0','0','1');
-Memory_4_3_D <= NOT (((NOT N_PZ_401 AND NOT Memory_5_3)
-	OR (N_PZ_361 AND NOT Memory_4_3)
-	OR (NOT N_PZ_362 AND NOT Memory_3_3)
+Memory_4_3_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_5_3)
+	OR (NOT N_PZ_377 AND NOT Memory_3_3)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_4_3)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3) AND MaxIndex(2))));
+
+
+Memory_4_or0000 <= ((In_Read)
+	OR (NOT In_Write)
+	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
+	NOT MaxIndex(3) AND NOT MaxIndex(2)));
 
 FDCPE_Memory_5_0: FDCPE port map (Memory_5_0,Memory_5_0_D,clk_RdWr,'0','0','1');
-Memory_5_0_D <= NOT (((NOT N_PZ_401 AND NOT Memory_6_0)
-	OR (N_PZ_361 AND NOT Memory_5_0)
-	OR (NOT N_PZ_362 AND NOT Memory_4_0)
+Memory_5_0_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_6_0)
+	OR (NOT N_PZ_377 AND NOT Memory_4_0)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_5_0)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_5_1: FDCPE port map (Memory_5_1,Memory_5_1_D,clk_RdWr,'0','0','1');
-Memory_5_1_D <= NOT (((NOT N_PZ_401 AND NOT Memory_6_1)
-	OR (N_PZ_361 AND NOT Memory_5_1)
-	OR (NOT N_PZ_362 AND NOT Memory_4_1)
+Memory_5_1_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_6_1)
+	OR (NOT N_PZ_377 AND NOT Memory_4_1)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_5_1)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_5_2: FDCPE port map (Memory_5_2,Memory_5_2_D,clk_RdWr,'0','0','1');
-Memory_5_2_D <= NOT (((NOT N_PZ_401 AND NOT Memory_6_2)
-	OR (N_PZ_361 AND NOT Memory_5_2)
-	OR (NOT N_PZ_362 AND NOT Memory_4_2)
+Memory_5_2_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_6_2)
+	OR (NOT N_PZ_377 AND NOT Memory_4_2)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_5_2)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_5_3: FDCPE port map (Memory_5_3,Memory_5_3_D,clk_RdWr,'0','0','1');
-Memory_5_3_D <= NOT (((NOT N_PZ_401 AND NOT Memory_6_3)
-	OR (N_PZ_361 AND NOT Memory_5_3)
-	OR (NOT N_PZ_362 AND NOT Memory_4_3)
+Memory_5_3_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_6_3)
+	OR (NOT N_PZ_377 AND NOT Memory_4_3)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_5_3)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_6_0: FDCPE port map (Memory_6_0,Memory_6_0_D,clk_RdWr,'0','0','1');
-Memory_6_0_D <= NOT (((NOT N_PZ_401 AND NOT Memory_7_0)
-	OR (N_PZ_361 AND NOT Memory_6_0)
-	OR (NOT N_PZ_362 AND NOT Memory_5_0)
+Memory_6_0_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_7_0)
+	OR (NOT N_PZ_377 AND NOT Memory_5_0)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_6_0)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_6_1: FDCPE port map (Memory_6_1,Memory_6_1_D,clk_RdWr,'0','0','1');
-Memory_6_1_D <= NOT (((NOT N_PZ_401 AND NOT Memory_7_1)
-	OR (N_PZ_361 AND NOT Memory_6_1)
-	OR (NOT N_PZ_362 AND NOT Memory_5_1)
+Memory_6_1_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_7_1)
+	OR (NOT N_PZ_377 AND NOT Memory_5_1)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_6_1)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_6_2: FDCPE port map (Memory_6_2,Memory_6_2_D,clk_RdWr,'0','0','1');
-Memory_6_2_D <= NOT (((NOT N_PZ_401 AND NOT Memory_7_2)
-	OR (N_PZ_361 AND NOT Memory_6_2)
-	OR (NOT N_PZ_362 AND NOT Memory_5_2)
+Memory_6_2_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_7_2)
+	OR (NOT N_PZ_377 AND NOT Memory_5_2)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_6_2)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_6_3: FDCPE port map (Memory_6_3,Memory_6_3_D,clk_RdWr,'0','0','1');
-Memory_6_3_D <= NOT (((NOT N_PZ_401 AND NOT Memory_7_3)
-	OR (N_PZ_361 AND NOT Memory_6_3)
-	OR (NOT N_PZ_362 AND NOT Memory_5_3)
+Memory_6_3_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_7_3)
+	OR (NOT N_PZ_377 AND NOT Memory_5_3)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_6_3)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND MaxIndex(2) AND NOT MaxIndex(3))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(3) AND MaxIndex(2))));
 
 FDCPE_Memory_7_0: FDCPE port map (Memory_7_0,Memory_7_0_D,clk_RdWr,'0','0','1');
-Memory_7_0_D <= NOT (((NOT N_PZ_401 AND NOT Memory_8_0)
-	OR (N_PZ_361 AND NOT Memory_7_0)
-	OR (NOT N_PZ_362 AND NOT Memory_6_0)
+Memory_7_0_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_8_0)
+	OR (NOT N_PZ_377 AND NOT Memory_6_0)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_7_0)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(2))));
 
 FDCPE_Memory_7_1: FDCPE port map (Memory_7_1,Memory_7_1_D,clk_RdWr,'0','0','1');
-Memory_7_1_D <= NOT (((NOT N_PZ_401 AND NOT Memory_8_1)
-	OR (N_PZ_361 AND NOT Memory_7_1)
-	OR (NOT N_PZ_362 AND NOT Memory_6_1)
+Memory_7_1_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_8_1)
+	OR (NOT N_PZ_377 AND NOT Memory_6_1)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_7_1)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(2))));
 
 FDCPE_Memory_7_2: FDCPE port map (Memory_7_2,Memory_7_2_D,clk_RdWr,'0','0','1');
-Memory_7_2_D <= NOT (((NOT N_PZ_401 AND NOT Memory_8_2)
-	OR (N_PZ_361 AND NOT Memory_7_2)
-	OR (NOT N_PZ_362 AND NOT Memory_6_2)
+Memory_7_2_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_8_2)
+	OR (NOT N_PZ_377 AND NOT Memory_6_2)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_7_2)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(2))));
 
 FDCPE_Memory_7_3: FDCPE port map (Memory_7_3,Memory_7_3_D,clk_RdWr,'0','0','1');
-Memory_7_3_D <= NOT (((NOT N_PZ_401 AND NOT Memory_8_3)
-	OR (N_PZ_361 AND NOT Memory_7_3)
-	OR (NOT N_PZ_362 AND NOT Memory_6_3)
+Memory_7_3_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_8_3)
+	OR (NOT N_PZ_377 AND NOT Memory_6_3)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_7_3)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2))));
+	NOT Memory_4_or0000 AND NOT MaxIndex(2))));
 
 FDCPE_Memory_8_0: FDCPE port map (Memory_8_0,Memory_8_0_D,clk_RdWr,'0','0','1');
-Memory_8_0_D <= NOT (((NOT N_PZ_401 AND NOT Memory_9_0)
-	OR (N_PZ_361 AND NOT Memory_8_0)
-	OR (NOT N_PZ_362 AND NOT Memory_7_0)
+Memory_8_0_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_9_0)
+	OR (NOT N_PZ_377 AND NOT Memory_7_0)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_8_0)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_8_1: FDCPE port map (Memory_8_1,Memory_8_1_D,clk_RdWr,'0','0','1');
-Memory_8_1_D <= NOT (((NOT N_PZ_401 AND NOT Memory_9_1)
-	OR (N_PZ_361 AND NOT Memory_8_1)
-	OR (NOT N_PZ_362 AND NOT Memory_7_1)
+Memory_8_1_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_9_1)
+	OR (NOT N_PZ_377 AND NOT Memory_7_1)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_8_1)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_8_2: FDCPE port map (Memory_8_2,Memory_8_2_D,clk_RdWr,'0','0','1');
-Memory_8_2_D <= NOT (((NOT N_PZ_401 AND NOT Memory_9_2)
-	OR (N_PZ_361 AND NOT Memory_8_2)
-	OR (NOT N_PZ_362 AND NOT Memory_7_2)
+Memory_8_2_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_9_2)
+	OR (NOT N_PZ_377 AND NOT Memory_7_2)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_8_2)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_8_3: FDCPE port map (Memory_8_3,Memory_8_3_D,clk_RdWr,'0','0','1');
-Memory_8_3_D <= NOT (((NOT N_PZ_401 AND NOT Memory_9_3)
-	OR (N_PZ_361 AND NOT Memory_8_3)
-	OR (NOT N_PZ_362 AND NOT Memory_7_3)
+Memory_8_3_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_9_3)
+	OR (NOT N_PZ_377 AND NOT Memory_7_3)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_8_3)
 	OR (MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_9_0: FDCPE port map (Memory_9_0,Memory_9_0_D,clk_RdWr,'0','0','1');
-Memory_9_0_D <= NOT (((NOT N_PZ_401 AND NOT Memory_10_0)
-	OR (N_PZ_361 AND NOT Memory_9_0)
-	OR (NOT N_PZ_362 AND NOT Memory_8_0)
+Memory_9_0_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_10_0)
+	OR (NOT N_PZ_377 AND NOT Memory_8_0)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_9_0)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_9_1: FDCPE port map (Memory_9_1,Memory_9_1_D,clk_RdWr,'0','0','1');
-Memory_9_1_D <= NOT (((NOT N_PZ_401 AND NOT Memory_10_1)
-	OR (N_PZ_361 AND NOT Memory_9_1)
-	OR (NOT N_PZ_362 AND NOT Memory_8_1)
+Memory_9_1_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_10_1)
+	OR (NOT N_PZ_377 AND NOT Memory_8_1)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_9_1)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_9_2: FDCPE port map (Memory_9_2,Memory_9_2_D,clk_RdWr,'0','0','1');
-Memory_9_2_D <= NOT (((NOT N_PZ_401 AND NOT Memory_10_2)
-	OR (N_PZ_361 AND NOT Memory_9_2)
-	OR (NOT N_PZ_362 AND NOT Memory_8_2)
+Memory_9_2_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_10_2)
+	OR (NOT N_PZ_377 AND NOT Memory_8_2)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_9_2)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND NOT MaxIndex(2))));
 
 FDCPE_Memory_9_3: FDCPE port map (Memory_9_3,Memory_9_3_D,clk_RdWr,'0','0','1');
-Memory_9_3_D <= NOT (((NOT N_PZ_401 AND NOT Memory_10_3)
-	OR (N_PZ_361 AND NOT Memory_9_3)
-	OR (NOT N_PZ_362 AND NOT Memory_8_3)
+Memory_9_3_D <= NOT (((NOT Memory_4_or0000 AND NOT Memory_10_3)
+	OR (NOT N_PZ_377 AND NOT Memory_8_3)
+	OR (Memory_4_or0000 AND N_PZ_377 AND NOT Memory_9_3)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND MaxIndex(1) AND 
-	NOT N_PZ_401 AND NOT MaxIndex(2) AND MaxIndex(3))));
+	NOT Memory_4_or0000 AND MaxIndex(3) AND NOT MaxIndex(2))));
 
 
-N_PZ_361 <= (N_PZ_401 AND N_PZ_362);
-
-
-N_PZ_362 <= ((NOT N_PZ_407)
-	OR (NOT Out_FullStack AND NOT MaxIndex(0) AND NOT MaxIndex(4) AND 
-	NOT MaxIndex(1) AND NOT MaxIndex(2) AND NOT MaxIndex(3)));
-
-
-N_PZ_401 <= ((In_Write)
-	OR (NOT In_Read)
+N_PZ_377 <= ((NOT N_PZ_415)
 	OR (NOT MaxIndex(0) AND NOT MaxIndex(4) AND NOT MaxIndex(1) AND 
-	NOT MaxIndex(2) AND NOT MaxIndex(3)));
+	NOT MaxIndex(3) AND NOT MaxIndex(2)));
 
 
-N_PZ_407 <= (In_Write AND NOT In_Read);
+N_PZ_394 <= (NOT N_PZ_415 AND Memory_4_or0000);
+
+
+N_PZ_415 <= (In_Read AND NOT In_Write);
+
+
+N_PZ_430 <= ((NOT N_PZ_377)
+	OR (NOT In_Read AND In_Write AND Out_FullStack));
 
 
 Out_BtnValue(0) <= In_BtnValue(0);
@@ -1242,23 +1271,21 @@ Out_BtnValue(2) <= In_BtnValue(2);
 
 Out_BtnValue(3) <= In_BtnValue(3);
 
-FTCPE_Out_FullStack: FTCPE port map (Out_FullStack,Out_FullStack_T,clk_RdWr,'0','0','1');
-Out_FullStack_T <= ((Out_FullStack AND NOT MaxIndex(4) AND NOT In_Write AND 
-	NOT N_PZ_401)
-	OR (NOT Out_FullStack AND NOT MaxIndex(0) AND MaxIndex(4) AND 
-	NOT MaxIndex(1) AND N_PZ_407 AND NOT MaxIndex(2) AND NOT MaxIndex(3)));
 
-FDCPE_Out_MemCellValue0: FDCPE port map (Out_MemCellValue(0),Memory_0_0,clk_RdWr,'0','0',NOT N_PZ_401);
+Out_FullStack <= (NOT MaxIndex(0) AND MaxIndex(4) AND NOT MaxIndex(1) AND 
+	NOT MaxIndex(3) AND NOT MaxIndex(2));
 
-FDCPE_Out_MemCellValue1: FDCPE port map (Out_MemCellValue(1),Memory_0_1,clk_RdWr,'0','0',NOT N_PZ_401);
+FDCPE_Out_MemCellValue0: FDCPE port map (Out_MemCellValue(0),Memory_0_0,clk_RdWr,'0','0',NOT Memory_4_or0000);
 
-FDCPE_Out_MemCellValue2: FDCPE port map (Out_MemCellValue(2),Memory_0_2,clk_RdWr,'0','0',NOT N_PZ_401);
+FDCPE_Out_MemCellValue1: FDCPE port map (Out_MemCellValue(1),Memory_0_1,clk_RdWr,'0','0',NOT Memory_4_or0000);
 
-FDCPE_Out_MemCellValue3: FDCPE port map (Out_MemCellValue(3),Memory_0_3,clk_RdWr,'0','0',NOT N_PZ_401);
+FDCPE_Out_MemCellValue2: FDCPE port map (Out_MemCellValue(2),Memory_0_2,clk_RdWr,'0','0',NOT Memory_4_or0000);
+
+FDCPE_Out_MemCellValue3: FDCPE port map (Out_MemCellValue(3),Memory_0_3,clk_RdWr,'0','0',NOT Memory_4_or0000);
 
 
-clk_RdWr <= ((N_PZ_407 AND In_Enable)
-	OR (NOT In_Write AND In_Read AND In_Enable));
+clk_RdWr <= ((N_PZ_415 AND In_Enable)
+	OR (NOT In_Read AND In_Write AND In_Enable));
 
 
 Register Legend:

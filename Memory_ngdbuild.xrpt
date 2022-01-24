@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Wed Dec 15 17:36:34 2021">
+  <application stringID="NgdBuild" timeStamp="Mon Jan 24 12:03:11 2022">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="E:\Programy\ISE\14.7\ISE_DS\ISE\\lib\nt64;E:\Programy\ISE\14.7\ISE_DS\ISE\\bin\nt64;E:\Programy\ISE\14.7\ISE_DS\ISE\bin\nt64;E:\Programy\ISE\14.7\ISE_DS\ISE\lib\nt64;E:\Programy\ISE\14.7\ISE_DS\ISE\..\..\..\DocNav;E:\Programy\ISE\14.7\ISE_DS\PlanAhead\bin;E:\Programy\ISE\14.7\ISE_DS\EDK\bin\nt64;E:\Programy\ISE\14.7\ISE_DS\EDK\lib\nt64;E:\Programy\ISE\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;E:\Programy\ISE\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;E:\Programy\ISE\14.7\ISE_DS\EDK\gnuwin\bin;E:\Programy\ISE\14.7\ISE_DS\EDK\gnu\arm\nt\bin;E:\Programy\ISE\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;E:\Programy\ISE\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;E:\Programy\ISE\14.7\ISE_DS\common\bin\nt64;E:\Programy\ISE\14.7\ISE_DS\common\lib\nt64;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\miste\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Library\Developer\Toolchains\unknown-Asserts-development.xctoolchain\usr\bin;C:\Library\Swift-development\bin;C:\Library\icu-67\usr\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Users\miste\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\miste\AppData\Local\Programs\Python\Python310\;C:\Users\miste\AppData\Local\Microsoft\WindowsApps;C:\Users\miste\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\miste\.dotnet\tools;C:\Users\miste\AppData\Roaming\npm;E:\Programy\Matlab\bin"/>
+          <item stringID="value" value="E:\Programy\ISE\14.7\ISE_DS\ISE\\lib\nt64;E:\Programy\ISE\14.7\ISE_DS\ISE\\bin\nt64;E:\Programy\ISE\14.7\ISE_DS\ISE\bin\nt64;E:\Programy\ISE\14.7\ISE_DS\ISE\lib\nt64;E:\Programy\ISE\14.7\ISE_DS\ISE\..\..\..\DocNav;E:\Programy\ISE\14.7\ISE_DS\PlanAhead\bin;E:\Programy\ISE\14.7\ISE_DS\EDK\bin\nt64;E:\Programy\ISE\14.7\ISE_DS\EDK\lib\nt64;E:\Programy\ISE\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;E:\Programy\ISE\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;E:\Programy\ISE\14.7\ISE_DS\EDK\gnuwin\bin;E:\Programy\ISE\14.7\ISE_DS\EDK\gnu\arm\nt\bin;E:\Programy\ISE\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;E:\Programy\ISE\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;E:\Programy\ISE\14.7\ISE_DS\common\bin\nt64;E:\Programy\ISE\14.7\ISE_DS\common\lib\nt64;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\miste\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Library\Developer\Toolchains\unknown-Asserts-development.xctoolchain\usr\bin;C:\Library\Swift-development\bin;C:\Library\icu-67\usr\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Users\miste\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\miste\AppData\Local\Programs\Python\Python310\;C:\Users\miste\AppData\Local\Microsoft\WindowsApps;C:\Users\miste\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\miste\.dotnet\tools;C:\Users\miste\AppData\Roaming\npm;E:\Programy\Matlab\bin;C:\msys64\mingw64\bin"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -70,32 +70,30 @@
         <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="0"/>
       </section>
       <section stringID="NGDBUILD_PRE_UNISIM_SUMMARY">
-        <item dataType="int" stringID="NGDBUILD_NUM_AND2" value="212"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="15"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND2" value="100"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="70"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND4" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_AND5" value="4"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="70"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND5" value="7"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="73"/>
         <item dataType="int" stringID="NGDBUILD_NUM_GND" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="7"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="194"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="206"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="9"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OR2" value="69"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OR3" value="3"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OR4" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OR2" value="70"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OR3" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_XOR2" value="9"/>
       </section>
       <section stringID="NGDBUILD_POST_UNISIM_SUMMARY">
-        <item dataType="int" stringID="NGDBUILD_NUM_AND2" value="212"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="15"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND2" value="100"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="70"/>
         <item dataType="int" stringID="NGDBUILD_NUM_AND4" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_AND5" value="4"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND5" value="7"/>
         <item dataType="int" stringID="NGDBUILD_NUM_GND" value="1"/>
         <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="7"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="194"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="206"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="9"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OR2" value="69"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OR3" value="3"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OR4" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OR2" value="70"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OR3" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_XOR2" value="9"/>
       </section>
       <section stringID="NGDBUILD_CORE_GENERATION_SUMMARY">
